@@ -50,15 +50,15 @@ export default function GynecologyService() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#fffafa] py-16 sm:py-20 lg:py-24">
-      {/* Background Decoration */}
+    <section className="relative overflow-hidden bg-[#fffafa] py-8 sm:py-12 lg:py-12">
+
       <div className="pointer-events-none absolute -right-40 top-10 -z-0 h-96 w-96 rounded-full bg-[#f8e5e7]/40 blur-3xl" />
 
       <div className="relative z-10 mx-auto max-w-[1700px] px-5 sm:px-8 lg:px-12 xl:px-[4.8%]">
 
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-14">
 
-          {/* LEFT: Image */}
+
           <motion.div
             initial={{
               opacity: 0,
