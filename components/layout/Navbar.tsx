@@ -262,33 +262,6 @@ export default function Navbar() {
                       }`}
                     />
                   </button>
-
-                  <AnimatePresence>
-                    {servicesOpen && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        className="overflow-hidden"
-                      >
-                        <div className="ml-4 border-l-2 border-[#e9a4b3] py-2 pl-3">
-                          {services.map((service) => (
-                            <Link
-                              key={service.name}
-                              href={service.href}
-                              onClick={() => {
-                                setMobileOpen(false);
-                                setServicesOpen(false);
-                              }}
-                              className="block rounded-lg px-4 py-2.5 text-sm text-gray-600 transition-colors hover:bg-[#fff1f4] hover:text-[#c75d76]"
-                            >
-                              {service.name}
-                            </Link>
-                          ))}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
                 </div>
 
                 {navLinks.slice(2).map((link, index) => (
