@@ -1038,7 +1038,7 @@
               "contactLabel": "Contact Us",
               "contactHref": "/contact-us",
               "appointmentLabel": "Book Appointment",
-              "appointmentHref": "/appointment",
+              "appointmentHref": "/book-appointment",
               "ariaLabel": "Mobile navigation",
               "phoneLabel": "+91 98765 43210",
               "phoneHref": "tel:+919876543210",

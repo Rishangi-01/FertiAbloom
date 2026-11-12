@@ -46,7 +46,7 @@ export default function Navbar() {
           : "bg-white"
       }`}
     >
-      <nav aria-label={navigationData.ariaLabel} className="mx-auto flex max-w-[1600px] items-center justify-between px-5 py-3 sm:px-8 lg:px-12 xl:px-16">
+      <nav aria-label={navigationData.ariaLabel} className="mx-auto flex max-w-[1600px] items-center justify-between px-5 py-0 lg:py-3 sm:px-8 lg:px-12 xl:px-16">
 
         
         <Link
@@ -194,22 +194,6 @@ export default function Navbar() {
                     </Link>
                   </motion.div>
                 ))}
-
-      
-                <div>
-                  <button
-                    onClick={() => setServicesOpen(!servicesOpen)}
-                    className="flex w-full items-center justify-between rounded-lg px-4 py-3 text-base font-medium text-gray-800 transition-all hover:bg-[#fff1f4] hover:text-[#c75d76]"
-                  >
-                    {navLinks[2].name}
-                    <ChevronDown
-                      size={19}
-                      className={`transition-transform duration-300 ${
-                        servicesOpen ? "rotate-180" : ""
-                      }`}
-                    />
-                  </button>
-                </div>
 
                 {navLinks.slice(2).map((link, index) => (
                   <motion.div

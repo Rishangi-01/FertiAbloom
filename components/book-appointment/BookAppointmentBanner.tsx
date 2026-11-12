@@ -52,7 +52,7 @@ export default function BookAppointmentBanner() {
       </motion.div>
 
       
-      <div className="mx-auto w-full max-w-[1600px] py-16 px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20">
+      <div className="mx-auto w-full max-w-[1600px] pt-[40px] px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20">
         <motion.div
           initial="hidden"
           animate="visible"
