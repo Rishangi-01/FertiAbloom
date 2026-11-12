@@ -197,8 +197,8 @@
           "reviews": 24,
           "description": "A symbol of everlasting love, this exquisite diamond ring features a brilliant-cut center stone set in 18k gold, designed to shine for a lifetime. Crafted in premium white gold, this elegant piece is perfect for engagements, anniversaries or special occasions. This elegant ring showcases a brilliant round-cut diamond, carefully set in a handcrafted 18k gold band. Designed for those who appreciate fine craftsmanship and timeless beauty.",
           "enquiryNow": {
-            "label": "Enquiry Now",
-            "href": "/enquiry-now"
+            "label": "Contact Us",
+            "href": "/contact-us"
           },
           "features": [
             {
@@ -1155,7 +1155,7 @@
                 "imageAlt": "Mother lovingly holding her baby",
                 "button": {
                   "label": "Appointment",
-                  "href": "/contact"
+                  "href": "/contact-us"
                 }
               },
               {
@@ -1259,7 +1259,7 @@
               ],
               "button": {
                 "label": "Appointment",
-                "href": "/contact"
+                "href": "/contact-us"
               }
             },
             "eyebrow": "About Us",
@@ -2525,7 +2525,7 @@
             ],
             "primaryButton": {
               "label": "Send Another Message",
-              "href": "/contact"
+              "href": "/contact-us"
             },
             "secondaryButton": {
               "label": "Book Another Appointment",
@@ -2728,19 +2728,19 @@
                 "links": [
                   {
                     "label": "IVF Treatment",
-                    "href": "/services/ivf-treatment"
+                    "href": "/services/service-detail"
                   },
                   {
                     "label": "IUI Treatment",
-                    "href": "/services/iui-treatment"
+                    "href": "/services/service-detail"
                   },
                   {
                     "label": "Egg Freezing",
-                    "href": "/services/egg-freezing"
+                    "href": "/services/service-detail"
                   },
                   {
                     "label": "Male Fertility Care",
-                    "href": "/services/male-fertility-care"
+                    "href": "/services/service-detail"
                   },
                   {
                     "label": "Gynecology Care",
