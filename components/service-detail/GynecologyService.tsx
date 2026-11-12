@@ -12,18 +12,11 @@ import {
   Check,
   ChevronRight,
 } from "lucide-react";
-
-const services = [
-  "Well-Woman Examination",
-  "PCOS Diagnosis & Management",
-  "Menstrual Health Support",
-  "Menopause Care",
-  "Contraceptive Counseling",
-  "Laparoscopic Gynecological Procedures",
-];
+import { serviceDetailData } from "@/data";
 
 export default function GynecologyService() {
   const reduceMotion = useReducedMotion();
+  const content = serviceDetailData.gynecology;
 
   const fadeUp = {
     hidden: {
@@ -54,7 +47,7 @@ export default function GynecologyService() {
 
       <div className="pointer-events-none absolute -right-40 top-10 -z-0 h-96 w-96 rounded-full bg-[#f8e5e7]/40 blur-3xl" />
 
-      <div className="relative z-10 mx-auto max-w-[1700px] px-5 sm:px-8 lg:px-12 xl:px-[4.8%]">
+      <div className="relative z-10 mx-auto max-w-[1600px] px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20">
 
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-14">
 
@@ -77,8 +70,8 @@ export default function GynecologyService() {
           >
             <div className="relative aspect-[4/3] w-full overflow-hidden lg:aspect-[1.05/1] xl:aspect-[1.08/1]">
               <Image
-                src="/images/home/about-fertility.png"
-                alt="Gynecologist providing compassionate pregnancy care"
+                src={content.image}
+                alt={content.imageAlt}
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -105,29 +98,29 @@ export default function GynecologyService() {
             {/* Breadcrumb */}
             <motion.nav
               variants={fadeUp}
-              aria-label="Breadcrumb"
+              aria-label={content.breadcrumb.ariaLabel}
               className="mb-9 flex flex-wrap items-center gap-2 text-sm font-medium text-[#777078] sm:mb-10 sm:text-base"
             >
               <Link
-                href="/"
+                href={content.breadcrumb.homeHref}
                 className="transition-colors hover:text-[#bc5b68]"
               >
-                Home
+                {content.breadcrumb.homeLabel}
               </Link>
 
               <ChevronRight size={17} />
 
               <Link
-                href="/services"
+                href={content.breadcrumb.servicesHref}
                 className="transition-colors hover:text-[#bc5b68]"
               >
-                Services
+                {content.breadcrumb.servicesLabel}
               </Link>
 
               <ChevronRight size={17} />
 
               <span className="text-[#bd5c69]">
-                Gynecology Care
+                {content.breadcrumb.currentLabel}
               </span>
             </motion.nav>
 
@@ -137,7 +130,7 @@ export default function GynecologyService() {
               className="mb-4 flex items-center gap-5"
             >
               <span className="text-sm font-bold uppercase tracking-[0.12em] text-[#bd6875] sm:text-base">
-                Our Service
+                {content.eyebrow}
               </span>
 
               <span className="h-[2px] w-16 bg-[#d9a0a5] sm:w-[75px]" />
@@ -148,9 +141,9 @@ export default function GynecologyService() {
               variants={fadeUp}
               className="text-3xl font-extrabold leading-[1.12] tracking-tight text-[#29232d] sm:text-4xl md:text-5xl xl:text-[56px]"
             >
-              Gynecology Care{" "}
+              {content.title}{" "}
               <span className="text-[#b95260]">
-                Services
+                {content.highlight}
               </span>
             </motion.h2>
 
@@ -159,15 +152,7 @@ export default function GynecologyService() {
               variants={fadeUp}
               className="mt-6 text-base leading-[1.8] text-[#777078] sm:text-lg lg:mt-7 xl:text-[19px]"
             >
-              Our gynecology care focuses on maintaining
-              women's reproductive health at every stage
-              of life. From routine check-ups to advanced
-              treatments, we provide personalized care in
-              a comfortable and supportive environment.
-              Our experienced specialists are dedicated
-              to helping you achieve better health and
-              well-being with compassionate and
-              professional guidance.
+              {content.description}
             </motion.p>
 
             {/* Services List */}
@@ -175,7 +160,7 @@ export default function GynecologyService() {
               variants={fadeUp}
               className="mt-7 grid grid-cols-1 gap-x-6 gap-y-5 rounded-2xl border border-[#f7e8e9] bg-[#fdf1f1]/80 p-5 sm:grid-cols-2 sm:p-7 lg:mt-8 xl:p-8"
             >
-              {services.map((service, index) => (
+              {content.services.map((service, index) => (
                 <motion.div
                   key={service}
                   initial={{
@@ -207,10 +192,10 @@ export default function GynecologyService() {
             {/* CTA Button */}
             <motion.div variants={fadeUp} className="mt-8">
               <Link
-                href="/appointment"
+                href={content.appointmentButton.href}
                 className="group inline-flex min-h-[60px] items-center justify-center gap-5 rounded-full bg-[#bc5c68] px-8 py-4 text-base font-semibold text-white shadow-lg shadow-[#bc5c68]/15 transition-all duration-300 hover:-translate-y-1 hover:bg-[#a94957] hover:shadow-xl hover:shadow-[#bc5c68]/25 sm:px-10 sm:text-lg"
               >
-                Book an Appointment
+                {content.appointmentButton.label}
 
                 <ArrowRight
                   size={22}

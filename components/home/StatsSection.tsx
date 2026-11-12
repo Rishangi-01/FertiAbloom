@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import {
   motion,
   useInView,
@@ -18,41 +18,14 @@ import {
   HeartHandshake,
   Trophy,
 } from "lucide-react";
+import { statsSectionData } from "@/data";
 
-const stats = [
-  {
-    id: 1,
-    value: 5000,
-    suffix: "+",
-    display: "5K+",
-    label: "Happy Patients",
-    icon: Baby,
-  },
-  {
-    id: 2,
-    value: 70,
-    suffix: "+",
-    display: "70+",
-    label: "Expert Specialists",
-    icon: UsersRound,
-  },
-  {
-    id: 3,
-    value: 18,
-    suffix: "+",
-    display: "18+",
-    label: "Years of Experience",
-    icon: HeartHandshake,
-  },
-  {
-    id: 4,
-    value: 24,
-    suffix: "+",
-    display: "24+",
-    label: "Awards & Recognition",
-    icon: Trophy,
-  },
-];
+const statIcons: Record<string, typeof Baby> = {
+  baby: Baby,
+  "users-round": UsersRound,
+  "heart-handshake": HeartHandshake,
+  trophy: Trophy,
+};
 
 function AnimatedCounter({
   value,
@@ -113,6 +86,7 @@ function AnimatedCounter({
 
 export default function StatsSection() {
   const reduceMotion = useReducedMotion();
+  const stats = statsSectionData.items;
 
   return (
     <section className="relative w-full overflow-hidden bg-[#fffaf9] px-4 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
@@ -135,7 +109,7 @@ export default function StatsSection() {
           duration: 0.9,
           ease: "easeOut",
         }}
-        className="relative mx-auto w-full max-w-[1800px] overflow-hidden rounded-[28px] border border-[#f8e8ed] bg-gradient-to-r from-[#fff5f7] via-[#fffafa] to-[#fff4f6] px-4 py-8 shadow-[0_12px_45px_rgba(205,106,135,0.07)] sm:rounded-[35px] sm:px-8 sm:py-10 lg:px-12 lg:py-7 xl:px-16"
+        className="relative mx-auto w-full max-w-[1600px] overflow-hidden rounded-[28px] border border-[#f8e8ed] bg-gradient-to-r from-[#fff5f7] via-[#fffafa] to-[#fff4f6] px-4 py-8 shadow-[0_12px_45px_rgba(205,106,135,0.07)] sm:rounded-[35px] sm:px-8 sm:py-10 lg:px-12 lg:py-7 xl:px-16"
       >
 
         {/* Left Decorative Leaves - IMAGE */}
@@ -156,8 +130,8 @@ export default function StatsSection() {
           className="pointer-events-none absolute -left-3 bottom-1 z-0 h-32 w-24 sm:h-40 sm:w-32 lg:h-48 lg:w-40"
         >
           <Image
-            src="/images/home/leaves-left.png"
-            alt=""
+            src={statsSectionData.decorativeImages[0].src}
+            alt={statsSectionData.decorativeImages[0].alt}
             fill
             sizes="160px"
             className="object-contain object-left-bottom"
@@ -182,8 +156,8 @@ export default function StatsSection() {
           className="pointer-events-none absolute -right-3 bottom-1 z-0 h-32 w-24 sm:h-40 sm:w-32 lg:h-48 lg:w-40"
         >
           <Image
-            src="/images/home/leaves-right.png"
-            alt=""
+            src={statsSectionData.decorativeImages[1].src}
+            alt={statsSectionData.decorativeImages[1].alt}
             fill
             sizes="160px"
             className="object-contain object-right-bottom"
@@ -194,11 +168,15 @@ export default function StatsSection() {
         <div className="relative z-10 grid grid-cols-2 xl:grid-cols-4">
 
           {stats.map((stat, index) => {
-            const Icon = stat.icon;
+            const Icon = statIcons[stat.icon];
+            const numericValue =
+              Number(stat.value.replace(/\D/g, "")) *
+              (stat.value.includes("K") ? 1000 : 1);
+            const suffix = stat.value.replace(/[\dK]/g, "");
 
             return (
               <motion.div
-                key={stat.id}
+                key={stat.label}
                 initial={{
                   opacity: 0,
                   y: reduceMotion ? 0 : 30,
@@ -249,9 +227,9 @@ export default function StatsSection() {
                 {/* Animated Number */}
                 <h3 className="text-4xl font-extrabold leading-none tracking-[-0.04em] text-[#dc3980] sm:text-5xl lg:text-[54px]">
                   <AnimatedCounter
-                    value={stat.value}
-                    suffix={stat.suffix}
-                    display={stat.display}
+                    value={numericValue}
+                    suffix={suffix}
+                    display={stat.value}
                     delay={index * 0.15}
                   />
                 </h3>

@@ -5,76 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-
-const services = [
-  {
-    id: 1,
-    title: "Gynecology Care",
-    description:
-      "Comprehensive care for women's reproductive health at every stage of life.",
-    image: "/images/home/gynecology-care.png",
-    link: "/services/service-detail",
-  },
-  {
-    id: 2,
-    title: "Fertility Treatment",
-    description:
-      "Advanced and personalized fertility solutions to help you build your family.",
-    image: "/images/home/fertility-treatment.png",
-    link: "/services/service-detail",
-  },
-  {
-    id: 3,
-    title: "Prenatal Care",
-    description:
-      "Expert care and monitoring for a safe and healthy pregnancy journey.",
-    image: "/images/home/prenatal-care.png",
-    link: "/services/service-detail",
-  },
-  {
-    id: 4,
-    title: "Family Planning",
-    description:
-      "Guidance and support to help you plan your family with confidence.",
-    image: "/images/home/family-planning.png",
-    link: "/services/service-detail",
-  },
-  {
-    id: 5,
-    title: "Contraceptive Counseling",
-    description:
-      "Personalized guidance on safe and effective contraception options.",
-    image: "/images/home/contraceptive-counseling.png",
-    link: "/services/service-detail",
-  },
-  {
-    id: 6,
-    title: "PCOS Management",
-    description:
-      "Comprehensive care for PCOS with lifestyle, medication and long-term support.",
-    image: "/images/home/pcos-management.png",
-    link: "/services/service-detail",
-  },
-  {
-    id: 7,
-    title: "IVF & IUI Treatment",
-    description:
-      "Advanced reproductive technologies to turn your parenthood dreams into reality.",
-    image: "/images/home/ivf-iui-treatment.png",
-    link: "/services/service-detail-treatment",
-  },
-  {
-    id: 8,
-    title: "Menopause Care",
-    description:
-      "Supportive care to manage hormonal changes and maintain a healthy life.",
-    image: "/images/home/menopause-care.png",
-    link: "/services/service-detail",
-  },
-];
+import { servicesData } from "@/data";
 
 export default function OurServices() {
   const reduceMotion = useReducedMotion();
+  const services = servicesData.items;
 
   const containerVariants = {
     hidden: {},
@@ -110,7 +45,7 @@ export default function OurServices() {
 
       <div className="pointer-events-none absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-[#f8e5e8]/50 blur-[100px]" />
 
-      <div className="relative z-10 mx-auto w-full max-w-[1700px] px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20">
+      <div className="relative z-10 mx-auto w-full max-w-[1600px] px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20">
 
         {/* Section Heading */}
         <motion.div
@@ -125,7 +60,7 @@ export default function OurServices() {
             <span className="h-[2px] w-12 sm:w-16 bg-[#ed8da0]" />
 
             <span className="text-sm font-semibold uppercase tracking-[0.18em] text-[#df6680] sm:text-base">
-              Our Services
+              {servicesData.eyebrow}
             </span>
 
             <span className="h-[2px] w-12 sm:w-16 bg-[#ed8da0]" />
@@ -133,10 +68,10 @@ export default function OurServices() {
 
           {/* Main Heading */}
           <h2 className="mx-auto max-w-3xl text-3xl font-bold leading-[1.2] tracking-[-0.035em] text-[#342b3d] sm:text-4xl md:text-5xl lg:text-[52px]">
-            Expert Care for Every Stage
+            {servicesData.title}
 
             <span className="mt-1 block text-[#d45f78]">
-              of Your Parenthood Journey
+              {servicesData.highlight}
             </span>
           </h2>
         </motion.div>
@@ -151,7 +86,7 @@ export default function OurServices() {
         >
           {services.map((service) => (
             <motion.div
-              key={service.id}
+              key={service.slug}
               variants={cardVariants}
               whileHover={
                 reduceMotion
@@ -187,17 +122,17 @@ export default function OurServices() {
 
                 {/* Description */}
                 <p className="mt-3 text-[15px] leading-[1.65] text-[#777181] sm:text-base">
-                  {service.description}
+                  {service.text}
                 </p>
 
                 {/* View Details Link */}
                 <div className="mt-auto pt-5">
                   <Link
-                    href={service.link}
+                    href={servicesData.serviceDetailsHref}
                     className="group/link inline-flex items-center gap-3 text-base font-semibold text-[#e35c7e] transition-colors duration-300 hover:text-[#b94c67] sm:text-lg"
                   >
                     <span className="relative">
-                      View Details
+                      {servicesData.buttonLabel}
 
                       <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-[#d45f78] transition-all duration-300 group-hover/link:w-full" />
                     </span>

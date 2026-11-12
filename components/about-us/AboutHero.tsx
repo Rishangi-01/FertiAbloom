@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "motion/react";
 import { ChevronRight } from "lucide-react";
+import { aboutSectionData, navigationData, siteInfoData } from "@/data";
 
 export default function AboutHero() {
   const shouldReduceMotion = useReducedMotion();
@@ -41,8 +42,8 @@ export default function AboutHero() {
         className="absolute inset-0 -z-20"
       >
         <Image
-          src="/images/banner.png"
-          alt="A happy baby receiving loving medical care"
+          src={siteInfoData.bannerImage}
+          alt={siteInfoData.bannerImageAlt}
           fill
           priority
           sizes="100vw"
@@ -51,7 +52,7 @@ export default function AboutHero() {
       </motion.div>
 
       
-      <div className="mx-auto w-full max-w-[1600px] px-6 py-16 sm:px-10 md:px-14 lg:px-20 xl:px-24">
+      <div className="mx-auto w-full max-w-[1600px] py-16 px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -70,20 +71,20 @@ export default function AboutHero() {
             variants={fadeUp}
             className="text-5xl font-extrabold tracking-tight text-[#351c35] sm:text-6xl md:text-7xl lg:text-[84px] xl:text-[80px]"
           >
-            About
+            {aboutSectionData.heroTitle}
           </motion.h1>
 
           {/* Breadcrumb */}
           <motion.nav
-            aria-label="Breadcrumb"
+            aria-label={siteInfoData.breadcrumbLabel}
             variants={fadeUp}
             className="mt-7 inline-flex items-center gap-3 rounded-full bg-[#c75d7b] px-7 py-4 text-sm font-medium text-white shadow-lg shadow-[#c75d7b]/15 transition-all duration-300 hover:bg-[#ad4565] hover:shadow-xl sm:gap-4 sm:px-8 sm:py-[15px] sm:text-lg"
           >
             <Link
-              href="/"
+              href={navigationData.links[0].href}
               className="transition-opacity hover:opacity-75"
             >
-              Home
+              {navigationData.links[0].label}
             </Link>
 
             <ChevronRight
@@ -92,7 +93,7 @@ export default function AboutHero() {
               aria-hidden="true"
             />
 
-            <span aria-current="page">About</span>
+            <span aria-current="page">{aboutSectionData.heroTitle}</span>
           </motion.nav>
         </motion.div>
       </div>

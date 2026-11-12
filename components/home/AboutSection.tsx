@@ -5,36 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Check } from "lucide-react";
-
-const features = [
-  {
-    title: "Personalized Fertility Treatment",
-    color: "pink",
-  },
-  {
-    title: "Advanced IVF & IUI Support",
-    color: "pink",
-  },
-  {
-    title: "Comprehensive Women's Care",
-    color: "pink",
-  },
-  {
-    title: "Experienced Specialists",
-    color: "green",
-  },
-  {
-    title: "Compassionate & Supportive Care",
-    color: "green",
-  },
-  {
-    title: "Modern & Advanced Technology",
-    color: "green",
-  },
-];
+import { aboutSectionData } from "@/data";
 
 export default function AboutSection() {
   const reduceMotion = useReducedMotion();
+  const content = aboutSectionData.homeSection;
 
   const fadeUp = {
     hidden: {
@@ -70,7 +45,7 @@ export default function AboutSection() {
 
       <div className="absolute right-[-100px] top-[-100px] h-[300px] w-[300px] rounded-full bg-[#f9eeee]/40 blur-3xl pointer-events-none" />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-12 px-5 sm:px-8 md:px-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12 lg:px-14 xl:gap-16 xl:px-20">
+      <div className="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12 xl:gap-16 px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20">
 
         {/* LEFT IMAGE SECTION */}
         <motion.div
@@ -99,8 +74,8 @@ export default function AboutSection() {
           <div className="relative z-10 aspect-[1.08/1] w-full overflow-hidden rounded-[30px] border-[5px] border-white shadow-[0_15px_50px_rgba(79,53,58,0.10)] sm:rounded-[38px] lg:rounded-[42px]">
 
             <Image
-              src="/images/home/about-fertility.png"
-              alt="Fertility specialist caring for an expecting mother"
+              src={aboutSectionData.mainImage}
+              alt={aboutSectionData.mainImageAlt}
               fill
               priority={false}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 680px"
@@ -142,7 +117,7 @@ export default function AboutSection() {
             className="mb-5 flex items-center gap-4"
           >
             <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[#d46a7a]">
-              About Us
+              {content.eyebrow}
             </span>
 
             <span className="h-[2px] w-16 bg-[#e7a5ac]" />
@@ -153,11 +128,11 @@ export default function AboutSection() {
             variants={fadeUp}
             className="text-3xl font-bold leading-[1.15] tracking-[-0.04em] text-[#332d3b] sm:text-4xl md:text-[42px] xl:text-[48px]"
           >
-            Compassionate Care
+            {content.title[0]}
             <br className="hidden xl:block" />{" "}
-            for Your{" "}
+            {content.title[1]}{" "}
             <span className="text-[#cc6475]">
-              Parenthood Journey
+              {content.title[2]}
             </span>
           </motion.h2>
 
@@ -166,12 +141,7 @@ export default function AboutSection() {
             variants={fadeUp}
             className="mt-6 text-base leading-[1.8] text-[#77727a] sm:text-lg"
           >
-            At FertiAbloom, we are dedicated to providing
-            personalized fertility care with advanced treatments
-            and a supportive environment. Our experienced
-            specialists guide you at every step with care,
-            compassion and the latest medical technology to help
-            you achieve your dream of a happy family.
+            {aboutSectionData.homeText}
           </motion.p>
 
           
@@ -179,7 +149,7 @@ export default function AboutSection() {
             variants={stagger}
             className="mt-8 grid grid-cols-1 gap-x-5 gap-y-3 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-3"
           >
-            {features.map((feature, index) => (
+            {content.features.map((feature) => (
               <motion.div
                 key={feature.title}
                 variants={fadeUp}
@@ -212,10 +182,10 @@ export default function AboutSection() {
             className="mt-8"
           >
             <Link
-              href="/contact"
+              href={content.button.href}
               className="group inline-flex items-center justify-center gap-4 rounded-full bg-[#d36373] px-9 py-5 text-base font-semibold text-white shadow-[0_10px_30px_rgba(211,99,115,0.20)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#bd5365] hover:shadow-[0_15px_35px_rgba(211,99,115,0.30)]"
             >
-              <span>Appointment</span>
+              <span>{content.button.label}</span>
 
               <ArrowRight
                 size={21}

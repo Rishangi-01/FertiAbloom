@@ -15,82 +15,34 @@ import {
   MapPin,
   Phone,
   Mail,
-  ArrowUpRight,
   ChevronRight,
 } from "lucide-react";
+import {
+  footerSectionData,
+  navigationData,
+  siteInfoData,
+} from "@/data";
 
-const quickLinks = [
-  { name: "Home", href: "/" },
-  { name: "About Us", href: "/about-us" },
-  { name: "Our Services", href: "/services" },
-  { name: "Blog", href: "/blog" },
-  { name: "Contact Us", href: "/contact-us" },
-];
+const socialIcons: Record<string, typeof FaFacebookF> = {
+  facebook: FaFacebookF,
+  twitter: FaXTwitter,
+  instagram: FaInstagram,
+  pinterest: FaPinterestP,
+  linkedin: FaLinkedinIn,
+};
 
-const services = [
-  { name: "IVF Treatment", href: "/services/ivf-treatment" },
-  { name: "IUI Treatment", href: "/services/iui-treatment" },
-  { name: "Egg Freezing", href: "/services/egg-freezing" },
-  { name: "Male Fertility Care", href: "/services/male-fertility-care" },
-];
-
-const socialLinks = [
-  {
-    icon: FaFacebookF,
-    href: "https://facebook.com",
-    label: "Facebook",
-  },
-  {
-    icon: FaXTwitter,
-    href: "https://x.com",
-    label: "Twitter",
-  },
-  {
-    icon: FaInstagram,
-    href: "https://instagram.com",
-    label: "Instagram",
-  },
-  {
-    icon: FaPinterestP,
-    href: "https://pinterest.com",
-    label: "Pinterest",
-  },
-  {
-    icon: FaLinkedinIn,
-    href: "https://linkedin.com",
-    label: "LinkedIn",
-  },
-];
-
-const contactDetails = [
-  {
-    icon: MapPin,
-    text: (
-      <>
-        123 Wellness Street,
-        <br />
-        New Delhi, India - 110001
-      </>
-    ),
-    href: "https://maps.google.com/?q=New+Delhi+India",
-    label: "Address",
-  },
-  {
-    icon: Phone,
-    text: "+91 98765 43210",
-    href: "tel:+919876543210",
-    label: "Phone",
-  },
-  {
-    icon: Mail,
-    text: "info@fertiabloom.com",
-    href: "mailto:info@fertiabloom.com",
-    label: "Email",
-  },
-];
+const contactIcons: Record<string, typeof MapPin> = {
+  "map-pin": MapPin,
+  phone: Phone,
+  mail: Mail,
+};
 
 export default function Footer() {
   const reduceMotion = useReducedMotion();
+  const quickLinks = footerSectionData.columns[0].links.slice(0, 5);
+  const services = footerSectionData.columns[1].links.slice(0, 4);
+  const socialLinks = siteInfoData.socials;
+  const contactDetails = footerSectionData.contactDetails;
 
   const reveal = {
     hidden: {
@@ -111,7 +63,7 @@ export default function Footer() {
     <footer className="relative w-full overflow-hidden bg-[#fff7fa] px-3 pb-3 pt-5 sm:px-4 sm:pb-4 sm:pt-6">
 
 
-      <div className="relative mx-auto max-w-[1900px] overflow-hidden rounded-[25px] border border-[#f9dce9] bg-gradient-to-br from-[#fff4f8] via-[#fff9fb] to-[#fdebf3] shadow-[0_10px_45px_rgba(226,117,159,0.07)] sm:rounded-[35px]">
+      <div className="relative mx-auto max-w-[1600px] overflow-hidden rounded-[25px] border border-[#f9dce9] bg-gradient-to-br from-[#fff4f8] via-[#fff9fb] to-[#fdebf3] shadow-[0_10px_45px_rgba(226,117,159,0.07)] sm:rounded-[35px]">
 
 
         <div className="pointer-events-none absolute -left-24 -top-32 h-80 w-80 rounded-full bg-[#f9d8e7]/50 blur-[100px]" />
@@ -135,11 +87,11 @@ export default function Footer() {
 
           
 
-            <Link href="/" className="inline-flex items-center">
+            <Link href={navigationData.links[0].href} className="inline-flex items-center">
 
               <Image
-                src="/images/logo.png"
-                alt="FertiAbloom - Where Hope Blossoms"
+                src={siteInfoData.logo}
+                alt={siteInfoData.alt}
                 width={420}
                 height={145}
                 priority
@@ -152,9 +104,7 @@ export default function Footer() {
 
             <p className="mt-5 max-w-[440px] text-[15px] leading-[1.9] text-[#77778d] sm:text-base">
 
-              Compassionate fertility care, advanced treatments,
-              and personalized support to help you achieve your
-              dream of parenthood.
+              {footerSectionData.about}
 
             </p>
 
@@ -162,7 +112,7 @@ export default function Footer() {
             <div className="mt-6 flex flex-wrap items-center gap-3 sm:gap-4">
 
               {socialLinks.map((social, index) => {
-                const Icon = social.icon;
+                const Icon = socialIcons[social.icon];
 
                 return (
                   <motion.a
@@ -212,7 +162,7 @@ export default function Footer() {
           >
 
             <h3 className="text-xl font-extrabold tracking-tight text-[#32164e] sm:text-[23px]">
-              Quick Links
+              {footerSectionData.columns[0].title}
             </h3>
 
 
@@ -222,7 +172,7 @@ export default function Footer() {
 
               {quickLinks.map((link) => (
 
-                <li key={link.name}>
+                <li key={link.href}>
 
                   <Link
                     href={link.href}
@@ -234,7 +184,7 @@ export default function Footer() {
                       className="shrink-0 text-[#ed4a91] transition-transform duration-300 group-hover:translate-x-1"
                     />
 
-                    <span>{link.name}</span>
+                    <span>{link.label}</span>
 
                   </Link>
 
@@ -257,7 +207,7 @@ export default function Footer() {
           >
 
             <h3 className="text-xl font-extrabold tracking-tight text-[#32164e] sm:text-[23px]">
-              Our Services
+              {footerSectionData.columns[1].title}
             </h3>
 
 
@@ -267,7 +217,7 @@ export default function Footer() {
 
               {services.map((service) => (
 
-                <li key={service.name}>
+                <li key={service.href}>
 
                   <Link
                     href={service.href}
@@ -279,7 +229,7 @@ export default function Footer() {
                       className="shrink-0 text-[#ed4a91] transition-transform duration-300 group-hover:translate-x-1"
                     />
 
-                    <span>{service.name}</span>
+                    <span>{service.label}</span>
 
                   </Link>
 
@@ -303,7 +253,7 @@ export default function Footer() {
           >
 
             <h3 className="text-xl font-extrabold tracking-tight text-[#32164e] sm:text-[23px]">
-              Contact Us
+              {footerSectionData.contactTitle}
             </h3>
 
             
@@ -315,20 +265,14 @@ export default function Footer() {
             <div className="mt-7 flex flex-col gap-5">
 
               {contactDetails.map((contact) => {
-                const Icon = contact.icon;
+                const Icon = contactIcons[contact.icon];
 
                 return (
                   <motion.a
-                    key={contact.label}
+                    key={contact.title}
                     href={contact.href}
-                    target={
-                      contact.label === "Address" ? "_blank" : undefined
-                    }
-                    rel={
-                      contact.label === "Address"
-                        ? "noopener noreferrer"
-                        : undefined
-                    }
+                    target={contact.href.startsWith("https://") ? "_blank" : undefined}
+                    rel={contact.href.startsWith("https://") ? "noopener noreferrer" : undefined}
                     whileHover={
                       reduceMotion
                         ? undefined
@@ -349,7 +293,7 @@ export default function Footer() {
 
                     <span className="text-sm font-medium leading-[1.7] text-[#77778d] transition-colors duration-300 group-hover:text-[#e83d85] sm:text-[15px]">
 
-                      {contact.text}
+                      {contact.value}
 
                     </span>
 
@@ -405,8 +349,8 @@ export default function Footer() {
           
 
           <Image
-            src="/images/footer-mother-baby.png"
-            alt="Mother lovingly holding her newborn baby"
+            src={siteInfoData.bgImage}
+            alt={siteInfoData.footerImageAlt}
             fill
             sizes="30vw"
             className="relative z-10 object-contain object-right-bottom"
@@ -419,7 +363,7 @@ export default function Footer() {
 
           <p className="text-sm font-medium text-[#77778d] sm:text-base">
 
-            © Copyright 2026 by FertiAbloom.
+            {footerSectionData.copyright}
             All Rights Reserved.
 
           </p>

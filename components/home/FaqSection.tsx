@@ -11,47 +11,15 @@ import {
   ChevronDown,
   MessageCircleQuestion,
 } from "lucide-react";
-
-const faqs = [
-  {
-    id: "01",
-    question: "How much do you charge for a consultation?",
-    answer:
-      "Our consultation fees are kept affordable and vary depending on the type of consultation, whether it is an in-clinic or online consultation. Please contact our clinic directly for detailed information about the charges.",
-  },
-  {
-    id: "02",
-    question: "What types of treatments do you offer?",
-    answer:
-      "We provide a range of fertility and reproductive healthcare services, including fertility consultations, IVF, IUI, gynecology care, prenatal care, family planning and personalized treatment options.",
-  },
-  {
-    id: "03",
-    question: "How do I book my appointment?",
-    answer:
-      "You can book an appointment by contacting our clinic directly or using the appointment booking option available on our website. Our team will help you choose a convenient date and time.",
-  },
-  {
-    id: "04",
-    question: "Can I cancel or reschedule my appointment?",
-    answer:
-      "Yes. You can contact our clinic in advance to cancel or reschedule your appointment. Our support team will help you find another suitable time.",
-  },
-  {
-    id: "05",
-    question: "Is IVF treatment safe?",
-    answer:
-      "IVF is a widely used fertility treatment, but every medical treatment has potential risks and benefits. Your fertility specialist can explain the treatment process and discuss what is appropriate for your individual situation.",
-  },
-];
+import { faqSectionData } from "@/data";
 
 export default function FaqSection() {
   const [activeIndex, setActiveIndex] = useState(0);
-
   const reduceMotion = useReducedMotion();
+  const faqs = faqSectionData.items;
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#fffafa] px-4 py-16 sm:px-6 sm:py-20 lg:px-10 lg:py-24">
+    <section className="relative w-full overflow-hidden bg-[#fffafa] py-16 sm:py-20 lg:py-24">
       {/* =========================
           BACKGROUND DECORATIONS
       ========================== */}
@@ -81,7 +49,7 @@ export default function FaqSection() {
           MAIN CONTAINER
       ========================== */}
 
-      <div className="relative z-10 mx-auto grid w-full max-w-[1650px] grid-cols-1 items-center gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:gap-14 xl:gap-16">
+      <div className="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:gap-14 xl:gap-16 px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20">
         {/* =========================
             LEFT IMAGE
         ========================== */}
@@ -128,8 +96,8 @@ export default function FaqSection() {
 
           <div className="group relative z-10 aspect-[0.98/1] w-full overflow-hidden rounded-[26px] bg-[#f7edf1] shadow-[0_25px_70px_rgba(70,38,65,0.13)] sm:rounded-[32px] lg:rounded-[36px] h-full">
             <Image
-              src="/images/home/faq.png"
-              alt="Mother holding her baby"
+              src={faqSectionData.image}
+              alt={faqSectionData.imageAlt}
               fill
               priority={false}
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -179,7 +147,7 @@ export default function FaqSection() {
                 strokeWidth={2.4}
               />
 
-              <span>FAQ</span>
+              <span>{faqSectionData.eyebrow}</span>
             </div>
           </motion.div>
 
@@ -197,9 +165,9 @@ export default function FaqSection() {
             }}
             className="max-w-[720px] text-4xl font-extrabold leading-[1.08] tracking-[-0.045em] text-[#32194e] sm:text-5xl md:text-[52px] lg:text-[54px] xl:text-[58px]"
           >
-            Frequently Asked
+            {faqSectionData.headingFirst}
             <span className="block bg-gradient-to-r from-[#e83b83] to-[#ed4b92] bg-clip-text text-transparent">
-              Questions
+              {faqSectionData.headingHighlight}
             </span>
           </motion.h2>
 
@@ -217,9 +185,7 @@ export default function FaqSection() {
             }}
             className="mt-5 max-w-[760px] text-sm leading-[1.7] text-[#777389] sm:text-base md:text-lg"
           >
-            Find answers to common questions about our fertility
-            treatments, procedures, and patient care to help you make
-            informed decisions.
+            {faqSectionData.intro}
           </motion.p>
 
           {/* =========================
@@ -244,7 +210,7 @@ export default function FaqSection() {
 
               return (
                 <motion.div
-                  key={faq.id}
+                  key={faq.question}
                   layout={!reduceMotion}
                   transition={{
                     layout: {
@@ -276,7 +242,7 @@ export default function FaqSection() {
                           : "bg-[#fde8f0] text-[#e94789]"
                       }`}
                     >
-                      {faq.id}
+                      {String(index + 1).padStart(2, "0")}
                     </span>
 
                     {/* QUESTION */}

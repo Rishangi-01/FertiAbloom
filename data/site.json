@@ -1,0 +1,3001 @@
+{
+  "Insurance": {
+    "templateComponents": {
+      "template-1": {
+        "shared": {
+          "Site": "InsuranceSite1",
+          "Header": "InsuranceHeader1",
+          "Footer": "InsuranceFooter1"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "Hero",
+                "component": "InsuranceHero1"
+              },
+              {
+                "key": "Highlights",
+                "component": "InsuranceHighlights1"
+              },
+              {
+                "key": "About",
+                "component": "InsuranceAbout1"
+              },
+              {
+                "key": "Plans",
+                "component": "InsurancePlans1"
+              },
+              {
+                "key": "Process",
+                "component": "InsuranceProcess1"
+              },
+              {
+                "key": "Stats",
+                "component": "InsuranceStats1"
+              },
+              {
+                "key": "Testimonials",
+                "component": "InsuranceTestimonials1"
+              },
+              {
+                "key": "Cta",
+                "component": "InsuranceCta1"
+              },
+              {
+                "key": "Blog",
+                "component": "InsuranceBlog1"
+              }
+            ]
+          },
+          "about-us": {
+            "components": [
+              {
+                "key": "About",
+                "component": "InsuranceAbout1"
+              },
+              {
+                "key": "Stats",
+                "component": "InsuranceStats1"
+              },
+              {
+                "key": "WhyChooseUs",
+                "component": "InsuranceWhyChooseUs1"
+              }
+            ]
+          },
+          "insurance-plans": {
+            "components": [
+              {
+                "key": "Plans",
+                "component": "InsurancePlans1"
+              }
+            ]
+          },
+          "insurance-plan-detail": {
+            "expand": "items",
+            "components": [
+              {
+                "key": "PlanDetail",
+                "component": "InsurancePlanDetail1"
+              },
+              {
+                "key": "EnquiryForm",
+                "component": "InsuranceEnquiryForm1"
+              }
+            ]
+          },
+          "blogs": {
+            "components": [
+              {
+                "key": "Blog",
+                "component": "InsuranceBlog1"
+              }
+            ]
+          },
+          "blog-detail": {
+            "expand": "items",
+            "components": [
+              {
+                "key": "BlogDetail",
+                "component": "InsuranceBlogDetail1"
+              }
+            ]
+          },
+          "contact-us": {
+            "components": [
+              {
+                "key": "ContactPage",
+                "component": "InsuranceContactPage1"
+              },
+              {
+                "key": "EnquiryForm",
+                "component": "InsuranceEnquiryForm1"
+              }
+            ]
+          },
+          "enquire-now": {
+            "components": [
+              {
+                "key": "EnquirePage",
+                "component": "InsuranceEnquirePage1"
+              },
+              {
+                "key": "EnquiryForm",
+                "component": "InsuranceEnquiryForm1"
+              }
+            ]
+          },
+          "thank-you": {
+            "components": [
+              {
+                "key": "ThankYouPage",
+                "component": "InsuranceThankYouPage1"
+              }
+            ]
+          },
+          "faq": {
+            "components": [
+              {
+                "key": "FaqPage",
+                "component": "InsuranceFaqPage1"
+              }
+            ]
+          },
+          "privacy-policy": {
+            "components": [
+              {
+                "key": "PolicyPages",
+                "component": "InsurancePolicyPages1"
+              }
+            ]
+          },
+          "terms-and-conditions": {
+            "components": [
+              {
+                "key": "PolicyPages",
+                "component": "InsurancePolicyPages1"
+              }
+            ]
+          },
+          "cookie-policy": {
+            "components": [
+              {
+                "key": "PolicyPages",
+                "component": "InsurancePolicyPages1"
+              }
+            ]
+          },
+          "sitemap": {
+            "components": [
+              {
+                "key": "SitemapPage",
+                "component": "InsuranceSitemapPage1"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "commerce": {
+      "productDetails": {
+        "hero": {
+          "breadcrumbLabel": "Breadcrumb",
+          "image": {
+            "src": "/images/hero.webp",
+            "alt": "Elegant fine jewellery with gold bracelets and diamond rings"
+          },
+          "heading": "Collection Detail",
+          "homeLabel": "Home",
+          "homeHref": "/",
+          "currentLabel": "Collection Detail"
+        },
+        "product": {
+          "name": "Eternal Premium Diamond Ring",
+          "price": 2499,
+          "rating": 4.8,
+          "reviews": 24,
+          "description": "A symbol of everlasting love, this exquisite diamond ring features a brilliant-cut center stone set in 18k gold, designed to shine for a lifetime. Crafted in premium white gold, this elegant piece is perfect for engagements, anniversaries or special occasions. This elegant ring showcases a brilliant round-cut diamond, carefully set in a handcrafted 18k gold band. Designed for those who appreciate fine craftsmanship and timeless beauty.",
+          "enquiryNow": {
+            "label": "Enquiry Now",
+            "href": "/enquiry-now"
+          },
+          "features": [
+            {
+              "label": "18k Gold",
+              "icon": "gem"
+            },
+            {
+              "label": "Certified Diamond",
+              "icon": "shield"
+            },
+            {
+              "label": "Lifetime Warranty",
+              "icon": "returns"
+            },
+            {
+              "label": "Free Shipping",
+              "icon": "truck"
+            }
+          ],
+          "sizes": [
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "initialSize": "7",
+          "images": [
+            {
+              "src": "/images/home/banner3.webp",
+              "alt": "Eternal diamond ring front view"
+            },
+            {
+              "src": "/images/about/banner1.webp",
+              "alt": "Diamond ring side detail"
+            },
+            {
+              "src": "/images/home/banner2.webp",
+              "alt": "Luxury jewelry close-up"
+            }
+          ]
+        },
+        "copy": {
+          "collection": "The Signature Collection",
+          "reviews": "{count} reviews",
+          "ratingAria": "Rated {rating} out of 5",
+          "selectSize": "Select Ring Size",
+          "sizeGuide": "Size Guide",
+          "quantity": "Quantity",
+          "decreaseQuantity": "Decrease quantity",
+          "increaseQuantity": "Increase quantity",
+          "addToCart": "Add to Cart",
+          "addedToCart": "Added to Cart",
+          "addToWishlist": "Add to Wishlist",
+          "addedToWishlist": "Added to Wishlist",
+          "removeFromWishlist": "Remove from wishlist",
+          "addProductToWishlist": "Add to wishlist",
+          "addedConfirmation": "Added to your shopping bag",
+          "cartCount": "Demo cart items added: {count}",
+          "dismissConfirmation": "Dismiss confirmation",
+          "previousImage": "Previous product image",
+          "nextImage": "Next product image",
+          "viewImage": "View image {index}",
+          "findFit": "Find your perfect fit",
+          "sizeGuideTitle": "Ring Size Guide",
+          "closeSizeGuide": "Close size guide",
+          "sizeGuideDescription": "Select your preferred size. Ring sizing can vary by region, so please confirm the sizing system before ordering.",
+          "sizeColumn": "Size",
+          "fitColumn": "Fit",
+          "selectedSize": "Currently selected",
+          "availableSize": "Available",
+          "sizeGuideNote": "This sample guide uses placeholder size labels. Replace these with your jeweler's verified size chart.",
+          "done": "Done"
+        }
+      },
+      "productExtraDetails": {
+        "eyebrow": "The Details",
+        "title": "Product Specifications",
+        "image": {
+          "src": "/images/home/banner3.webp",
+          "alt": "Eternal diamond ring in white gold"
+        },
+        "specifications": [
+          {
+            "label": "Diamond Type",
+            "value": "Lab-Grown Diamond"
+          },
+          {
+            "label": "Carat Weight",
+            "value": "1 Carat (ct.)"
+          },
+          {
+            "label": "Cut",
+            "value": "Round Brilliant Cut"
+          },
+          {
+            "label": "Color",
+            "value": "F (Near Colorless)"
+          },
+          {
+            "label": "Clarity",
+            "value": "VS1"
+          },
+          {
+            "label": "Metal Type",
+            "value": "White Gold (18K)"
+          },
+          {
+            "label": "Ring Size",
+            "value": "Available in All Sizes"
+          },
+          {
+            "label": "Certification",
+            "value": "IGI Certified"
+          }
+        ]
+      },
+      "productListing": {
+        "products": [
+          {
+            "id": 1,
+            "name": "Eternal Diamond Ring",
+            "category": "Rings",
+            "materials": [
+              "Gold",
+              "Diamond"
+            ],
+            "price": 3499,
+            "image": "/images/our-story/product3.webp"
+          },
+          {
+            "id": 2,
+            "name": "Golden Bloom Necklace",
+            "category": "Necklaces",
+            "materials": [
+              "Gold",
+              "Diamond"
+            ],
+            "price": 4999,
+            "image": "/images/our-story/product4.webp",
+            "badge": "Bestseller"
+          },
+          {
+            "id": 3,
+            "name": "Pearl Drop Earrings",
+            "category": "Earrings",
+            "materials": [
+              "Gold",
+              "Silver"
+            ],
+            "price": 2199,
+            "image": "/images/our-story/product5.webp"
+          },
+          {
+            "id": 4,
+            "name": "Royal Bangle",
+            "category": "Bracelets",
+            "materials": [
+              "Gold"
+            ],
+            "price": 1499,
+            "image": "/images/about/banner1.webp"
+          },
+          {
+            "id": 5,
+            "name": "Solitaire Ring",
+            "category": "Rings",
+            "materials": [
+              "Gold",
+              "Diamond",
+              "Platinum"
+            ],
+            "price": 3299,
+            "image": "/images/our-story/product2.webp"
+          },
+          {
+            "id": 6,
+            "name": "Celestial Earrings",
+            "category": "Earrings",
+            "materials": [
+              "Gold",
+              "Diamond"
+            ],
+            "price": 3299,
+            "image": "/images/home/banner4.webp"
+          },
+          {
+            "id": 7,
+            "name": "Golden Halo Ring",
+            "category": "Rings",
+            "materials": [
+              "Gold"
+            ],
+            "price": 2599,
+            "image": "/images/our-story/product4.webp"
+          },
+          {
+            "id": 8,
+            "name": "Classic Gold Chain",
+            "category": "Necklaces",
+            "materials": [
+              "Gold"
+            ],
+            "price": 1899,
+            "image": "/images/our-story/product5.webp"
+          },
+          {
+            "id": 9,
+            "name": "Golden Charm Bracelet",
+            "category": "Bracelets",
+            "materials": [
+              "Gold",
+              "Diamond"
+            ],
+            "price": 2899,
+            "image": "/images/home/banner4.webp"
+          }
+        ],
+        "categories": [
+          "Rings",
+          "Necklaces",
+          "Earrings",
+          "Bracelets"
+        ],
+        "materials": [
+          "Gold",
+          "Diamond",
+          "Platinum",
+          "Silver"
+        ],
+        "pageSize": 6,
+        "minimumPrice": 0,
+        "maxPrice": 50000,
+        "priceStep": 500,
+        "defaultSort": "featured",
+        "sortOptions": [
+          {
+            "value": "featured",
+            "label": "Best Selling"
+          },
+          {
+            "value": "price-low",
+            "label": "Price: Low to High"
+          },
+          {
+            "value": "price-high",
+            "label": "Price: High to Low"
+          },
+          {
+            "value": "name",
+            "label": "Name: A to Z"
+          }
+        ],
+        "copy": {
+          "filters": "Filters",
+          "clearAll": "Clear all",
+          "category": "Category",
+          "priceRange": "Price Range",
+          "maximumPrice": "Maximum price",
+          "materials": "Material",
+          "sortBy": "Sort By",
+          "sortProducts": "Sort products",
+          "sort": "Sort",
+          "productsCount": "{count} products",
+          "showing": "Showing",
+          "of": "of",
+          "crafted": "Crafted to be cherished",
+          "viewProduct": "View Product",
+          "viewProductAria": "View {name}",
+          "addToWishlist": "Add {name} to wishlist",
+          "removeFromWishlist": "Remove {name} from wishlist",
+          "inclusiveTaxes": "Inclusive of taxes",
+          "noProducts": "No pieces found",
+          "emptyDescription": "Try changing your filters to discover more of our collection.",
+          "clearFilters": "Clear Filters",
+          "previousPage": "Previous page",
+          "page": "Page {page}",
+          "nextPage": "Next page",
+          "closeFilters": "Close filters",
+          "productFilters": "Product filters",
+          "showProducts": "Show {count} Products",
+          "resetFilters": "Reset Filters",
+          "minimumPrice": "₹0",
+          "collectionHref": "/collections/collection-details"
+        }
+      },
+      "gallery": {
+        "headingPrefix": "Our",
+        "headingHighlight": "Gallery",
+        "description": "Explore our exquisite collection of handcrafted jewellery, capturing timeless elegance and fine craftsmanship.",
+        "paginationAriaLabel": "Gallery pagination",
+        "previousPageLabel": "Previous page",
+        "nextPageLabel": "Next page",
+        "goToPageLabelTemplate": "Go to gallery page {page}",
+        "pageLabelTemplate": "Page {current} of {total}",
+        "itemsPerPage": 6,
+        "items": [
+          {
+            "id": 1,
+            "title": "Traditional Gold Necklace",
+            "category": "Gold Jewellery",
+            "image": "/images/our-story/product2.webp"
+          },
+          {
+            "id": 2,
+            "title": "Diamond Solitaire Ring",
+            "category": "Diamond Jewellery",
+            "image": "/images/our-story/product3.webp"
+          },
+          {
+            "id": 3,
+            "title": "Diamond Drop Earrings",
+            "category": "Earrings",
+            "image": "/images/our-story/product4.webp"
+          },
+          {
+            "id": 4,
+            "title": "Diamond Tennis Bangles",
+            "category": "Bangles",
+            "image": "/images/our-story/product5.webp"
+          },
+          {
+            "id": 5,
+            "title": "Emerald Statement Ring",
+            "category": "Gemstone Jewellery",
+            "image": "/images/home/banner2.webp"
+          },
+          {
+            "id": 6,
+            "title": "Gold Pendant Necklace",
+            "category": "Necklaces",
+            "image": "/images/home/banner3.webp"
+          },
+          {
+            "id": 7,
+            "title": "Classic Gold Earrings",
+            "category": "Gold Jewellery",
+            "image": "/images/home/banner4.webp"
+          },
+          {
+            "id": 8,
+            "title": "Diamond Halo Ring",
+            "category": "Diamond Jewellery",
+            "image": "/images/home/banner2.webp"
+          },
+          {
+            "id": 9,
+            "title": "Elegant Pearl Earrings",
+            "category": "Earrings",
+            "image": "/images/collections/product1.webp"
+          },
+          {
+            "id": 10,
+            "title": "Gold Diamond Bracelet",
+            "category": "Bracelets",
+            "image": "/images/our-story/product2.webp"
+          },
+          {
+            "id": 11,
+            "title": "Ruby Gold Ring",
+            "category": "Gemstone Jewellery",
+            "image": "/images/our-story/product3.webp"
+          },
+          {
+            "id": 12,
+            "title": "Floral Diamond Pendant",
+            "category": "Necklaces",
+            "image": "/images/our-story/product4.webp"
+          },
+          {
+            "id": 13,
+            "title": "Royal Gold Necklace",
+            "category": "Gold Jewellery",
+            "image": "/images/our-story/product5.webp"
+          }
+        ]
+      },
+      "blog": {
+        "sectionEyebrow": "Our Blog",
+        "headingPrefix": "Latest Insights &",
+        "headingHighlight": "Articles",
+        "headingSuffix": "",
+        "description": "Stay informed with expert advice, tips, and the latest updates on fertility, pregnancy, and women's health from our specialists.",
+        "linkTemplate": "/blog/blog-detail",
+        "detailsHref": "/blog/blog-detail",
+        "listingHref": "/blog",
+        "readLabelTemplate": "Read {title}",
+        "moreDetailsLabel": "Read More",
+        "paginationAriaLabel": "Blog pagination",
+        "previousPageLabel": "Previous page",
+        "goToPageLabelTemplate": "Go to page {page}",
+        "nextPageLabel": "Next page",
+        "showingLabel": "Showing",
+        "rangeSeparator": "–",
+        "ofLabel": "of",
+        "articlesLabel": "articles",
+        "postsPerPage": 6,
+        "posts": [
+          {
+            "id": 1,
+            "category": "Pregnancy Care",
+            "title": "IVF Demystified: From Consultation to Pregnancy",
+            "description": "Understand the complete IVF journey, from your first consultation to achieving a successful pregnancy, with expert guidance.",
+            "image": "/images/home/blog1.webp",
+            "date": "06 Aug",
+            "year": "2025",
+            "slug": "/blog/blog-detail"
+          },
+          {
+            "id": 2,
+            "category": "Fertility Tips",
+            "title": "IVF Made Simple: Guide to Fertility Success",
+            "description": "Explore how IVF works, who it can help, and key tips to improve your chances of success, all in simple terms.",
+            "image": "/images/home/blog2.webp",
+            "date": "05 Aug",
+            "year": "2025",
+            "slug": "/blog/blog-detail"
+          },
+          {
+            "id": 3,
+            "category": "IVF Treatment",
+            "title": "In Vitro Fertilization: A Comprehensive Introduction",
+            "description": "Learn the basics of IVF, including the process, benefits, success rates, and what to expect during treatment.",
+            "image": "/images/home/blog3.webp",
+            "date": "04 Aug",
+            "year": "2025",
+            "slug": "/blog/blog-detail"
+          },
+          {
+            "id": 4,
+            "category": "Newborn Care",
+            "title": "Essential Newborn Care Tips for First-Time Parents",
+            "description": "Practical advice on newborn care, feeding, sleep routines, and creating a healthy environment for your baby.",
+            "image": "/images/home/blog1.webp",
+            "date": "03 Aug",
+            "year": "2025",
+            "slug": "/blog/blog-detail"
+          },
+          {
+            "id": 5,
+            "category": "Women's Health",
+            "title": "Nutrition Tips to Boost Fertility Naturally",
+            "description": "Discover the best foods, vitamins, and lifestyle changes that can support reproductive health and improve fertility.",
+            "image": "/images/home/blog2.webp",
+            "date": "02 Aug",
+            "year": "2025",
+            "slug": "/blog/blog-detail"
+          },
+          {
+            "id": 6,
+            "category": "Treatment Options",
+            "title": "Understanding Your Fertility Treatment Options",
+            "description": "Explore different fertility treatments, their benefits, and how to choose the right option based on your unique needs.",
+            "image": "/images/home/blog3.webp",
+            "date": "01 Aug",
+            "year": "2025",
+            "slug": "/blog/blog-detail"
+          },
+          {
+            "id": 7,
+            "category": "Fertility Health",
+            "title": "Understanding the Early Signs of Pregnancy",
+            "description": "Learn about common early pregnancy signs and when it may be helpful to consult a healthcare professional.",
+            "image": "/images/home/blog1.webp",
+            "date": "29 Jul",
+            "year": "2025",
+            "slug": "/blog/blog-detail"
+          },
+          {
+            "id": 8,
+            "category": "IVF Journey",
+            "title": "Preparing Yourself for Your First IVF Cycle",
+            "description": "A helpful overview of what to discuss with your fertility specialist before beginning your IVF journey.",
+            "image": "/images/home/blog2.webp",
+            "date": "27 Jul",
+            "year": "2025",
+            "slug": "/blog/blog-detail"
+          },
+          {
+            "id": 9,
+            "category": "Women's Wellness",
+            "title": "Simple Lifestyle Habits for Reproductive Health",
+            "description": "Explore healthy everyday habits that support general wellbeing and reproductive health.",
+            "image": "/images/home/blog3.webp",
+            "date": "25 Jul",
+            "year": "2025",
+            "slug": "/blog/blog-detail"
+          },
+          {
+            "id": 10,
+            "category": "Parenting",
+            "title": "A Complete Guide to Your Pregnancy Journey",
+            "description": "Discover helpful information about prenatal care, regular checkups, and preparing for parenthood.",
+            "image": "/images/home/blog1.webp",
+            "date": "22 Jul",
+            "year": "2025",
+            "slug": "/blog/blog-detail"
+          },
+          {
+            "id": 11,
+            "category": "Fertility Tips",
+            "title": "Common Fertility Questions Answered by Experts",
+            "description": "Find answers to common fertility questions and learn when to seek professional medical advice.",
+            "image": "/images/home/blog2.webp",
+            "date": "20 Jul",
+            "year": "2025",
+            "slug": "/blog/blog-detail"
+          },
+          {
+            "id": 12,
+            "category": "IVF Treatment",
+            "title": "What to Expect During Your Fertility Consultation",
+            "description": "Understand the consultation process, important questions, and how specialists evaluate individual needs.",
+            "image": "/images/home/blog3.webp",
+            "date": "18 Jul",
+            "year": "2025",
+            "slug": "/blog/blog-detail"
+          }
+        ]
+      },
+      "blogDetails": {
+        "hero": {
+          "breadcrumbLabel": "Breadcrumb",
+          "image": {
+            "src": "/images/banner.webp",
+            "alt": "A happy baby receiving loving medical care"
+          },
+          "heading": "Blog Detail",
+          "homeLabel": "Home",
+          "homeHref": "/",
+          "currentLabel": "Blog Detail"
+        },
+        "eyebrow": "Pregnancy Care",
+        "headingFirst": "Everything There Is to Know About a",
+        "headingHighlight": "Healthy Pregnancy Journey",
+        "dateTime": "2025-08-28",
+        "dateLabel": "28 Aug, 2025",
+        "readingTime": "5 min read",
+        "readArticleLabel": "Read Article",
+        "viewAllPostsLabel": "View All Posts",
+        "joinConversationLabel": "Join the Conversation",
+        "introduction": "A healthy pregnancy is a beautiful journey that comes with many changes, questions, and exciting milestones. Proper care, guidance, and regular check-ups can make this journey safer and more comfortable for both the mother and baby. In this article, we'll explore essential tips and important things to know for a healthy and happy pregnancy.",
+        "image": {
+          "src": "/images/home/blog3.webp",
+          "alt": "Doctor consulting an expecting mother during pregnancy"
+        },
+        "quotation": "The right next step begins with reliable information and care tailored to your needs.",
+        "backLabel": "View All Posts",
+        "articleHeading": "Healthy Pregnancy Journey",
+        "disclaimer": {
+          "label": "Medical disclaimer:",
+          "text": "This article is for general educational purposes only and is not a substitute for medical advice, diagnosis, or treatment. Please consult a qualified healthcare professional for guidance specific to your situation."
+        },
+        "comments": [
+          {
+            "name": "Priya Sharma",
+            "time": "2 days ago",
+            "message": "Very helpful and informative article. Thank you!",
+            "avatar": "/images/profile/avatar5.webp"
+          },
+          {
+            "name": "Rahul Mehta",
+            "time": "4 days ago",
+            "message": "This really cleared many of my doubts.",
+            "avatar": "/images/profile/avatar3.webp"
+          },
+          {
+            "name": "Anjali Verma",
+            "time": "5 days ago",
+            "message": "Great tips for a healthy pregnancy journey.",
+            "avatar": "/images/profile/avatar4.webp"
+          },
+          {
+            "name": "Sandeep Kumar",
+            "time": "1 week ago",
+            "message": "Well explained and easy to understand.",
+            "avatar": "/images/profile/avatar6.webp"
+          }
+        ],
+        "tips": [
+          {
+            "number": "01.",
+            "title": "Early Prenatal Care",
+            "sectionTitle": "Early Prenatal Care",
+            "paragraphs": [
+              "Start your prenatal care as soon as you know you're pregnant. Regular check-ups help monitor your baby's growth, detect any potential issues early, and ensure you receive the right guidance on nutrition, lifestyle, and overall health.",
+              "A good starting point is to discuss your medical history, concerns, and expectations with your healthcare provider. They can help determine which assessments, if any, may be appropriate for you."
+            ]
+          },
+          {
+            "number": "02.",
+            "title": "Balanced Nutrition",
+            "sectionTitle": "Balanced Nutrition",
+            "paragraphs": [
+              "A well-balanced diet is essential during pregnancy. Include plenty of fruits, vegetables, whole grains, lean proteins, and dairy in your meals. Essential nutrients like folic acid, iron, calcium, and vitamin D support your baby's development and keep you healthy.",
+              "Lifestyle changes cannot guarantee conception. Your age, medical history, and other factors may influence fertility, so personalized guidance is important."
+            ]
+          },
+          {
+            "number": "03.",
+            "title": "Stay Active and Rest Well",
+            "sectionTitle": "Stay Active and Rest Well",
+            "paragraphs": [
+              "Light exercise, such as walking or prenatal yoga, can help improve mood, reduce stress, and prepare your body for delivery. Equally important is getting enough rest and sleep to maintain your energy levels."
+            ],
+            "cards": [
+              {
+                "icon": "heart",
+                "title": "Personalized guidance",
+                "text": "Discuss your health history and potential options with a qualified fertility specialist."
+              },
+              {
+                "icon": "message-circle",
+                "title": "Clear communication",
+                "text": "Ask about benefits, risks, costs, alternatives, and what to expect at each stage."
+              }
+            ]
+          },
+          {
+            "number": "04.",
+            "title": "Questions to ask your specialist",
+            "sectionTitle": "Questions to ask your specialist",
+            "paragraphs": [
+              "Preparing questions before an appointment can help you understand the available choices and feel more comfortable participating in decisions about your care.",
+              "Which assessments might be appropriate for my situation?",
+              "What treatment options could be considered, and why?",
+              "What are the possible risks, benefits, and costs?",
+              "Where can I find reliable support and information?"
+            ]
+          }
+        ]
+      },
+      "enquiryNow": {
+        "hero": {
+          "breadcrumbLabel": "Breadcrumb",
+          "image": {
+            "src": "/images/banner.webp",
+            "alt": "A happy baby receiving loving medical care"
+          },
+          "heading": "Book Appointment",
+          "homeLabel": "Home",
+          "homeHref": "/",
+          "currentLabel": "Book Appointment"
+        },
+        "section": {
+          "image": {
+            "src": "/images/home/gynecology-care.webp",
+            "alt": "Gynecologist consulting an expecting mother"
+          },
+          "benefitsHeader": {
+            "eyebrow": "BOOK APPOINTMENT",
+            "title": "Schedule Your Visit with Our Specialists",
+            "description": "Take the first step towards better reproductive health. Book an appointment with our experienced gynecologists for personalized care and guidance."
+          },
+          "benefits": [
+            {
+              "icon": "HeartPulse",
+              "title": "Expert Doctors",
+              "description": "Consult with experienced gynecologists."
+            },
+            {
+              "icon": "UserRound",
+              "title": "Flexible Scheduling",
+              "description": "Choose a convenient date and time."
+            },
+            {
+              "icon": "MonitorCheck",
+              "title": "Personalized Care",
+              "description": "Get the right treatment for your needs."
+            },
+            {
+              "icon": "UsersRound",
+              "title": "Personalized Approach",
+              "description": "Because you are unique"
+            }
+          ],
+          "form": {
+            "eyebrow": "BOOK APPOINTMENT",
+            "title": "Schedule Your Visit with Our Specialists",
+            "description": "Take the first step towards better reproductive health. Book an appointment with our experienced gynecologists for personalized care and guidance.",
+            "fields": {
+              "fullName": {
+                "label": "Your Name",
+                "placeholder": "Enter Your Name"
+              },
+              "email": {
+                "label": "Your Email",
+                "placeholder": "Enter Your Email"
+              },
+              "phone": {
+                "label": "Phone Number",
+                "placeholder": "Enter Your Phone Number"
+              },
+              "interest": {
+                "label": "Select Service",
+                "placeholder": "Select Service",
+                "options": [
+                  "IVF Treatment",
+                  "IUI Treatment",
+                  "Fertility Consultation",
+                  "Pregnancy Care",
+                  "Gynecology Consultation",
+                  "Egg Freezing",
+                  "Other Services"
+                ]
+              },
+              "lastName": {
+                "label": "Last Name *",
+                "placeholder": "Your last name"
+              },
+              "doctor": {
+                "label": "Preferred Specialist",
+                "options": [
+                  "Any Available Specialist",
+                  "Fertility Specialist",
+                  "Gynecologist",
+                  "Reproductive Health Consultant"
+                ]
+              },
+              "date": {
+                "label": "Appointment Date"
+              },
+              "time": {
+                "label": "Preferred Time",
+                "placeholder": "Select Preferred Time",
+                "options": [
+                  "09:00 AM",
+                  "10:00 AM",
+                  "11:00 AM",
+                  "12:00 PM",
+                  "02:00 PM",
+                  "03:00 PM",
+                  "04:00 PM",
+                  "05:00 PM"
+                ]
+              },
+              "appointmentType": {
+                "label": "How would you like to meet?",
+                "options": [
+                  {
+                    "value": "In-clinic",
+                    "label": "In-clinic Visit"
+                  },
+                  {
+                    "value": "Online",
+                    "label": "Online Consultation"
+                  }
+                ]
+              },
+              "message": {
+                "label": "Your Message",
+                "placeholder": "Enter Your Message (Optional)",
+                "maxLength": 3000,
+                "counterSeparator": "/"
+              }
+            },
+            "status": {
+              "success": "Your appointment request has been submitted successfully!",
+              "error": "Something went wrong. Please try again later.",
+              "requestError": "Unable to book appointment."
+            },
+            "submit": {
+              "label": "Book Appointment",
+              "submitting": "Submitting..."
+            },
+            "privacyNotice": "Your information should be handled securely and confidentially by the connected booking system.",
+            "appointment": {
+              "successTitle": "Your appointment request has been submitted successfully!",
+              "successText": "Your form passed browser validation. To confirm a real appointment, this page needs to be connected to your booking system or backend API.",
+              "successButton": "Book Another Appointment",
+              "submitLabel": "Book Appointment",
+              "resetLabel": "Reset"
+            }
+          }
+        }
+      },
+      "signatureCollections": {
+        "eyebrow": "Comprehensive Fertility Treatments",
+        "title": "Fertility Treatments",
+        "viewAll": {
+          "label": "Our Services",
+          "href": "/services"
+        },
+        "collections": [
+          {
+            "name": "Maternity Care",
+            "description": "Compassionate support throughout your pregnancy.",
+            "image": "/images/home/wellness1.webp",
+            "alt": "Maternity Care at Hope IVF",
+            "number": "01"
+          },
+          {
+            "name": "Gynecology",
+            "description": "Personalized care for women's health at every stage.",
+            "image": "/images/home/wellness2.webp",
+            "alt": "Gynecology at Hope IVF",
+            "number": "02"
+          },
+          {
+            "name": "Pediatric Care",
+            "description": "Thoughtful healthcare for infants and growing children.",
+            "image": "/images/home/wellness3.webp",
+            "alt": "Pediatric Care at Hope IVF",
+            "number": "03"
+          },
+          {
+            "name": "Radiology",
+            "description": "Modern diagnostic imaging and clinical support.",
+            "image": "/images/home/wellness4.webp",
+            "alt": "Radiology at Hope IVF",
+            "number": "04"
+          }
+        ]
+      }
+    },
+    "sections": {
+      "Site": {
+        "variants": {
+          "InsuranceSite1": {
+            "bgImage": "/images/footer-mother-baby.webp",
+            "alt": "FertiAbloom - Where Hope Blossoms",
+            "name": "FertiAbloom",
+            "description": "Expert fertility care, advanced treatments and compassionate support to help you achieve your dream of a happy family.",
+            "logo": "/images/logo.webp",
+            "logoWhite": "/images/logo.webp",
+            "heroImage": "/images/home/family-hero.webp",
+            "heroImageAlt": "Mother lovingly holding her baby",
+            "breadcrumbLabel": "Breadcrumb",
+            "metadata": {
+              "title": "FertiAbloom | IVF & Fertility Care",
+              "description": "Expert fertility care, advanced treatments and compassionate support to help you achieve your dream of a happy family.",
+              "icon": "/favicon.webp"
+            },
+            "mobileMenu": {
+              "openLabel": "Open navigation menu",
+              "closeLabel": "Close navigation menu",
+              "contactLabel": "Contact Us",
+              "contactHref": "/contact-us",
+              "appointmentLabel": "Book Appointment",
+              "appointmentHref": "/appointment",
+              "ariaLabel": "Mobile navigation",
+              "phoneLabel": "+91 98765 43210",
+              "phoneHref": "tel:+919876543210",
+              "emailLabel": "info@fertiabloom.com",
+              "emailHref": "mailto:info@fertiabloom.com"
+            },
+            "addressLines": [
+              "123 Wellness Street,",
+              "New Delhi, India - 110001"
+            ],
+            "emails": [
+              "info@fertiabloom.com"
+            ],
+            "phones": [
+              "+91 98765 43210"
+            ],
+            "callLabel": "Call Us",
+            "bannerImage": "/images/banner.webp",
+            "bannerImageAlt": "A happy baby receiving loving medical care",
+            "footerImageAlt": "Mother lovingly holding her newborn baby",
+            "socials": [
+              {
+                "icon": "facebook",
+                "label": "Facebook",
+                "href": "https://facebook.com"
+              },
+              {
+                "icon": "twitter",
+                "label": "Twitter",
+                "href": "https://x.com"
+              },
+              {
+                "icon": "instagram",
+                "label": "Instagram",
+                "href": "https://instagram.com"
+              },
+              {
+                "icon": "pinterest",
+                "label": "Pinterest",
+                "href": "https://pinterest.com"
+              },
+              {
+                "icon": "linkedin",
+                "label": "LinkedIn",
+                "href": "https://linkedin.com"
+              }
+            ],
+            "hours": [
+              {
+                "days": "Monday – Saturday",
+                "daysShort": "Mon - Sat",
+                "time": "10:00 AM – 7:00 PM ET"
+              },
+              {
+                "days": "Sunday",
+                "daysShort": "Sunday",
+                "time": "Closed"
+              }
+            ]
+          }
+        }
+      },
+      "Header": {
+        "variants": {
+          "InsuranceHeader1": {
+            "ariaLabel": "Main navigation",
+            "links": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "About Us",
+                "href": "/about-us"
+              },
+              {
+                "label": "Services",
+                "href": "/services",
+                "dropdown": false
+              },
+              {
+                "label": "Our Team",
+                "href": "/our-team"
+              },
+              {
+                "label": "Blog",
+                "href": "/blog"
+              },
+              {
+                "label": "Contact Us",
+                "href": "/contact-us"
+              }
+            ],
+            "button": {
+              "label": "Appointment",
+              "href": "/book-appointment"
+            }
+          }
+        }
+      },
+      "Hero": {
+        "variants": {
+          "InsuranceHero1": {
+            "slides": [
+              {
+                "eyebrow": "IVF & Fertility Care",
+                "title": [
+                  "Your Journey",
+                  "to Parenthood",
+                  "Starts Here"
+                ],
+                "text": "Expert fertility care, advanced treatments and compassionate support to help you achieve your dream of a happy family.",
+                "image": "/images/home/family-hero.webp",
+                "imageAlt": "Mother lovingly holding her baby",
+                "button": {
+                  "label": "Appointment",
+                  "href": "/contact"
+                }
+              },
+              {
+                "eyebrow": "Our Journey",
+                "title": [
+                  "Growing Together",
+                  "for a Healthier Future"
+                ],
+                "text": "With years of experience in maternal and child care, we have helped countless families welcome happiness and good health.",
+                "image": "/images/home/about-baby-hands.webp",
+                "imageAlt": "A parent gently holding their baby's tiny hand"
+              },
+              {
+                "eyebrow": "Fertility Care",
+                "title": [
+                  "Comprehensive",
+                  "Fertility Treatments"
+                ],
+                "text": "Learn about two commonly used fertility treatments and discuss their suitability with your fertility specialist.",
+                "image": "/images/home/wellness6.webp",
+                "imageAlt": "Patient during a fertility consultation"
+              }
+            ]
+          }
+        }
+      },
+      "Highlights": {
+        "variants": {
+          "InsuranceHighlights1": {
+            "items": [
+              {
+                "icon": "microscope",
+                "title": "Gynecology Care",
+                "text": "Comprehensive care for women's reproductive health at every stage of life."
+              },
+              {
+                "icon": "heart-pulse",
+                "title": "Fertility Treatment",
+                "text": "Advanced and personalized fertility solutions to help you build your family."
+              },
+              {
+                "icon": "baby",
+                "title": "Prenatal Care",
+                "text": "Expert care and monitoring for a safe and healthy pregnancy journey."
+              },
+              {
+                "icon": "heart-pulse",
+                "title": "Family Planning",
+                "text": "Guidance and support to help you plan your family with confidence."
+              },
+              {
+                "icon": "baby",
+                "title": "Contraceptive Counseling",
+                "text": "Personalized guidance on safe and effective contraception options."
+              },
+              {
+                "icon": "scan",
+                "title": "PCOS Management",
+                "text": "Comprehensive care for PCOS with lifestyle, medication and long-term support."
+              }
+            ]
+          }
+        }
+      },
+      "About": {
+        "variants": {
+          "InsuranceAbout1": {
+            "heroTitle": "About",
+            "homeSection": {
+              "eyebrow": "About Us",
+              "title": [
+                "Compassionate Care",
+                "for Your",
+                "Parenthood Journey"
+              ],
+              "features": [
+                {
+                  "title": "Personalized Fertility Treatment",
+                  "color": "pink"
+                },
+                {
+                  "title": "Advanced IVF & IUI Support",
+                  "color": "pink"
+                },
+                {
+                  "title": "Comprehensive Women's Care",
+                  "color": "pink"
+                },
+                {
+                  "title": "Experienced Specialists",
+                  "color": "green"
+                },
+                {
+                  "title": "Compassionate & Supportive Care",
+                  "color": "green"
+                },
+                {
+                  "title": "Modern & Advanced Technology",
+                  "color": "green"
+                }
+              ],
+              "button": {
+                "label": "Appointment",
+                "href": "/contact"
+              }
+            },
+            "eyebrow": "About Us",
+            "title": "Compassionate Care for Your",
+            "highlight": "Parenthood Journey",
+            "mainImage": "/images/home/about-fertility.webp",
+            "mainImageAlt": "Fertility specialist caring for an expecting mother",
+            "familyImage": "/images/home/family-hero.webp",
+            "familyImageAlt": "Mother lovingly holding her baby",
+            "homeText": "At FertiAbloom, we are dedicated to providing personalized fertility care with advanced treatments and a supportive environment. Our experienced specialists guide you at every step with care, compassion and the latest medical technology to help you achieve your dream of a happy family.",
+            "experience": {
+              "value": "18+",
+              "label": [
+                "Years of",
+                "Experience"
+              ]
+            },
+            "points": [
+              {
+                "icon": "heart-pulse",
+                "title": "Compassionate Care",
+                "text": "With heart at every step"
+              },
+              {
+                "icon": "user-round",
+                "title": "Expert Team",
+                "text": "Skilled and experienced"
+              }
+            ],
+            "button": {
+              "label": "Appointment",
+              "href": "/book-appointment"
+            },
+            "pageParagraphs": [
+              "At FertiAbloom, we are dedicated to providing personalized fertility care with advanced treatments and a supportive environment. Our experienced specialists guide you at every step with care, compassion and the latest medical technology to help you achieve your dream of a happy family.",
+              "Expert fertility care, advanced treatments and compassionate support to help you achieve your dream of a happy family.",
+              "We combine advanced reproductive care with a compassionate approach to help you achieve your dream of parenthood through personalized treatment plans.",
+              "Our gynecology care focuses on maintaining women's reproductive health at every stage of life. From routine check-ups to advanced treatments, we provide personalized care in a comfortable and supportive environment."
+            ],
+            "mission": {
+              "eyebrow": "What guides us",
+              "title": [
+                "Our",
+                "Mission"
+              ],
+              "button": {
+                "label": "Discover our approach",
+                "href": "/services"
+              },
+              "image": "/images/about/our-mission.webp",
+              "imageAlt": "A healthcare professional caring for a baby"
+            },
+            "values": {
+              "eyebrow": "Our Values",
+              "title": "Compassionate & Supportive Care",
+              "text": "At FertiAbloom, we are dedicated to providing personalized fertility care with advanced treatments and a supportive environment. Our experienced specialists guide you at every step with care, compassion and the latest medical technology to help you achieve your dream of a happy family.",
+              "image": "/images/home/about-fertility.webp",
+              "imageAlt": "Fertility specialist caring for an expecting mother"
+            }
+          }
+        }
+      },
+      "WhyChooseUs": {
+        "variants": {
+          "InsuranceWhyChooseUs1": {
+            "eyebrow": "Why Choose Us",
+            "title": "Having Trouble",
+            "titleLine2": "Getting",
+            "highlight": "Pregnant?",
+            "text": "We combine advanced reproductive care with a compassionate approach to help you achieve your dream of parenthood through personalized treatment plans.",
+            "image": "/images/home/why-choose-us.webp",
+            "imageAlt": "Happy parents enjoying time with their baby",
+            "items": [
+              {
+                "icon": "heart-pulse",
+                "title": [
+                  "Personalized Treatment",
+                  "Plans"
+                ],
+                "text": [
+                  "Every family has a unique journey. We",
+                  "create personalized fertility care plans based on",
+                  "your individual needs, health and goals."
+                ]
+              },
+              {
+                "icon": "user-round",
+                "title": [
+                  "Advanced Fertility",
+                  "Solutions"
+                ],
+                "text": [
+                  "We use the latest reproductive technology",
+                  "and evidence-based treatments to provide comprehensive",
+                  "support throughout your fertility journey."
+                ]
+              },
+              {
+                "icon": "monitor-check",
+                "title": [
+                  "Experienced &",
+                  "Caring Specialists"
+                ],
+                "text": [
+                  "Our experienced fertility specialists provide",
+                  "professional guidance, compassionate care and",
+                  "support at every step."
+                ]
+              },
+              {
+                "icon": "users-round",
+                "title": [
+                  "Comprehensive",
+                  "Support"
+                ],
+                "text": [
+                  "From your first consultation to ongoing",
+                  "care, our team is here to",
+                  "make your experience comfortable and supportive."
+                ]
+              },
+              {
+                "icon": "microscope",
+                "title": [
+                  "Expert",
+                  "Doctors"
+                ],
+                "text": [
+                  "Consult with",
+                  "experienced",
+                  "gynecologists."
+                ]
+              },
+              {
+                "icon": "shield-check",
+                "title": [
+                  "Flexible",
+                  "Scheduling"
+                ],
+                "text": [
+                  "Choose a",
+                  "convenient date",
+                  "and time."
+                ]
+              }
+            ],
+            "homeItemCount": 4,
+            "homeTreatmentTitle": "Comprehensive Fertility Care",
+            "homeTreatments": [
+              "IVF (In Vitro Fertilization)",
+              "IUI (Intrauterine Insemination)",
+              "Egg Freezing",
+              "Personalized Treatment Plan",
+              "Male Fertility Treatment",
+              "Egg Retrieval & Fertilization"
+            ]
+          }
+        }
+      },
+      "Plans": {
+        "variants": {
+          "InsurancePlans1": {
+            "heroTitle": "Our Services",
+            "eyebrow": "Our Services",
+            "title": "Expert Care for Every Stage",
+            "highlight": "of Your Parenthood Journey",
+            "text": "Expert fertility care, advanced treatments and compassionate support to help you achieve your dream of a happy family.",
+            "buttonLabel": "View Details",
+            "serviceDetailsHref": "/services/service-detail",
+            "learnMoreLabelTemplate": "Learn more about {name}",
+            "homeCount": 4,
+            "homeImage": "/images/home/gynecology-care.webp",
+            "homeImageAlt": "Gynecology Care",
+            "homeServiceSlugs": [
+              "maternity-care",
+              "gynecology",
+              "pediatric-care",
+              "radiology",
+              "physiotherapy"
+            ],
+            "treatmentCardCount": 2,
+            "treatmentHeading": [
+              "Expert Care for Every Stage",
+              "of Your Parenthood Journey"
+            ],
+            "items": [
+              {
+                "slug": "ivf-treatment",
+                "title": "Gynecology Care",
+                "icon": "microscope",
+                "homeIcon": "microscope",
+                "text": "Comprehensive care for women's reproductive health at every stage of life.",
+                "lines": [
+                  "Comprehensive care for women's reproductive health",
+                  "at every stage of life."
+                ],
+                "homeText": [
+                  "Comprehensive care for women's",
+                  "reproductive health at every",
+                  "stage of life."
+                ],
+                "image": "/images/home/gynecology-care.webp",
+                "homeImage": "/images/home/gynecology-care.webp",
+                "treatmentImageAlt": "Gynecology Care",
+                "detailImage": "/images/home/gynecology-care.webp",
+                "relatedText": [
+                  "Comprehensive care for women's reproductive health",
+                  "at every stage of life."
+                ],
+                "overview": [
+                  "Comprehensive care for women's reproductive health at every stage of life.",
+                  "Every journey is personal. Take the first step toward understanding your fertility and reproductive health with compassionate, professional guidance."
+                ]
+              },
+              {
+                "slug": "iui-treatment",
+                "title": "Fertility Treatment",
+                "icon": "stethoscope",
+                "homeIcon": "stethoscope",
+                "text": "Advanced and personalized fertility solutions to help you build your family.",
+                "lines": [
+                  "Advanced and personalized fertility solutions to",
+                  "help you build your family."
+                ],
+                "homeText": [
+                  "Advanced and personalized fertility",
+                  "solutions to help you",
+                  "build your family."
+                ],
+                "image": "/images/home/fertility-treatment.webp",
+                "homeImage": "/images/home/fertility-treatment.webp",
+                "treatmentImageAlt": "Fertility Treatment",
+                "thumb": "/images/home/fertility-treatment.webp",
+                "relatedText": [
+                  "Advanced and personalized fertility solutions to",
+                  "help you build your family."
+                ],
+                "overview": [
+                  "Advanced and personalized fertility solutions to help you build your family.",
+                  "Every journey is personal. Take the first step toward understanding your fertility and reproductive health with compassionate, professional guidance."
+                ]
+              },
+              {
+                "slug": "maternity-care",
+                "title": "Prenatal Care",
+                "icon": "baby",
+                "homeIcon": "baby",
+                "text": "Expert care and monitoring for a safe and healthy pregnancy journey.",
+                "lines": [
+                  "Expert care and monitoring",
+                  "for a safe and",
+                  "healthy pregnancy journey."
+                ],
+                "homeText": [
+                  "Expert care and monitoring",
+                  "for a safe and",
+                  "healthy pregnancy journey."
+                ],
+                "image": "/images/home/prenatal-care.webp",
+                "homeImage": "/images/home/prenatal-care.webp",
+                "homeImageAlt": "Prenatal Care",
+                "thumb": "/images/home/prenatal-care.webp",
+                "relatedText": [
+                  "Expert care and monitoring for a",
+                  "safe and healthy pregnancy journey."
+                ],
+                "overview": [
+                  "Expert care and monitoring for a safe and healthy pregnancy journey.",
+                  "Every journey is personal. Take the first step toward understanding your fertility and reproductive health with compassionate, professional guidance."
+                ]
+              },
+              {
+                "slug": "gynecology",
+                "title": "Family Planning",
+                "icon": "heart-pulse",
+                "homeIcon": "heart-pulse",
+                "text": "Guidance and support to help you plan your family with confidence.",
+                "lines": [
+                  "Guidance and support to",
+                  "help you plan your",
+                  "family with confidence."
+                ],
+                "homeText": [
+                  "Guidance and support to",
+                  "help you plan your",
+                  "family with confidence."
+                ],
+                "image": "/images/home/family-planning.webp",
+                "homeImage": "/images/home/family-planning.webp",
+                "homeImageAlt": "Family Planning",
+                "thumb": "/images/home/family-planning.webp",
+                "relatedText": [
+                  "Guidance and support to help you",
+                  "plan your family with confidence."
+                ],
+                "overview": [
+                  "Guidance and support to help you plan your family with confidence.",
+                  "Every journey is personal. Take the first step toward understanding your fertility and reproductive health with compassionate, professional guidance."
+                ]
+              },
+              {
+                "slug": "pediatric-care",
+                "title": "Contraceptive Counseling",
+                "icon": "baby",
+                "homeIcon": "baby",
+                "text": "Personalized guidance on safe and effective contraception options.",
+                "lines": [
+                  "Personalized guidance on",
+                  "safe and effective",
+                  "contraception options."
+                ],
+                "homeText": [
+                  "Personalized guidance on",
+                  "safe and effective",
+                  "contraception options."
+                ],
+                "image": "/images/home/contraceptive-counseling.webp",
+                "homeImage": "/images/home/contraceptive-counseling.webp",
+                "homeImageAlt": "Contraceptive Counseling",
+                "thumb": "/images/home/contraceptive-counseling.webp",
+                "relatedText": [
+                  "Personalized guidance on safe",
+                  "and effective contraception options."
+                ],
+                "overview": [
+                  "Personalized guidance on safe and effective contraception options.",
+                  "Every journey is personal. Take the first step toward understanding your fertility and reproductive health with compassionate, professional guidance."
+                ]
+              },
+              {
+                "slug": "radiology",
+                "title": "PCOS Management",
+                "icon": "scan",
+                "homeIcon": "scan",
+                "text": "Comprehensive care for PCOS with lifestyle, medication and long-term support.",
+                "lines": [
+                  "Comprehensive care for PCOS",
+                  "with lifestyle, medication",
+                  "and long-term support."
+                ],
+                "homeText": [
+                  "Comprehensive care for PCOS",
+                  "with lifestyle, medication",
+                  "and long-term support."
+                ],
+                "image": "/images/home/pcos-management.webp",
+                "homeImage": "/images/home/pcos-management.webp",
+                "homeImageAlt": "PCOS Management",
+                "relatedText": [
+                  "Comprehensive care for PCOS with",
+                  "lifestyle, medication and long-term support."
+                ],
+                "overview": [
+                  "Comprehensive care for PCOS with lifestyle, medication and long-term support.",
+                  "Every journey is personal. Take the first step toward understanding your fertility and reproductive health with compassionate, professional guidance."
+                ]
+              },
+              {
+                "slug": "physiotherapy",
+                "title": "IVF & IUI Treatment",
+                "icon": "activity",
+                "homeIcon": "activity",
+                "text": "Advanced reproductive technologies to turn your parenthood dreams into reality.",
+                "lines": [
+                  "Advanced reproductive technologies to",
+                  "turn your parenthood",
+                  "dreams into reality."
+                ],
+                "homeText": [
+                  "Advanced reproductive technologies to",
+                  "turn your parenthood",
+                  "dreams into reality."
+                ],
+                "image": "/images/home/ivf-iui-treatment.webp",
+                "homeImage": "/images/home/ivf-iui-treatment.webp",
+                "homeImageAlt": "IVF & IUI Treatment",
+                "relatedText": [
+                  "Advanced reproductive technologies to turn",
+                  "your parenthood dreams into reality."
+                ],
+                "overview": [
+                  "Advanced reproductive technologies to turn your parenthood dreams into reality.",
+                  "Every journey is personal. Take the first step toward understanding your fertility and reproductive health with compassionate, professional guidance."
+                ]
+              },
+              {
+                "slug": "pcos-reproductive-health",
+                "title": "Menopause Care",
+                "icon": "heart-pulse",
+                "homeIcon": "heart-pulse",
+                "text": "Supportive care to manage hormonal changes and maintain a healthy life.",
+                "lines": [
+                  "Supportive care to manage",
+                  "hormonal changes and maintain",
+                  "a healthy life."
+                ],
+                "homeText": [
+                  "Supportive care to manage",
+                  "hormonal changes and maintain",
+                  "a healthy life."
+                ],
+                "image": "/images/home/menopause-care.webp",
+                "homeImage": "/images/home/menopause-care.webp",
+                "relatedText": [
+                  "Supportive care to manage hormonal changes",
+                  "and maintain a healthy life."
+                ],
+                "overview": [
+                  "Supportive care to manage hormonal changes and maintain a healthy life.",
+                  "Every journey is personal. Take the first step toward understanding your fertility and reproductive health with compassionate, professional guidance."
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "PlanDetail": {
+        "variants": {
+          "InsurancePlanDetail1": {
+            "bannerTitle": "Service Detail",
+            "overviewEyebrow": "Our Service",
+            "overviewTitle": "Gynecology Care Services",
+            "featuresEyebrow": "About Service",
+            "featuresTitle": "Comprehensive Care",
+            "featuresSuffix": "for Women?s Health",
+            "overviewText": "Our gynecology care focuses on maintaining women's reproductive health at every stage of life. From routine check-ups to advanced treatments, we provide personalized care in a comfortable and supportive environment. Our experienced specialists are dedicated to helping you achieve better health and well-being with compassionate and professional guidance.",
+            "introCards": [
+              {
+                "icon": "heart",
+                "title": "Compassion",
+                "text": "Support that respects your feelings and circumstances."
+              },
+              {
+                "icon": "microscope",
+                "title": "Clinical Guidance",
+                "text": "Understand investigations and treatment options."
+              },
+              {
+                "icon": "shield-check",
+                "title": "Informed Choices",
+                "text": "Discuss benefits, limitations, risks, and costs."
+              }
+            ],
+            "treatmentSectionTitle": "Comprehensive Care for Women?s Health",
+            "treatmentSectionText": "We offer comprehensive diagnostic and treatment facilities using modern technology to address a wide range of women's health concerns. Whether you need a routine check-up, treatment for menstrual irregularities, or specialized care, our gynecology services are tailored to your individual needs. Our goal is to provide safe, effective and holistic care, helping you maintain a healthy and confident life at every stage.",
+            "treatments": [
+              {
+                "slug": "ivf-treatment",
+                "number": "01",
+                "eyebrow": "Advanced Fertility Care",
+                "subtitle": "A carefully guided journey toward parenthood.",
+                "description": "In vitro fertilization (IVF) is a fertility treatment in which eggs and sperm are combined in a laboratory. An embryo may then be transferred into the uterus by a qualified fertility specialist.",
+                "image": "/images/home/why-choose.webp",
+                "imageAlt": "A patient discussing ultrasound results with a healthcare professional",
+                "features": [
+                  "Individualized treatment planning",
+                  "Specialist-led monitoring",
+                  "Laboratory-based fertilization",
+                  "Guidance throughout the process"
+                ],
+                "process": [
+                  {
+                    "title": "Initial consultation",
+                    "description": "Your specialist reviews your medical history and discusses suitable investigations."
+                  },
+                  {
+                    "title": "Treatment planning",
+                    "description": "A personalized plan is developed according to your circumstances and clinical findings."
+                  },
+                  {
+                    "title": "Fertilization",
+                    "description": "Eggs and sperm are brought together in a laboratory, with fertilization monitored by the clinical team."
+                  },
+                  {
+                    "title": "Embryo transfer",
+                    "description": "When appropriate, an embryo may be transferred into the uterus, followed by clinical guidance and testing."
+                  }
+                ]
+              },
+              {
+                "slug": "iui-treatment",
+                "number": "02",
+                "eyebrow": "Personalized Fertility Care",
+                "subtitle": "A less invasive option for selected fertility needs.",
+                "description": "Intrauterine insemination (IUI) involves placing prepared sperm directly into the uterus around the time of ovulation. A fertility specialist can help determine whether this approach is suitable for you.",
+                "image": "/images/about/our-mission.webp",
+                "imageAlt": "Fertility laboratory equipment used in reproductive care",
+                "features": [
+                  "Treatment suitability assessment",
+                  "Ovulation timing and monitoring",
+                  "Prepared sperm placed in the uterus",
+                  "Follow-up guidance from your specialist"
+                ],
+                "process": [
+                  {
+                    "title": "Consultation",
+                    "description": "Your specialist reviews your health history and discusses fertility investigations."
+                  },
+                  {
+                    "title": "Ovulation monitoring",
+                    "description": "The clinical team identifies the appropriate timing for the procedure."
+                  },
+                  {
+                    "title": "Sperm preparation",
+                    "description": "A laboratory prepares a sperm sample for the insemination procedure."
+                  },
+                  {
+                    "title": "Insemination and follow-up",
+                    "description": "Prepared sperm is placed in the uterus, followed by instructions about testing and follow-up."
+                  }
+                ]
+              }
+            ],
+            "processSectionEyebrow": "What to Expect",
+            "processSectionTitle": "Your Treatment Journey",
+            "processSectionText": "Each treatment follows its own clinical process. Your specialist will explain the steps and timing that apply to your plan.",
+            "treatmentPrefix": "Treatment",
+            "contactHref": "/book-appointment",
+            "supportTitle": "Book an Appointment",
+            "supportButton": {
+              "label": "Book an Appointment",
+              "href": "/book-appointment"
+            },
+            "features": [
+              {
+                "icon": "check-circle",
+                "title": "Individualized treatment planning",
+                "text": [
+                  "Individualized treatment",
+                  "planning"
+                ]
+              },
+              {
+                "icon": "check-circle",
+                "title": "Specialist-led monitoring",
+                "text": [
+                  "Specialist-led",
+                  "monitoring"
+                ]
+              },
+              {
+                "icon": "check-circle",
+                "title": "Laboratory-based fertilization",
+                "text": [
+                  "Laboratory-based",
+                  "fertilization"
+                ]
+              },
+              {
+                "icon": "check-circle",
+                "title": "Guidance throughout the process",
+                "text": [
+                  "Guidance throughout",
+                  "the process"
+                ]
+              }
+            ],
+            "whyEyebrow": "What to Expect",
+            "whyTitle": "Your Treatment",
+            "whySuffix": "Journey",
+            "why": [
+              {
+                "icon": "stethoscope",
+                "title": "Consultation",
+                "text": "Your specialist reviews your health history and discusses fertility investigations."
+              },
+              {
+                "icon": "clock",
+                "title": "Ovulation monitoring",
+                "text": "The clinical team identifies the appropriate timing for the procedure."
+              },
+              {
+                "icon": "microscope",
+                "title": "Sperm preparation",
+                "text": "A laboratory prepares a sperm sample for the insemination procedure."
+              },
+              {
+                "icon": "check-circle",
+                "title": "Insemination and follow-up",
+                "text": "Prepared sperm is placed in the uterus, followed by instructions about testing and follow-up."
+              }
+            ],
+            "formTitle": "Discuss This Treatment",
+            "formText": "Have questions about IVF or IUI? Arrange a consultation to discuss your needs, options, potential risks, and next steps.",
+            "relatedTitle": "Our Services",
+            "gynecology": {
+              "image": "/images/home/about-fertility.webp",
+              "imageAlt": "Gynecologist providing compassionate pregnancy care",
+              "breadcrumb": {
+                "ariaLabel": "Breadcrumb",
+                "homeLabel": "Home",
+                "homeHref": "/",
+                "servicesLabel": "Services",
+                "servicesHref": "/services",
+                "currentLabel": "Gynecology Care"
+              },
+              "eyebrow": "Our Service",
+              "title": "Gynecology Care",
+              "highlight": "Services",
+              "description": "Our gynecology care focuses on maintaining women's reproductive health at every stage of life. From routine check-ups to advanced treatments, we provide personalized care in a comfortable and supportive environment. Our experienced specialists are dedicated to helping you achieve better health and well-being with compassionate and professional guidance.",
+              "services": [
+                "Well-Woman Examination",
+                "PCOS Diagnosis & Management",
+                "Menstrual Health Support",
+                "Menopause Care",
+                "Contraceptive Counseling",
+                "Laparoscopic Gynecological Procedures"
+              ],
+              "appointmentButton": {
+                "label": "Book an Appointment",
+                "href": "/book-appointment"
+              },
+              "healthSection": {
+                "eyebrow": "About Service",
+                "title": [
+                  "Comprehensive Care",
+                  "for Women’s Health"
+                ],
+                "paragraphs": [
+                  "We offer comprehensive diagnostic and treatment facilities using modern technology to address a wide range of women's health concerns. Whether you need a routine check-up, treatment for menstrual irregularities, or specialized care, our gynecology services are tailored to your individual needs.",
+                  "Our goal is to provide safe, effective and holistic care, helping you maintain a healthy and confident life at every stage."
+                ],
+                "image": "/images/home/pcos-management.webp",
+                "imageAlt": "Gynecologist explaining women's reproductive health using an anatomical model"
+              }
+            }
+          }
+        }
+      },
+      "Process": {
+        "variants": {
+          "InsuranceProcess1": {
+            "eyebrow": "What to Expect",
+            "title": "Your Treatment",
+            "highlight": "Journey",
+            "text": "Each treatment follows its own clinical process. Your specialist will explain the steps and timing that apply to your plan.",
+            "button": {
+              "label": "Book an Appointment",
+              "href": "/book-appointment"
+            },
+            "steps": [
+              {
+                "icon": "stethoscope",
+                "title": "Initial consultation",
+                "text": [
+                  "Your specialist reviews",
+                  "your medical history and",
+                  "discusses suitable",
+                  "investigations."
+                ]
+              },
+              {
+                "icon": "calendar-check",
+                "title": "Treatment planning",
+                "text": [
+                  "A personalized plan is",
+                  "developed according to your",
+                  "circumstances and clinical findings."
+                ]
+              },
+              {
+                "icon": "microscope",
+                "title": "Fertilization",
+                "text": [
+                  "Eggs and sperm are brought",
+                  "together in a laboratory, with",
+                  "fertilization monitored by the",
+                  "clinical team."
+                ]
+              },
+              {
+                "icon": "baby",
+                "title": "Embryo transfer",
+                "text": [
+                  "When appropriate, an embryo",
+                  "may be transferred into the",
+                  "uterus, followed by clinical",
+                  "guidance and testing."
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "Stats": {
+        "variants": {
+          "InsuranceStats1": {
+            "decorativeImages": [
+              {
+                "src": "/images/home/leaves-left.webp",
+                "alt": ""
+              },
+              {
+                "src": "/images/home/leaves-right.webp",
+                "alt": ""
+              }
+            ],
+            "items": [
+              {
+                "icon": "baby",
+                "value": "5K+",
+                "label": "Happy Patients"
+              },
+              {
+                "icon": "users-round",
+                "value": "70+",
+                "label": "Expert Specialists"
+              },
+              {
+                "icon": "heart-handshake",
+                "value": "18+",
+                "label": "Years of Experience"
+              },
+              {
+                "icon": "trophy",
+                "value": "24+",
+                "label": "Awards & Recognition"
+              }
+            ]
+          }
+        }
+      },
+      "Testimonials": {
+        "variants": {
+          "InsuranceTestimonials1": {
+            "heroTitle": "Testimonials",
+            "ariaLabel": "Patient testimonials",
+            "eyebrow": "Testimonial",
+            "title": "Real Stories,",
+            "highlight": "Real Hope",
+            "storyLabel": "A personal story",
+            "ratingLabel": "Illustrative five-star rating",
+            "previousLabel": "Previous testimonial",
+            "nextLabel": "Next testimonial",
+            "showLabelTemplate": "Show testimonial {number}",
+            "text": "Hear from our patients who have experienced compassionate care and successful outcomes with our fertility treatments.",
+            "averageRating": "4.8",
+            "reviewSummary": [
+              "From 3K+",
+              "Patients",
+              "Reviewed by",
+              "Google"
+            ],
+            "sideImage": "/images/home/testimonial-main.webp",
+            "sideImageAlt": "Happy parents holding their newborn baby",
+            "items": [
+              {
+                "name": "Neha Sharma",
+                "city": "New Delhi, India",
+                "treatment": "IVF Patient",
+                "rating": 5,
+                "image": "/images/profile/avatar5.webp",
+                "imageAlt": "Neha Sharma",
+                "quote": "The entire team was extremely supportive and guided us through every step of our IVF journey. We are now blessed with our baby, and we are forever grateful!"
+              },
+              {
+                "name": "michael Verma",
+                "city": "Noida, India",
+                "treatment": "Fertility Treatment Patient",
+                "rating": 5,
+                "image": "/images/profile/avatar2.webp",
+                "imageAlt": "michael Verma",
+                "quote": "From our very first consultation, we felt comfortable and supported. The doctors explained every step with so much care and patience. We are truly thankful our journey."
+              },
+              {
+                "name": "Ananya Mehta",
+                "city": "Gurugram, India",
+                "treatment": "IVF Patient",
+                "rating": 5,
+                "image": "/images/profile/avatar4.webp",
+                "imageAlt": "Ananya Mehta",
+                "quote": "The doctors and staff were incredibly kind and professional. Every appointment gave us confidence and hope. We appreciate the personalized care and dedication that made our experience so special."
+              },
+              {
+                "name": "Meera & Rahul",
+                "city": "Ghaziabad, India",
+                "treatment": "Fertility Care",
+                "rating": 5,
+                "image": "/images/team/team4.webp",
+                "imageAlt": "Portrait representing Meera and Rahul's testimonial",
+                "quote": "We felt comfortable asking questions and discussing our concerns. The clear explanations and caring approach helped us make decisions with greater confidence."
+              }
+            ]
+          }
+        }
+      },
+      "Cta": {
+        "variants": {
+          "InsuranceCta1": {
+            "eyebrow": "IVF & Fertility Care",
+            "title": [
+              "Your Journey to",
+              "Parenthood Starts Here"
+            ],
+            "text": "Expert fertility care, advanced treatments and compassionate support to help you achieve your dream of a happy family.",
+            "image": "/images/home/family-hero.webp",
+            "button": {
+              "label": "Appointment",
+              "href": "/book-appointment"
+            }
+          }
+        }
+      },
+      "Blog": {
+        "variants": {
+          "InsuranceBlog1": {
+            "heroTitle": "Blog",
+            "readLabel": "Read More",
+            "readAriaLabelTemplate": "Read {title}",
+            "eyebrow": "Our Blog",
+            "title": "Latest Insights &",
+            "highlight": "Articles",
+            "text": "Stay informed with expert advice, tips, and the latest updates on fertility, pregnancy, and women's health from our specialists.",
+            "buttonLabel": "View All Posts",
+            "homeCount": 3,
+            "categoryLabel": "Showing posts in",
+            "allPostsLabel": "View All Posts",
+            "allPostsHref": "/blog",
+            "posts": [
+              {
+                "slug": "/blog/blog-detail",
+                "category": "Pregnancy Care",
+                "date": "06 Aug",
+                "title": "IVF Demystified: From Consultation to Pregnancy",
+                "titleLines": [
+                  "IVF Demystified: From",
+                  "Consultation to Pregnancy"
+                ],
+                "text": "Understand the complete IVF journey, from your first consultation to achieving a successful pregnancy, with expert guidance.",
+                "image": "/images/home/blog1.webp",
+                "imageAlt": "IVF Demystified: From Consultation to Pregnancy",
+                "detail": {
+                  "image": "/images/home/success-story1.webp",
+                  "imageAlt": "A mother holding her baby, representing family and reproductive health",
+                  "comments": 3,
+                  "intro": "Fertility is a personal aspect of health, and every individual or couple may have different questions, circumstances, and goals. Understanding your options can help you have informed conversations with a qualified healthcare professional.",
+                  "sections": [
+                    {
+                      "title": "Lifestyle and",
+                      "highlight": "reproductive health",
+                      "text": "General health habits can support overall well-being. Eating a varied, balanced diet, getting adequate rest, avoiding tobacco, and discussing medications or supplements with a clinician can all be useful topics to consider."
+                    },
+                    {
+                      "title": "Understanding",
+                      "highlight": "treatment options",
+                      "text": "Depending on your circumstances, a specialist may discuss diagnostic testing, medication, intrauterine insemination (IUI), in vitro fertilization (IVF), or other approaches. Not every option is appropriate for every person."
+                    },
+                    {
+                      "title": "Questions to ask",
+                      "highlight": "your specialist",
+                      "text": "Preparing questions before an appointment can help you understand the available choices and feel more comfortable participating in decisions about your care."
+                    }
+                  ],
+                  "tip": {
+                    "title": "A Guide to Getting Started",
+                    "text": "The right next step begins with reliable information and care tailored to your needs."
+                  }
+                }
+              },
+              {
+                "slug": "/blog/blog-detail",
+                "category": "Fertility Tips",
+                "date": "05 Aug",
+                "title": "IVF Made Simple: Guide to Fertility Success",
+                "titleLines": [
+                  "IVF Made Simple: Guide",
+                  "to Fertility Success"
+                ],
+                "text": "Explore how IVF works, who it can help, and key tips to improve your chances of success, all in simple terms.",
+                "image": "/images/home/blog2.webp",
+                "imageAlt": "IVF Made Simple: Guide to Fertility Success",
+                "detail": {
+                  "image": "/images/blog-2.webp",
+                  "imageAlt": "Doctor talking with a patient at a desk",
+                  "comments": 5,
+                  "intro": "A medical emergency rarely gives notice, and the cost of treatment can strain even careful savings. Health insurance lets you focus on recovery rather than on how the bills will be paid.",
+                  "sections": [
+                    {
+                      "title": "1. Manage Rising",
+                      "highlight": "Medical Costs",
+                      "text": "Hospital stays, surgeries, and diagnostic tests become more expensive every year. A health plan covers a large share of these costs so that one illness does not undo years of saving."
+                    },
+                    {
+                      "title": "2. Get Care",
+                      "highlight": "Without Delay",
+                      "text": "Many plans offer cashless treatment at network hospitals, which means you can be admitted and treated without arranging a large payment first. Check the hospital list near your home before you buy."
+                    },
+                    {
+                      "title": "3. Cover the",
+                      "highlight": "Whole Family",
+                      "text": "A family floater plan protects your spouse, children, and sometimes parents under a single sum insured. Review the waiting periods and exclusions so you know exactly what is covered and from when."
+                    }
+                  ],
+                  "tip": {
+                    "title": "Tip: Read the Waiting Periods",
+                    "text": "Most policies apply a waiting period to pre-existing conditions and certain treatments. Knowing these before you buy helps you avoid surprises at claim time."
+                  }
+                }
+              },
+              {
+                "slug": "/blog/blog-detail",
+                "category": "IVF Treatment",
+                "date": "04 Aug",
+                "title": "In Vitro Fertilization: A Comprehensive Introduction",
+                "titleLines": [
+                  "In Vitro Fertilization:",
+                  "A Comprehensive Introduction"
+                ],
+                "text": "Learn the basics of IVF, including the process, benefits, success rates, and what to expect during treatment.",
+                "image": "/images/home/blog3.webp",
+                "imageAlt": "In Vitro Fertilization: A Comprehensive Introduction",
+                "detail": {
+                  "image": "/images/blog-3.webp",
+                  "imageAlt": "Travellers watching a plane from an airport terminal",
+                  "comments": 2,
+                  "intro": "A trip takes weeks of planning, but a missed flight, a lost bag, or a sudden illness abroad can change it in minutes. Travel insurance is a small addition to your budget that keeps those setbacks from becoming expensive problems.",
+                  "sections": [
+                    {
+                      "title": "1. Medical Help",
+                      "highlight": "Away from Home",
+                      "text": "Treatment in another country can be costly and hard to arrange. Travel cover pays for emergency medical care and, where needed, evacuation, so you are not left negotiating bills in an unfamiliar place."
+                    },
+                    {
+                      "title": "2. Delays and",
+                      "highlight": "Cancellations",
+                      "text": "If your trip is cancelled or cut short for a covered reason, the policy can reimburse non-refundable bookings. Many plans also compensate for long flight delays and missed connections."
+                    },
+                    {
+                      "title": "3. Lost Baggage and",
+                      "highlight": "Documents",
+                      "text": "Losing your luggage or passport is stressful enough without the cost of replacing them. Cover for baggage and travel documents helps you get essentials quickly and continue your journey."
+                    }
+                  ],
+                  "tip": {
+                    "title": "Tip: Buy When You Book",
+                    "text": "Purchasing cover at the time you book your trip means cancellation benefits apply from day one, not just from the day you depart."
+                  }
+                }
+              },
+              {
+                "slug": "/blog/blog-detail",
+                "category": "Newborn Care",
+                "date": "03 Aug",
+                "title": "Essential Newborn Care Tips for First-Time Parents",
+                "titleLines": [
+                  "Essential Newborn Care Tips",
+                  "for First-Time Parents"
+                ],
+                "text": "Practical advice on newborn care, feeding, sleep routines, and creating a healthy environment for your baby.",
+                "image": "/images/home/blog1.webp",
+                "detail": {
+                  "image": "/images/blog-4.webp",
+                  "imageAlt": "Modern family home at dusk",
+                  "comments": 4,
+                  "intro": "Your home is likely the most valuable thing you own, and everything inside it took years to build up. Home insurance protects both the structure and your belongings against events you cannot control.",
+                  "sections": [
+                    {
+                      "title": "1. Cover the",
+                      "highlight": "Structure",
+                      "text": "Fire, storms, floods, and other calamities can cause damage that is expensive to repair. Structure cover pays towards rebuilding or restoring your home so you are not starting again from nothing."
+                    },
+                    {
+                      "title": "2. Protect Your",
+                      "highlight": "Belongings",
+                      "text": "Furniture, appliances, electronics, and valuables can be insured against theft and damage. Keep a simple list of what you own and its approximate value to make any claim faster."
+                    },
+                    {
+                      "title": "3. Choose the Right",
+                      "highlight": "Sum Insured",
+                      "text": "Insure the structure for what it would cost to rebuild, not its market price, and review the amount whenever you renovate. Being under-insured can reduce what you receive at claim time."
+                    }
+                  ],
+                  "tip": {
+                    "title": "Tip: Renters Need Cover Too",
+                    "text": "If you rent, you can still insure your belongings. Contents-only cover is usually inexpensive and protects everything you have brought into the home."
+                  }
+                }
+              },
+              {
+                "slug": "/blog/blog-detail",
+                "category": "Women's Health",
+                "date": "02 Aug",
+                "title": "Nutrition Tips to Boost Fertility Naturally",
+                "titleLines": [
+                  "Nutrition Tips to",
+                  "Boost Fertility Naturally"
+                ],
+                "text": "Discover the best foods, vitamins, and lifestyle changes that can support reproductive health and improve fertility.",
+                "image": "/images/home/blog2.webp",
+                "detail": {
+                  "image": "/images/blog-5.webp",
+                  "imageAlt": "Car driving along a winding road at sunset",
+                  "comments": 6,
+                  "intro": "Every drive carries some risk, however careful you are. Motor insurance protects you from the cost of accidents, theft, and damage, and keeps you on the right side of the law.",
+                  "sections": [
+                    {
+                      "title": "1. Third-Party or",
+                      "highlight": "Comprehensive",
+                      "text": "Third-party cover pays for injury or damage you cause to others and is the legal minimum in many places. Comprehensive cover adds protection for your own vehicle against accidents, theft, fire, and natural events."
+                    },
+                    {
+                      "title": "2. Add-Ons That",
+                      "highlight": "Matter",
+                      "text": "Zero depreciation, roadside assistance, and engine protection can make a real difference when you claim. Choose add-ons based on your car’s age, where you drive, and how much you would want to pay out of pocket."
+                    },
+                    {
+                      "title": "3. Keep Your",
+                      "highlight": "No-Claim Bonus",
+                      "text": "Each claim-free year usually earns a discount on your next premium. Renew on time and think twice before claiming for very small repairs, so the bonus keeps building."
+                    }
+                  ],
+                  "tip": {
+                    "title": "Tip: Renew Before Expiry",
+                    "text": "A lapsed policy can mean losing your no-claim bonus and driving uninsured. Set a reminder a few weeks before your renewal date."
+                  }
+                }
+              },
+              {
+                "slug": "/blog/blog-detail",
+                "category": "Treatment Options",
+                "date": "01 Aug",
+                "title": "Understanding Your Fertility Treatment Options",
+                "titleLines": [
+                  "Understanding Your Fertility",
+                  "Treatment Options"
+                ],
+                "text": "Explore different fertility treatments, their benefits, and how to choose the right option based on your unique needs.",
+                "image": "/images/home/blog3.webp",
+                "detail": {
+                  "image": "/images/blog-6.webp",
+                  "imageAlt": "Business owner meeting with an insurance advisor",
+                  "comments": 7,
+                  "intro": "A business takes years to build and can be set back by a single unexpected event. Business insurance helps you absorb the shock and keep trading while you recover.",
+                  "sections": [
+                    {
+                      "title": "1. Protect Your",
+                      "highlight": "Assets",
+                      "text": "Premises, equipment, and stock are the foundation of your operations. Property cover helps you repair or replace them after fire, theft, or damage so work can resume sooner."
+                    },
+                    {
+                      "title": "2. Cover Your",
+                      "highlight": "Liabilities",
+                      "text": "A customer injury, a faulty product, or a professional error can lead to claims against you. Liability cover pays for legal costs and compensation that could otherwise threaten the business."
+                    },
+                    {
+                      "title": "3. Keep Income",
+                      "highlight": "Flowing",
+                      "text": "If you have to close temporarily, business interruption cover can replace lost income and help with fixed costs such as rent and salaries until you are back on your feet."
+                    }
+                  ],
+                  "tip": {
+                    "title": "Tip: Review Cover as You Grow",
+                    "text": "New staff, new premises, or new services all change your risks. Revisit your policy every year so your cover grows with the business."
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "BlogDetail": {
+        "variants": {
+          "InsuranceBlogDetail1": {
+            "bannerTitle": "Blog Detail",
+            "author": "Admin",
+            "commentsLabel": "Recent Comments",
+            "latestTitle": "Latest Posts",
+            "categoriesTitle": "Fertility Insights"
+          }
+        }
+      },
+      "EnquiryForm": {
+        "variants": {
+          "InsuranceEnquiryForm1": {
+            "name": "Your Name *",
+            "email": "Your Email *",
+            "phone": "Phone Number *",
+            "plan": "Select Service *",
+            "planShort": "Select Service",
+            "message": "Your Message (Optional)",
+            "submit": "Book Appointment",
+            "note": "Your information should be handled securely and confidentially by the connected booking system."
+          }
+        }
+      },
+      "EnquirePage": {
+        "variants": {
+          "InsuranceEnquirePage1": {
+            "heroTitle": "Book Appointment",
+            "eyebrow": "BOOK APPOINTMENT",
+            "title": [
+              "Schedule Your",
+              "Visit with"
+            ],
+            "highlight": "Our Specialists",
+            "text": "Take the first step towards better reproductive health. Book an appointment with our experienced gynecologists for personalized care and guidance.",
+            "points": [
+              {
+                "icon": "heart",
+                "title": "Expert Doctors",
+                "text": [
+                  "Consult with experienced gynecologists."
+                ]
+              },
+              {
+                "icon": "shield-check",
+                "title": "Flexible Scheduling",
+                "text": [
+                  "Choose a convenient date and time."
+                ]
+              },
+              {
+                "icon": "calendar",
+                "title": "Personalized Care",
+                "text": [
+                  "Get the right treatment for your needs."
+                ]
+              }
+            ],
+            "formTitle": "Schedule Your Visit",
+            "formHighlight": "with Our Specialists",
+            "formText": "Take the first step towards better reproductive health. Book an appointment with our experienced gynecologists for personalized care and guidance."
+          }
+        }
+      },
+      "ContactPage": {
+        "variants": {
+          "InsuranceContactPage1": {
+            "eyebrow": "GET IN TOUCH",
+            "title": [
+              "We're Here to",
+              "Support Your"
+            ],
+            "highlight": "Journey",
+            "text": "Have a question or want to book an appointment? Fill out the form and our team will get back to you shortly.",
+            "cards": [
+              {
+                "icon": "phone-solid",
+                "title": "Call Us",
+                "field": "phones"
+              },
+              {
+                "icon": "mail-solid",
+                "title": "Email Us",
+                "field": "emails"
+              },
+              {
+                "icon": "pin-solid",
+                "title": "Visit Us",
+                "field": "address"
+              }
+            ],
+            "formTitle": "Send Us a",
+            "formHighlight": "Message",
+            "formText": "We are here to help you with personalized guidance and support.",
+            "detailsTitle": [
+              "Get in Touch",
+              "With Us"
+            ],
+            "detailsText": "We'd love to hear from you. Reach out to our team for appointments, inquiries or any assistance related to women's health and fertility care.",
+            "sectionImage": "/images/home/gynecology-care.webp",
+            "sectionImageAlt": "Doctor providing pregnancy care and consultation to an expecting mother",
+            "location": {
+              "mapCard": {
+                "title": "Visit Our Location",
+                "field": "address",
+                "directionsLabel": "Get Directions",
+                "mapLinkLabel": "Find Us on Google Maps"
+              },
+              "frameTitle": "Our Location"
+            },
+            "hero": {
+              "breadcrumbLabel": "Breadcrumb",
+              "image": {
+                "src": "/images/banner.webp",
+                "alt": "A happy baby receiving loving medical care"
+              },
+              "heading": "Contact Us",
+              "homeLabel": "Home",
+              "homeHref": "/",
+              "currentLabel": "Contact Us"
+            },
+            "form": {
+              "heading": "Send Us a Message",
+              "mobileEyebrow": "GET IN TOUCH",
+              "requiredMarker": "*",
+              "emailLabel": "Email us",
+              "emailValue": "info@fertiabloom.com",
+              "phoneLabel": "Call us",
+              "phoneValue": "+91 98765 43210",
+              "backgroundImage": "/images/banner.webp",
+              "backgroundImageAlt": "A happy baby receiving loving medical care",
+              "fields": {
+                "firstName": {
+                  "label": "Your Name",
+                  "placeholder": "Enter Your Name"
+                },
+                "lastName": {
+                  "label": "Subject",
+                  "placeholder": "Enter Subject"
+                },
+                "email": {
+                  "label": "Your Email",
+                  "placeholder": "Enter Your Email"
+                },
+                "phone": {
+                  "label": "Phone Number",
+                  "placeholder": "Enter Phone Number",
+                  "countryButtonLabel": "Choose country calling code"
+                },
+                "message": {
+                  "label": "Your Message",
+                  "placeholder": "Enter Your Message"
+                }
+              },
+              "countries": [
+                {
+                  "code": "+91",
+                  "name": "India"
+                },
+                {
+                  "code": "+1",
+                  "name": "United States"
+                },
+                {
+                  "code": "+44",
+                  "name": "United Kingdom"
+                },
+                {
+                  "code": "+61",
+                  "name": "Australia"
+                },
+                {
+                  "code": "+971",
+                  "name": "UAE"
+                }
+              ],
+              "submitLabel": "Send Message",
+              "sendingLabel": "Sending...",
+              "resetLabel": "Reset",
+              "successTitle": "Thank you!",
+              "successText": [
+                "Your form passed the client-side submission step.",
+                "Connect an email service or backend API to deliver your message to your team."
+              ],
+              "successButton": "Send Another Message",
+              "errorText": "Something went wrong. Please try again later.",
+              "requestError": "Unable to send your message."
+            }
+          }
+        }
+      },
+      "ThankYouPage": {
+        "variants": {
+          "InsuranceThankYouPage1": {
+            "pageTitle": "Thank You",
+            "title": "Thank",
+            "highlight": "You!",
+            "subtitle": "Thank you!",
+            "text": [
+              "Your form passed the client-side submission step.",
+              "Connect an email service or backend API to deliver your message to your team."
+            ],
+            "primaryButton": {
+              "label": "Send Another Message",
+              "href": "/contact"
+            },
+            "secondaryButton": {
+              "label": "Book Another Appointment",
+              "href": "/book-appointment"
+            },
+            "points": [
+              {
+                "icon": "heart",
+                "title": "Personal Care",
+                "text": [
+                  "Guidance tailored to your needs."
+                ]
+              },
+              {
+                "icon": "shield-check",
+                "title": "Trusted Support",
+                "text": [
+                  "Professional, respectful care."
+                ]
+              },
+              {
+                "icon": "monitor-check",
+                "title": "Advanced Technology",
+                "text": [
+                  "For better care."
+                ]
+              },
+              {
+                "icon": "users-round",
+                "title": "Personalized Approach",
+                "text": [
+                  "Because you are unique."
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "FaqPage": {
+        "variants": {
+          "InsuranceFaqPage1": {
+            "title": "Frequently Asked Questions",
+            "intro": "Find answers to common questions about our fertility treatments, procedures, and patient care to help you make informed decisions.",
+            "eyebrow": "FAQ",
+            "headingFirst": "Frequently Asked",
+            "headingHighlight": "Questions",
+            "image": "/images/home/faq.webp",
+            "imageAlt": "Mother holding her baby",
+            "items": [
+              {
+                "question": "How much do you charge for a consultation?",
+                "answer": "Our consultation fees are kept affordable and vary depending on the type of consultation, whether it is an in-clinic or online consultation. Please contact our clinic directly for detailed information about the charges."
+              },
+              {
+                "question": "What types of treatments do you offer?",
+                "answer": "We provide a range of fertility and reproductive healthcare services, including fertility consultations, IVF, IUI, gynecology care, prenatal care, family planning and personalized treatment options."
+              },
+              {
+                "question": "How do I book my appointment?",
+                "answer": "You can book an appointment by contacting our clinic directly or using the appointment booking option available on our website. Our team will help you choose a convenient date and time."
+              },
+              {
+                "question": "Can I cancel or reschedule my appointment?",
+                "answer": "Yes. You can contact our clinic in advance to cancel or reschedule your appointment. Our support team will help you find another suitable time."
+              },
+              {
+                "question": "Is IVF treatment safe?",
+                "answer": "IVF is a widely used fertility treatment, but every medical treatment has potential risks and benefits. Your fertility specialist can explain the treatment process and discuss what is appropriate for your individual situation."
+              }
+            ]
+          }
+        }
+      },
+      "PolicyPages": {
+        "variants": {
+          "InsurancePolicyPages1": {
+            "contactPrompt": "Questions? Contact us at",
+            "privacy": {
+              "intro": "Your trust matters to us. This policy explains how Surevia handles information you choose to share when you visit our website or contact our team.",
+              "sections": [
+                {
+                  "title": "Information you share",
+                  "text": "When you submit an enquiry or contact us, we may receive details such as your name, phone number, email address, and the insurance information you include in your message. Please avoid sending sensitive personal or financial information through general website forms."
+                },
+                {
+                  "title": "How we use information",
+                  "text": "We use enquiry details to respond to you, understand the cover you are asking about, and provide relevant guidance. If you ask us to help you explore a plan, we may use the details you provide to coordinate that request with the relevant insurance provider."
+                },
+                {
+                  "title": "Sharing and protection",
+                  "text": "We do not offer personal information for sale. Information may be shared with a relevant insurer or service provider when needed to respond to a request you make, or where disclosure is required by law. We take reasonable care in handling enquiry information, but no method of transmission or storage can be guaranteed completely secure."
+                },
+                {
+                  "title": "Your choices",
+                  "text": "You can choose not to provide information, though we may then be unable to respond to an enquiry. To ask about information you have sent us or request an update, email {email}."
+                },
+                {
+                  "title": "Insurance information",
+                  "text": "Website content is general information, not a substitute for an insurer’s policy wording or a personalized financial recommendation. The insurer’s documents and terms govern any cover you purchase."
+                }
+              ]
+            },
+            "terms": {
+              "intro": "These terms apply when you access the Surevia website. By using the site, you agree to use it lawfully and in a way that does not interfere with other visitors.",
+              "sections": [
+                {
+                  "title": "Website information",
+                  "text": "We aim to keep website information useful and current, but plan descriptions and other content are provided for general information and may change. They are not an offer of insurance, a guarantee of eligibility, or personal financial advice."
+                },
+                {
+                  "title": "Insurance applications and cover",
+                  "text": "Insurance products are subject to the insurer’s eligibility rules, underwriting, policy wording, exclusions, limits, and final approval. Always review the insurer’s official documents before applying or making a decision. A request sent through this website does not itself create insurance cover."
+                },
+                {
+                  "title": "Acceptable use",
+                  "text": "You must not misuse this website, attempt to gain unauthorized access, disrupt its operation, or submit information that is unlawful or belongs to another person without permission."
+                },
+                {
+                  "title": "Content and external websites",
+                  "text": "Website text, branding, and materials belong to Surevia or their respective owners. Links to other websites are provided for convenience; we do not control and are not responsible for their content or practices."
+                },
+                {
+                  "title": "Changes and contact",
+                  "text": "We may update these terms or website content as our services change. Continued use of the site after an update means you accept the revised terms. For questions, contact {email}."
+                }
+              ]
+            },
+            "cookies": {
+              "intro": "Cookies are small files that a website can store in your browser. This page describes how cookies may support your visit to the Surevia website and how you can manage them.",
+              "sections": [
+                {
+                  "title": "Why cookies may be used",
+                  "text": "Cookies and similar browser storage can help a website work reliably, remember a preference, understand how pages are used, or support embedded services. The specific cookies in use can vary as the website and its features change."
+                },
+                {
+                  "title": "Managing cookies",
+                  "text": "Most browsers let you review, block, or delete cookies in their privacy or site settings. Blocking some cookies may affect how parts of a website work. Changes made in your browser apply to that browser and device."
+                },
+                {
+                  "title": "Third-party services",
+                  "text": "If pages include content or tools provided by another company, that provider may use its own cookies under its own policy. Review the provider’s information for details about its practices."
+                },
+                {
+                  "title": "Updates",
+                  "text": "We may revise this page when website features or cookie practices change. Questions about this policy can be sent to {email}."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "SitemapPage": {
+        "variants": {
+          "InsuranceSitemapPage1": {
+            "pagesTitle": "Pages",
+            "policiesTitle": "Policies"
+          }
+        }
+      },
+      "Footer": {
+        "variants": {
+          "InsuranceFooter1": {
+            "ariaLabel": "Website footer",
+            "policyAriaLabel": "Legal and policy links",
+            "about": "Compassionate fertility care, advanced treatments, and personalized support to help you achieve your dream of parenthood.",
+            "columns": [
+              {
+                "title": "Quick Links",
+                "source": "links",
+                "links": [
+                  {
+                    "label": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "label": "About Us",
+                    "href": "/about-us"
+                  },
+                  {
+                    "label": "Our Services",
+                    "href": "/services"
+                  },
+                  {
+                    "label": "Blog",
+                    "href": "/blog"
+                  },
+                  {
+                    "label": "Contact Us",
+                    "href": "/contact-us"
+                  },
+                  {
+                    "label": "Appointment",
+                    "href": "/book-appointment"
+                  }
+                ]
+              },
+              {
+                "title": "Our Services",
+                "source": "plans",
+                "links": [
+                  {
+                    "label": "IVF Treatment",
+                    "href": "/services/ivf-treatment"
+                  },
+                  {
+                    "label": "IUI Treatment",
+                    "href": "/services/iui-treatment"
+                  },
+                  {
+                    "label": "Egg Freezing",
+                    "href": "/services/egg-freezing"
+                  },
+                  {
+                    "label": "Male Fertility Care",
+                    "href": "/services/male-fertility-care"
+                  },
+                  {
+                    "label": "Gynecology Care",
+                    "href": "/services/service-detail"
+                  }
+                ]
+              }
+            ],
+            "contactTitle": "Contact Us",
+            "contactDetails": [
+              {
+                "title": "Call Us",
+                "value": "+91 98765 43210",
+                "href": "tel:+919876543210",
+                "icon": "phone"
+              },
+              {
+                "title": "Email Us",
+                "value": "info@fertiabloom.com",
+                "href": "mailto:info@fertiabloom.com",
+                "icon": "mail"
+              },
+              {
+                "title": "Visit Us",
+                "value": "123 Wellness Street, New Delhi, India - 110001",
+                "href": "https://maps.google.com/?q=New+Delhi+India",
+                "icon": "map-pin"
+              }
+            ],
+            "contact": [
+              {
+                "icon": "pin-solid",
+                "field": "address"
+              },
+              {
+                "icon": "phone-solid",
+                "field": "phone"
+              },
+              {
+                "icon": "mail-solid",
+                "field": "email"
+              },
+              {
+                "icon": "clock",
+                "field": "hoursShort"
+              }
+            ],
+            "copyright": "? Copyright 2026 by FertiAbloom. All Rights Reserved."
+          }
+        }
+      },
+      "Homecare": {
+        "variants": {
+          "InsuranceHomecare1": {
+            "image": "/images/home/banner2.webp",
+            "imageAlt": "An elderly couple smiling together at home",
+            "title": [
+              "Dedicated to Providing the Best",
+              "In-Home Health Care."
+            ],
+            "tagline": "Care that feels like home"
+          }
+        }
+      },
+      "Team": {
+        "variants": {
+          "InsuranceTeam1": {
+            "heroTitle": "Our Team",
+            "eyebrow": "Our Specialists",
+            "title": "Meet Our Expert Medical Professionals",
+            "profile": {
+              "name": "Dr. Priya Sharma",
+              "role": "Gynecologist & Obstetrician",
+              "image": "/images/home/specialist1.webp",
+              "imageAlt": "Dr. Priya Sharma, Gynecologist and Obstetrician",
+              "credentials": "MBBS, MS (Obstetrics & Gynecology)",
+              "introduction": "Dr. Priya Sharma is a highly experienced Gynecologist and Obstetrician dedicated to providing comprehensive and compassionate care for women at every stage of life. She focuses on preventive care, early diagnosis, and personalized treatment to ensure the best outcomes for her patients.",
+              "aboutHeading": "About Dr. Priya Sharma",
+              "aboutText": "Dr. Priya Sharma specializes in obstetrics, gynecology, and reproductive health. She is committed to providing personalized and compassionate care to help women maintain optimal health. Her approach combines the latest medical advancements with a patient-centric focus, ensuring the highest standard of care for every individual.",
+              "educationHeading": "Education & Qualifications",
+              "appointmentHeading": "Book an Appointment",
+              "form": {
+                "namePlaceholder": "Your Name",
+                "phonePlaceholder": "Your Phone",
+                "dateLabel": "Select appointment date",
+                "submitLabel": "Book Appointment"
+              },
+              "specializationsHeading": "Specialization",
+              "specializations": [
+                "Prenatal and Postnatal Care",
+                "High-Risk Pregnancy Management",
+                "Menstrual Disorders",
+                "Infertility Evaluation and Treatment",
+                "Family Planning & Contraception",
+                "Menopause Care",
+                "Adolescent Gynecology",
+                "Laparoscopic Gynecological Surgery"
+              ],
+              "education": [
+                {
+                  "degree": "MBBS",
+                  "institute": "All India Institute of Medical Sciences (AIIMS), New Delhi"
+                },
+                {
+                  "degree": "MS in Obstetrics & Gynecology",
+                  "institute": "King George's Medical University, Lucknow"
+                }
+              ],
+              "contactDetails": [
+                {
+                  "icon": "phone",
+                  "title": "Phone",
+                  "value": "+91 123 456 7890",
+                  "href": "tel:+911234567890"
+                },
+                {
+                  "icon": "mail",
+                  "title": "Email",
+                  "value": "priyasharma@gmail.com",
+                  "href": "mailto:priyasharma@gmail.com"
+                },
+                {
+                  "icon": "map-pin",
+                  "title": "Location",
+                  "value": "New Delhi, India - 110001",
+                  "href": "https://maps.google.com/?q=New+Delhi+India"
+                }
+              ]
+            },
+            "homeSection": {
+              "eyebrow": "Our Specialists",
+              "title": "Meet Our Healthcare Experts",
+              "description": "Experienced and compassionate professionals dedicated to your well-being.",
+              "members": [
+                {
+                  "name": "Dr. Sarah Mitchell",
+                  "role": "Sr. IVF Specialist",
+                  "image": "/images/home/specialist1.webp"
+                },
+                {
+                  "name": "Dr. James Carter",
+                  "role": "Gynecologist",
+                  "image": "/images/home/specialist2.webp"
+                },
+                {
+                  "name": "Dr. Olivia Bennett",
+                  "role": "Women's Health Expert",
+                  "image": "/images/home/specialist3.webp"
+                }
+              ]
+            },
+            "members": [
+              {
+                "name": "Dr. Priya Sharma",
+                "role": "Gynecologist & Obstetrician",
+                "image": "/images/home/specialist1.webp",
+                "imageAlt": "Dr. Priya Sharma, Gynecologist & Obstetrician",
+                "href": "/our-team/team-detail",
+                "linkLabel": "Contact us about John Doe"
+              },
+              {
+                "name": "Dr. Rajesh Mehta",
+                "role": "Fertility Specialist",
+                "image": "/images/home/specialist2.webp",
+                "imageAlt": "Dr. Rajesh Mehta, Fertility Specialist",
+                "href": "/our-team/team-detail",
+                "linkLabel": "Contact us about Jane Smith"
+              },
+              {
+                "name": "Dr. Neha Kapoor",
+                "role": "IVF & Reproductive Endocrinologist",
+                "image": "/images/home/specialist3.webp",
+                "imageAlt": "Dr. Neha Kapoor, IVF & Reproductive Endocrinologist",
+                "href": "/our-team/team-detail",
+                "linkLabel": "Contact us about David Brown"
+              },
+              {
+                "name": "Dr. Amit Verma",
+                "role": "Laparoscopic Surgeon",
+                "image": "/images/home/specialist4.webp",
+                "imageAlt": "Dr. Amit Verma, Laparoscopic Surgeon",
+                "href": "/our-team/team-detail",
+                "linkLabel": "Contact us about Selina Kim"
+              },
+              {
+                "name": "Dr. Sneha lyer",
+                "role": "Prenatal Care Specialist",
+                "image": "/images/home/specialist5.webp",
+                "imageAlt": "Dr. Sneha lyer, Prenatal Care Specialist",
+                "href": "/our-team/team-detail",
+                "linkLabel": "Contact us about Dr. Sneha lyer"
+              },
+              {
+                "name": "Dr. Ananya Singh",
+                "role": "Menopause Care Specialist",
+                "image": "/images/home/specialist6.webp",
+                "imageAlt": "Dr. Ananya Singh, Menopause Care Specialist",
+                "href": "/our-team/team-detail",
+                "linkLabel": "Contact us about Dr. Ananya Singh"
+              },
+              {
+                "name": "Dr. Karan Malhotra",
+                "role": "Infertility Specialist",
+                "image": "/images/home/specialist7.webp",
+                "imageAlt": "Dr. Karan Malhotra, Infertility Specialist",
+                "href": "/our-team/team-detail",
+                "linkLabel": "Contact us about Dr. Karan Malhotra"
+              },
+              {
+                "name": "Dr. Vikram Rao",
+                "role": "Family Planning Specialist",
+                "image": "/images/home/specialist8.webp",
+                "imageAlt": "Dr. Vikram Rao, Family Planning Specialist",
+                "href": "/our-team/team-detail",
+                "linkLabel": "Contact us about Dr. Vikram Rao"
+              }
+            ]
+          }
+        }
+      },
+      "Gallery": {
+        "variants": {
+          "InsuranceGallery1": {
+            "title": [
+              "Our Gallery"
+            ],
+            "items": [
+              {
+                "src": "/images/home/wellness1.webp",
+                "alt": "Woman enjoying a peaceful moment with a book"
+              },
+              {
+                "src": "/images/home/wellness2.webp",
+                "alt": "Large green tropical leaf surrounded by nature"
+              },
+              {
+                "src": "/images/home/wellness3.webp",
+                "alt": "Incense smoke rising in a softly lit room"
+              },
+              {
+                "src": "/images/home/wellness4.webp",
+                "alt": "Woman enjoying a quiet moment in nature"
+              },
+              {
+                "src": "/images/home/wellness5.webp",
+                "alt": "Pregnant woman exercising on a balance ball"
+              },
+              {
+                "src": "/images/home/wellness6.webp",
+                "alt": "Expectant couple attending a prenatal appointment"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

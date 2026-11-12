@@ -2,67 +2,29 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { motion, useReducedMotion } from "motion/react";
 import {
   ArrowRight,
   CalendarDays,
   Check,
-  ChevronRight,
   GraduationCap,
   Mail,
   MapPin,
   Phone,
   User,
+  type LucideIcon,
 } from "lucide-react";
+import { teamPageData } from "@/data";
 
-const specializations = [
-  "Prenatal and Postnatal Care",
-  "High-Risk Pregnancy Management",
-  "Menstrual Disorders",
-  "Infertility Evaluation and Treatment",
-  "Family Planning & Contraception",
-  "Menopause Care",
-  "Adolescent Gynecology",
-  "Laparoscopic Gynecological Surgery",
-];
-
-const education = [
-  {
-    degree: "MBBS",
-    institute:
-      "All India Institute of Medical Sciences (AIIMS), New Delhi",
-  },
-  {
-    degree: "MS in Obstetrics & Gynecology",
-    institute:
-      "King George's Medical University, Lucknow",
-  },
-];
-
-const contactDetails = [
-  {
-    icon: Phone,
-    title: "Phone",
-    value: "+91 123 456 7890",
-    href: "tel:+911234567890",
-  },
-  {
-    icon: Mail,
-    title: "Email",
-    value: "priyasharma@gmail.com",
-    href: "mailto:priyasharma@gmail.com",
-  },
-  {
-    icon: MapPin,
-    title: "Location",
-    value: "New Delhi, India - 110001",
-    href: "https://maps.google.com/?q=New+Delhi+India",
-  },
-];
+const profileIcons: Record<string, LucideIcon> = {
+  phone: Phone,
+  mail: Mail,
+  "map-pin": MapPin,
+};
 
 export default function DoctorDetails() {
   const reduceMotion = useReducedMotion();
+  const profile = teamPageData.profile;
 
   const reveal = {
     initial: {
@@ -88,7 +50,7 @@ export default function DoctorDetails() {
       
       <div className="pointer-events-none absolute -left-40 top-40 h-96 w-96 rounded-full bg-pink-100/40 blur-[100px]" />
 
-      <div className="relative mx-auto max-w-[1700px] px-4 sm:px-7 lg:px-10 xl:px-12">
+      <div className="relative mx-auto max-w-[1600px] px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20">
 
         <div className="grid grid-cols-1 items-start gap-7 lg:grid-cols-[minmax(0,1fr)_370px] xl:grid-cols-[minmax(0,1fr)_380px] xl:gap-8 2xl:grid-cols-[minmax(0,1fr)_410px]">
 
@@ -117,8 +79,8 @@ export default function DoctorDetails() {
               >
                 <div className="relative aspect-[1.05/1] w-full overflow-hidden">
                   <Image
-                    src="/images/home/specialist1.png"
-                    alt="Dr. Priya Sharma, Gynecologist and Obstetrician"
+                    src={profile.image}
+                    alt={profile.imageAlt}
                     fill
                     priority
                     sizes="(max-width: 768px) 100vw, (max-width: 1280px) 45vw, 420px"
@@ -136,16 +98,16 @@ export default function DoctorDetails() {
               >
                 {/* Designation */}
                 <span className="mb-4 inline-flex w-fit items-center rounded-full bg-[#fdeaf1] px-5 py-2.5 text-sm font-semibold text-[#e43d85] sm:text-base">
-                  Gynecologist & Obstetrician
+                  {profile.role}
                 </span>
 
                 {/* Name */}
                 <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-[#32134f] sm:text-5xl xl:text-[54px]">
-                  Dr. Priya Sharma
+                  {profile.name}
                 </h1>
 
                 <p className="mt-2 text-base font-medium text-[#77758a] sm:text-lg">
-                  MBBS, MS (Obstetrics & Gynecology)
+                  {profile.credentials}
                 </p>
 
                 {/* Decorative line */}
@@ -153,32 +115,25 @@ export default function DoctorDetails() {
 
                 {/* Description */}
                 <p className="text-[15px] leading-[1.8] text-[#77758a] sm:text-base">
-                  Dr. Priya Sharma is a highly experienced
-                  Gynecologist and Obstetrician dedicated
-                  to providing comprehensive and
-                  compassionate care for women at every
-                  stage of life. She focuses on preventive
-                  care, early diagnosis, and personalized
-                  treatment to ensure the best outcomes
-                  for her patients.
+                  {profile.introduction}
                 </p>
 
                 {/* Contact Information */}
                 <div className="mt-7 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-3">
-                  {contactDetails.map((item, index) => {
-                    const Icon = item.icon;
+                  {profile.contactDetails.map((item, index) => {
+                    const Icon = profileIcons[item.icon];
 
                     return (
                       <motion.a
                         key={item.title}
                         href={item.href}
                         target={
-                          item.title === "Location"
+                          item.icon === "map-pin"
                             ? "_blank"
                             : undefined
                         }
                         rel={
-                          item.title === "Location"
+                          item.icon === "map-pin"
                             ? "noreferrer"
                             : undefined
                         }
@@ -223,19 +178,10 @@ export default function DoctorDetails() {
               {...reveal}
               className="rounded-2xl border border-white bg-white p-6 shadow-[0_8px_35px_rgba(60,30,70,0.035)] sm:p-8"
             >
-              <SectionHeading>
-                About Dr. Priya Sharma
-              </SectionHeading>
+              <SectionHeading>{profile.aboutHeading}</SectionHeading>
 
               <p className="mt-5 text-[15px] leading-[1.85] text-[#77758a] sm:text-base">
-                Dr. Priya Sharma specializes in obstetrics,
-                gynecology, and reproductive health. She is
-                committed to providing personalized and
-                compassionate care to help women maintain
-                optimal health. Her approach combines the
-                latest medical advancements with a
-                patient-centric focus, ensuring the highest
-                standard of care for every individual.
+                {profile.aboutText}
               </p>
             </motion.div>
 
@@ -246,12 +192,10 @@ export default function DoctorDetails() {
               {...reveal}
               className="rounded-2xl border border-white bg-white p-6 shadow-[0_8px_35px_rgba(60,30,70,0.035)] sm:p-8"
             >
-              <SectionHeading>
-                Education & Qualifications
-              </SectionHeading>
+              <SectionHeading>{profile.educationHeading}</SectionHeading>
 
               <div className="mt-6 divide-y divide-[#f8dce8] rounded-2xl bg-[#fff5f9] px-4 sm:px-5">
-                {education.map((item, index) => (
+                {profile.education.map((item, index) => (
                   <motion.div
                     key={item.degree}
                     initial={{
@@ -310,7 +254,7 @@ export default function DoctorDetails() {
                 className="rounded-2xl border border-[#fbe4ef] bg-gradient-to-br from-[#fff0f6] to-[#fdeaf2] p-6 shadow-[0_10px_40px_rgba(226,70,135,0.06)] sm:p-7"
               >
                 <h2 className="text-2xl font-extrabold tracking-tight text-[#32134f] sm:text-[27px]">
-                  Book an Appointment
+                  {profile.appointmentHeading}
                 </h2>
 
                 <div className="mt-4 h-[3px] w-14 rounded-full bg-[#ee3e89]" />
@@ -330,8 +274,8 @@ export default function DoctorDetails() {
                     <input
                       type="text"
                       name="name"
-                      placeholder="Your Name"
-                      aria-label="Your Name"
+                      placeholder={profile.form.namePlaceholder}
+                      aria-label={profile.form.namePlaceholder}
                       autoComplete="name"
                       required
                       className="h-[54px] w-full rounded-xl border border-white bg-white px-4 pl-12 text-sm text-[#32134f] outline-none transition-all placeholder:text-[#9995a5] focus:border-[#ed3f8b] focus:ring-4 focus:ring-[#ed3f8b]/10"
@@ -347,8 +291,8 @@ export default function DoctorDetails() {
                     <input
                       type="tel"
                       name="phone"
-                      placeholder="Your Phone"
-                      aria-label="Your Phone"
+                      placeholder={profile.form.phonePlaceholder}
+                      aria-label={profile.form.phonePlaceholder}
                       autoComplete="tel"
                       required
                       className="h-[54px] w-full rounded-xl border border-white bg-white px-4 pl-12 text-sm text-[#32134f] outline-none transition-all placeholder:text-[#9995a5] focus:border-[#ed3f8b] focus:ring-4 focus:ring-[#ed3f8b]/10"
@@ -364,7 +308,7 @@ export default function DoctorDetails() {
                     <input
                       type="date"
                       name="date"
-                      aria-label="Select appointment date"
+                      aria-label={profile.form.dateLabel}
                       required
                       className="h-[54px] w-full rounded-xl border border-white bg-white px-4 pl-12 text-sm text-[#77758a] outline-none transition-all focus:border-[#ed3f8b] focus:ring-4 focus:ring-[#ed3f8b]/10"
                     />
@@ -375,7 +319,7 @@ export default function DoctorDetails() {
                     type="submit"
                     className="group mt-2 flex min-h-[57px] w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#ee4089] to-[#d92f79] px-5 py-4 text-sm font-bold text-white shadow-lg shadow-[#e83d87]/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#e83d87]/30 active:translate-y-0 sm:text-base"
                   >
-                    Book Appointment
+                    {profile.form.submitLabel}
 
                     <ArrowRight
                       size={20}
@@ -391,11 +335,11 @@ export default function DoctorDetails() {
                 className="rounded-2xl border border-white bg-white p-6 shadow-[0_8px_35px_rgba(60,30,70,0.045)] sm:p-7"
               >
                 <SectionHeading>
-                  Specialization
+                  {profile.specializationsHeading}
                 </SectionHeading>
 
                 <div className="mt-6 space-y-4">
-                  {specializations.map((item, index) => (
+                  {profile.specializations.map((item, index) => (
                     <motion.div
                       key={item}
                       initial={{

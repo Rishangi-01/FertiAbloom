@@ -4,33 +4,15 @@
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { ShieldCheck } from "lucide-react";
-
-const specialists = [
-  {
-    id: 1,
-    name: "Dr. Sarah Mitchell",
-    designation: "Sr. IVF Specialist",
-    image: "/images/home/specialist1.png",
-  },
-  {
-    id: 2,
-    name: "Dr. James Carter",
-    designation: "Gynecologist",
-    image: "/images/home/specialist2.png",
-  },
-  {
-    id: 3,
-    name: "Dr. Olivia Bennett",
-    designation: "Women's Health Expert",
-    image: "/images/home/specialist3.png",
-  },
-];
+import { teamPageData } from "@/data";
 
 export default function SpecialistsSection() {
   const reduceMotion = useReducedMotion();
+  const { homeSection } = teamPageData;
+  const specialists = homeSection.members;
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#fffafa] px-4 py-16 sm:px-6 sm:py-20 lg:px-10 lg:py-24">
+    <section className="relative w-full overflow-hidden bg-[#fffafa] py-16 sm:py-20 lg:py-24">
 
       
       <div className="pointer-events-none absolute -left-28 -top-28 h-[380px] w-[380px] rounded-full border-[55px] border-[#fce9f1] opacity-70 blur-[1px]" />
@@ -40,7 +22,7 @@ export default function SpecialistsSection() {
       <div className="pointer-events-none absolute right-0 top-1/3 h-48 w-32 rounded-full bg-[#fdebf2] opacity-60 blur-[70px]" />
 
       
-      <div className="relative z-10 mx-auto w-full max-w-[1650px]">
+      <div className="relative z-10 mx-auto w-full max-w-[1600px] px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20">
 
         
         <motion.div
@@ -68,7 +50,7 @@ export default function SpecialistsSection() {
                 strokeWidth={2.2}
                 className="sm:h-8 sm:w-8"
               />
-              <span>Our Specialists</span>
+              <span>{homeSection.eyebrow}</span>
             </div>
 
             <span className="h-[2px] w-10 bg-[#ed5b9b] sm:w-16 lg:w-24" />
@@ -77,13 +59,12 @@ export default function SpecialistsSection() {
 
         
           <h2 className="text-3xl font-extrabold tracking-[-0.04em] text-[#342044] sm:text-4xl md:text-5xl lg:text-[52px]">
-            Meet Our Healthcare Experts
+            {homeSection.title}
           </h2>
 
         
           <p className="mx-auto mt-4 max-w-3xl text-sm leading-relaxed text-[#77738f] sm:text-base md:text-lg lg:text-xl">
-            Experienced and compassionate professionals dedicated
-            to your well-being.
+            {homeSection.description}
           </p>
 
         </motion.div>
@@ -94,7 +75,7 @@ export default function SpecialistsSection() {
           {specialists.map((doctor, index) => (
 
             <motion.div
-              key={doctor.id}
+              key={doctor.name}
               initial={{
                 opacity: 0,
                 y: reduceMotion ? 0 : 55,
@@ -157,7 +138,7 @@ export default function SpecialistsSection() {
 
 
                   <p className="mt-2 text-sm font-medium text-[#85809e] transition-colors duration-300 group-hover:text-[#d94d8b] sm:text-base lg:text-lg">
-                    {doctor.designation}
+                    {doctor.role}
                   </p>
 
                   <motion.div

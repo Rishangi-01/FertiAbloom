@@ -14,54 +14,30 @@ import {
   Quote,
   Star,
 } from "lucide-react";
-
-const testimonials = [
-  {
-    id: 1,
-    name: "Neha Sharma",
-    role: "IVF Patient",
-    avatar: "/images/profile/avatar5.webp",
-    rating: 5,
-    quote:
-      "The entire team was extremely supportive and guided us through every step of our IVF journey. We are now blessed with our baby, and we are forever grateful!",
-  },
-  {
-    id: 2,
-    name: "michael Verma",
-    role: "Fertility Treatment Patient",
-    avatar: "/images/profile/avatar2.webp",
-    rating: 5,
-    quote:
-      "From our very first consultation, we felt comfortable and supported. The doctors explained every step with so much care and patience. We are truly thankful our journey.",
-  },
-  {
-    id: 3,
-    name: "Ananya Mehta",
-    role: "IVF Patient",
-    avatar: "/images/profile/avatar4.webp",
-    rating: 5,
-    quote:
-      "The doctors and staff were incredibly kind and professional. Every appointment gave us confidence and hope. We appreciate the personalized care and dedication that made our experience so special.",
-  },
-];
+import { testimonialsSectionData } from "@/data";
 
 export default function TestimonialsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-
   const reduceMotion = useReducedMotion();
+  const testimonials = testimonialsSectionData.items.slice(0, 3).map((item) => ({
+    ...item,
+    role: item.treatment,
+    avatar: item.image,
+  }));
 
   const activeTestimonial = testimonials[activeIndex];
+  const testimonialCount = testimonials.length;
 
   const nextSlide = useCallback(() => {
-    setActiveIndex((prev) => (prev + 1) % testimonials.length);
-  }, []);
+    setActiveIndex((prev) => (prev + 1) % testimonialCount);
+  }, [testimonialCount]);
 
   const prevSlide = useCallback(() => {
     setActiveIndex(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+      (prev) => (prev - 1 + testimonialCount) % testimonialCount
     );
-  }, []);
+  }, [testimonialCount]);
 
   // Automatic slider
   useEffect(() => {
@@ -89,7 +65,7 @@ export default function TestimonialsSection() {
 
   return (
     <section
-      className="relative w-full overflow-hidden bg-[#fffafa] px-4 py-16 sm:px-6 sm:py-20 lg:px-10 lg:py-24"
+      className="relative w-full overflow-hidden bg-[#fffafa] py-16 sm:py-20 lg:py-24"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -101,7 +77,7 @@ export default function TestimonialsSection() {
       <div className="pointer-events-none absolute right-[20%] top-[-100px] h-72 w-72 rounded-full border-[35px] border-[#fdebf2]/60" />
 
       {/* Main Container */}
-      <div className="relative z-10 mx-auto grid w-full max-w-[1650px] grid-cols-1 items-center gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:gap-10 xl:gap-14">
+      <div className="relative z-10 mx-auto grid w-full max-w-[1600px] grid-cols-1 items-center gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:gap-10 xl:gap-14 px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20">
 
         {/* ================= LEFT CONTENT ================= */}
 
@@ -115,21 +91,20 @@ export default function TestimonialsSection() {
           {/* Badge */}
           <div className="mb-5 inline-flex items-center gap-2.5 rounded-full border border-[#f9dce8] bg-[#fdeaf2] px-5 py-2.5 text-sm font-bold text-[#e83e85] shadow-sm sm:text-base">
             <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-[#ed3d88]" />
-            Testimonial
+            {testimonialsSectionData.eyebrow}
           </div>
 
           {/* Heading */}
           <h2 className="text-4xl font-extrabold leading-[1.08] tracking-[-0.045em] text-[#32164e] sm:text-5xl md:text-6xl lg:text-[58px] xl:text-[64px]">
-            Real Stories,
+            {testimonialsSectionData.title}
             <span className="block bg-gradient-to-r from-[#e83d85] to-[#f0529b] bg-clip-text text-transparent">
-              Real Hope
+              {testimonialsSectionData.highlight}
             </span>
           </h2>
 
           {/* Description */}
           <p className="mt-5 max-w-[700px] text-sm leading-[1.8] text-[#77758e] sm:text-base md:text-lg">
-            Hear from our patients who have experienced compassionate
-            care and successful outcomes with our fertility treatments.
+            {testimonialsSectionData.text}
           </p>
 
           {/* Testimonial Card */}
@@ -146,7 +121,7 @@ export default function TestimonialsSection() {
             <div className="min-h-[130px] sm:min-h-[130px]">
               <AnimatePresence mode="wait" initial={false}>
                 <motion.div
-                  key={activeTestimonial.id}
+                  key={activeTestimonial.name}
                   variants={slideVariants}
                   initial="initial"
                   animate="animate"
@@ -171,7 +146,7 @@ export default function TestimonialsSection() {
 
               <AnimatePresence mode="wait" initial={false}>
                 <motion.div
-                  key={activeTestimonial.id}
+                  key={activeTestimonial.name}
                   initial={{ opacity: 0, x: reduceMotion ? 0 : -15 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: reduceMotion ? 0 : 15 }}
@@ -204,7 +179,7 @@ export default function TestimonialsSection() {
                 <button
                   type="button"
                   onClick={prevSlide}
-                  aria-label="Previous testimonial"
+                  aria-label={testimonialsSectionData.previousLabel}
                   className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[#f9dce8] bg-[#fff0f6] text-[#e83d85] transition-all duration-300 hover:-translate-y-1 hover:bg-[#e83d85] hover:text-white hover:shadow-lg active:scale-95"
                 >
                   <ArrowLeft size={22} />
@@ -213,7 +188,7 @@ export default function TestimonialsSection() {
                 <button
                   type="button"
                   onClick={nextSlide}
-                  aria-label="Next testimonial"
+                  aria-label={testimonialsSectionData.nextLabel}
                   className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[#f9dce8] bg-[#fff0f6] text-[#e83d85] transition-all duration-300 hover:-translate-y-1 hover:bg-[#e83d85] hover:text-white hover:shadow-lg active:scale-95"
                 >
                   <ArrowRight size={22} />
@@ -226,9 +201,12 @@ export default function TestimonialsSection() {
           <div className="mt-7 flex items-center justify-center gap-3 lg:justify-center">
             {testimonials.map((item, index) => (
               <button
-                key={item.id}
+                key={item.name}
                 type="button"
-                aria-label={`Go to testimonial ${index + 1}`}
+                aria-label={testimonialsSectionData.showLabelTemplate.replace(
+                  "{number}",
+                  String(index + 1)
+                )}
                 aria-current={activeIndex === index ? "true" : undefined}
                 onClick={() => setActiveIndex(index)}
                 className={`h-3.5 rounded-full transition-all duration-500 ${
@@ -257,8 +235,8 @@ export default function TestimonialsSection() {
           <div className="group relative aspect-[0.98/1] w-full overflow-hidden rounded-[27px] bg-[#f9eaf0] shadow-[0_25px_70px_rgba(68,35,67,0.12)] sm:rounded-[35px] lg:rounded-[38px]">
 
             <Image
-              src="/images/home/testimonial-main.png"
-              alt="Happy parents holding their newborn baby"
+              src={testimonialsSectionData.sideImage}
+              alt={testimonialsSectionData.sideImageAlt}
               fill
               priority={false}
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -292,7 +270,7 @@ export default function TestimonialsSection() {
             className="absolute -right-2 top-1/2 z-20 w-[125px] -translate-y-1/2 rounded-[22px] border border-white/90 bg-white/90 px-3 py-5 text-center shadow-[0_15px_45px_rgba(65,35,70,0.13)] backdrop-blur-xl sm:-right-7 sm:w-[155px] sm:rounded-[25px] sm:px-5 sm:py-7 lg:-right-8 xl:w-[165px]"
           >
             <h3 className="text-4xl font-extrabold tracking-tight text-[#ed4088] sm:text-5xl">
-              4.8
+              {testimonialsSectionData.averageRating}
             </h3>
 
             {/* Stars */}
@@ -310,13 +288,9 @@ export default function TestimonialsSection() {
             <div className="my-4 h-px w-full bg-[#f7dce7]" />
 
             <p className="text-xs leading-[1.7] text-[#77748d] sm:text-sm">
-              From 3K+
-              <br />
-              Patients
-              <br />
-              Reviewed by
-              <br />
-              Google
+              {testimonialsSectionData.reviewSummary.map((line) => (
+                <span key={line} className="block">{line}</span>
+              ))}
             </p>
           </motion.div>
 

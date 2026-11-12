@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
@@ -11,34 +11,29 @@ import {
   X,
   ArrowUpRight,
 } from "lucide-react";
-
-const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "About Us", href: "/about-us" },
-  { name: "Services", href: "/services" },
-  { name: "Our Team", href: "/our-team" },
-  { name: "Blog", href: "/blog" },
-  { name: "Contact Us", href: "/contact-us" },
-];
-
-// const services = [
-//   { name: "IVF Treatment", href: "/services/ivf" },
-//   { name: "IUI Treatment", href: "/services/iui" },
-//   { name: "Fertility Treatment", href: "/services/fertility" },
-//   { name: "ICSI Treatment", href: "/services/icsi" },
-// ];
+import { navigationData, siteInfoData } from "@/data";
 
 export default function Navbar() {
+  const navLinks = navigationData.links.map(({ label, href }) => ({
+    name: label,
+    href,
+  }));
+  const appointmentButton = navigationData.button;
+  const mobileMenu = siteInfoData.mobileMenu;
+
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Scroll effect
-  if (typeof window !== "undefined") {
-    window.onscroll = () => {
+  useEffect(() => {
+    const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-  }
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <motion.header
@@ -51,21 +46,21 @@ export default function Navbar() {
           : "bg-white"
       }`}
     >
-      <nav className="mx-auto flex max-w-[1920px] items-center justify-between px-5 py-3 sm:px-8 lg:px-12 xl:px-16">
+      <nav aria-label={navigationData.ariaLabel} className="mx-auto flex max-w-[1600px] items-center justify-between px-5 py-3 sm:px-8 lg:px-12 xl:px-16">
 
         
         <Link
-          href="/"
+          href={navigationData.links[0].href}
           className="relative z-50 flex shrink-0 items-center"
-          aria-label="FertiaBloom Home"
+          aria-label={`${siteInfoData.name} Home`}
         >
           <Image
-            src="/images/logo.png"
-            alt="FertiaBloom - Where Hope Blossoms"
+            src={siteInfoData.logo}
+            alt={siteInfoData.alt}
             width={450}
             height={115}
             priority
-            className="h-auto w-[230px] object-contain sm:w-[280px] lg:w-[320px] xl:w-[300px]"
+            className="h-auto w-[230px] object-contain sm:w-[280px] lg:w-[320px] xl:w-[275px]"
           />
         </Link>
 
@@ -101,54 +96,6 @@ export default function Navbar() {
           ))}
 
         
-          {/* <div
-            className="relative"
-            onMouseEnter={() => setServicesOpen(true)}
-            onMouseLeave={() => setServicesOpen(false)}
-          >
-            <button
-              onClick={() => setServicesOpen(!servicesOpen)}
-              aria-expanded={servicesOpen}
-              className="group flex items-center gap-2 py-3 text-[17px] font-medium text-[#242424] transition-colors duration-300 hover:text-[#c75d76]"
-            >
-              Services
-
-              <ChevronDown
-                size={18}
-                className={`transition-transform duration-300 ${
-                  servicesOpen ? "rotate-180" : ""
-                }`}
-              />
-            </button>
-
-            <AnimatePresence>
-              {servicesOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: 15, scale: 0.97 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  exit={{ opacity: 0, y: 10, scale: 0.97 }}
-                  transition={{ duration: 0.25 }}
-                  className="absolute left-0 top-full mt-1 w-64 overflow-hidden rounded-xl border border-pink-100 bg-white p-2 shadow-[0_15px_50px_rgba(0,0,0,0.12)]"
-                >
-                  {services.map((service) => (
-                    <Link
-                      key={service.name}
-                      href={service.href}
-                      onClick={() => setServicesOpen(false)}
-                      className="group flex items-center justify-between rounded-lg px-4 py-3 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-[#fff1f4] hover:pl-6 hover:text-[#c75d76]"
-                    >
-                      {service.name}
-                      <ArrowUpRight
-                        size={15}
-                        className="opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100"
-                      />
-                    </Link>
-                  ))}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div> */}
-
         
           {navLinks.slice(2).map((link, index) => (
             <motion.div
@@ -176,10 +123,10 @@ export default function Navbar() {
           className="hidden shrink-0 items-center border-l border-gray-200 pl-7 lg:flex xl:pl-9"
         >
           <Link
-            href="/appointment"
+            href={appointmentButton.href}
             className="group relative flex items-center gap-2 overflow-hidden rounded-full bg-[#c75d76] px-8 py-[17px] text-[16px] font-semibold text-white shadow-[0_5px_15px_rgba(199,93,118,0.18)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#ad4963] hover:shadow-[0_10px_25px_rgba(199,93,118,0.3)] xl:px-11 xl:text-[18px]"
           >
-            <span className="relative z-10">Appointment</span>
+            <span className="relative z-10">{appointmentButton.label}</span>
             <ArrowUpRight
               size={18}
               className="relative z-10 transition-transform duration-300 group-hover:rotate-45"
@@ -193,7 +140,7 @@ export default function Navbar() {
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="relative z-50 flex h-11 w-11 items-center justify-center rounded-full bg-[#fff1f4] text-[#c75d76] transition-colors hover:bg-[#c75d76] hover:text-white lg:hidden"
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          aria-label={mobileOpen ? mobileMenu.closeLabel : mobileMenu.openLabel}
           aria-expanded={mobileOpen}
         >
           <AnimatePresence mode="wait">
@@ -254,7 +201,7 @@ export default function Navbar() {
                     onClick={() => setServicesOpen(!servicesOpen)}
                     className="flex w-full items-center justify-between rounded-lg px-4 py-3 text-base font-medium text-gray-800 transition-all hover:bg-[#fff1f4] hover:text-[#c75d76]"
                   >
-                    Services
+                    {navLinks[2].name}
                     <ChevronDown
                       size={19}
                       className={`transition-transform duration-300 ${
@@ -283,11 +230,11 @@ export default function Navbar() {
 
       
                 <Link
-                  href="/appointment"
+                  href={mobileMenu.appointmentHref}
                   onClick={() => setMobileOpen(false)}
                   className="mt-4 flex items-center justify-center gap-2 rounded-full bg-[#c75d76] px-6 py-4 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:bg-[#ad4963]"
                 >
-                  Book Appointment
+                  {mobileMenu.appointmentLabel}
                   <ArrowUpRight size={19} />
                 </Link>
               </div>

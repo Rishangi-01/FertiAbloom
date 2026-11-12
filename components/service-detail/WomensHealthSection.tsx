@@ -3,9 +3,11 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
+import { serviceDetailData } from "@/data";
 
 export default function WomensHealthSection() {
   const reduceMotion = useReducedMotion();
+  const content = serviceDetailData.gynecology.healthSection;
 
   const fadeLeft = {
     hidden: {
@@ -39,7 +41,7 @@ export default function WomensHealthSection() {
   };
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#fff8f7] px-5 py-8 sm:px-8 sm:py-12 lg:px-12 lg:py-12">
+    <section className="relative w-full overflow-hidden bg-[#fff8f7] py-8 sm:py-12 lg:py-12">
 
       <div className="pointer-events-none absolute -left-40 top-10 h-80 w-80 rounded-full bg-[#f8e3e1]/50 blur-[100px]" />
 
@@ -47,7 +49,7 @@ export default function WomensHealthSection() {
 
       {/* Main Container */}
 
-      <div className="relative z-10 mx-auto grid max-w-[1650px] grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14 xl:gap-20">
+      <div className="relative z-10 mx-auto grid max-w-[1600px] grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14 xl:gap-20 px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20">
 
         {/* ================= LEFT CONTENT ================= */}
 
@@ -67,7 +69,7 @@ export default function WomensHealthSection() {
           <div className="mb-5 flex items-center gap-5">
 
             <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#bd7379] sm:text-sm">
-              About Service
+              {content.eyebrow}
             </span>
 
             <span className="h-[2px] w-14 rounded-full bg-[#d99da0]" />
@@ -78,10 +80,10 @@ export default function WomensHealthSection() {
 
           <h2 className="max-w-[720px] text-[34px] font-extrabold leading-[1.17] tracking-[-0.045em] text-[#29242b] sm:text-[42px] md:text-5xl xl:text-[50px]">
 
-            Comprehensive Care
+            {content.title[0]}
 
             <span className="block bg-gradient-to-r from-[#bd626b] to-[#a94d60] bg-clip-text text-transparent">
-              for Women’s Health
+              {content.title[1]}
             </span>
 
           </h2>
@@ -90,21 +92,9 @@ export default function WomensHealthSection() {
 
           <div className="mt-6 max-w-[750px] space-y-4 text-[15px] leading-[1.8] text-[#777078] sm:text-base md:text-[17px]">
 
-            <p>
-              We offer comprehensive diagnostic and treatment
-              facilities using modern technology to address a
-              wide range of women's health concerns. Whether
-              you need a routine check-up, treatment for
-              menstrual irregularities, or specialized care,
-              our gynecology services are tailored to your
-              individual needs.
-            </p>
-
-            <p>
-              Our goal is to provide safe, effective and
-              holistic care, helping you maintain a healthy
-              and confident life at every stage.
-            </p>
+            {content.paragraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
 
           </div>
 
@@ -146,8 +136,8 @@ export default function WomensHealthSection() {
             <div className="relative aspect-[1.78/1] w-full overflow-hidden rounded-[17px] border border-white/80 bg-[#f5e7e5] shadow-[0_15px_45px_rgba(111,68,75,0.10)] sm:rounded-[21px]">
 
               <Image
-                src="/images/home/pcos-management.png"
-                alt="Gynecologist explaining women's reproductive health using an anatomical model"
+                src={content.image}
+                alt={content.imageAlt}
                 fill
                 priority={false}
                 sizes="(max-width: 1024px) 100vw, 50vw"
