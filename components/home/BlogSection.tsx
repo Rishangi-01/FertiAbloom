@@ -72,8 +72,6 @@ export default function BlogSection() {
   return (
     <section className="relative w-full overflow-hidden bg-[#fffafa] px-4 py-12 sm:px-6 sm:py-12 lg:px-10 lg:py-12">
 
-      {/* ================= BACKGROUND DECORATIONS ================= */}
-
       <div className="pointer-events-none absolute -left-32 top-10 h-80 w-80 rounded-full bg-[#fde6ef]/70 blur-[90px]" />
 
       <div className="pointer-events-none absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-[#fde8f1]/80 blur-[100px]" />

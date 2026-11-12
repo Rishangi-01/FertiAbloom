@@ -65,7 +65,7 @@ export default function Navbar() {
             width={450}
             height={115}
             priority
-            className="h-auto w-[230px] object-contain sm:w-[280px] lg:w-[320px] xl:w-[400px]"
+            className="h-auto w-[230px] object-contain sm:w-[280px] lg:w-[320px] xl:w-[300px]"
           />
         </Link>
 
