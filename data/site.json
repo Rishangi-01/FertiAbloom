@@ -1076,11 +1076,6 @@
                 "href": "https://instagram.com"
               },
               {
-                "icon": "pinterest",
-                "label": "Pinterest",
-                "href": "https://pinterest.com"
-              },
-              {
                 "icon": "linkedin",
                 "label": "LinkedIn",
                 "href": "https://linkedin.com"
@@ -2788,7 +2783,7 @@
                 "field": "hoursShort"
               }
             ],
-            "copyright": "? Copyright 2026 by FertiAbloom. All Rights Reserved."
+            "copyright": "Copyright © 2026. All Rights Reserved. Powered By Lestow."
           }
         }
       },
