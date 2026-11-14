@@ -124,8 +124,9 @@ export default function AboutSec() {
             variants={fadeUp}
             className="mt-6 text-base leading-[1.8] text-[#77727a] sm:text-lg"
           >
-            {aboutSectionData.homeText} {aboutSectionData.homeText}{" "}
-            {aboutSectionData.homeText}
+            {aboutSectionData.homeText} {aboutSectionData.homeText} 
+            <br />
+            {aboutSectionData.homeText2}
           </motion.p>
         </motion.div>
       </div>

@@ -12,7 +12,7 @@ export default function SpecialistsSection() {
   const specialists = homeSection.members;
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#fffafa] py-16 sm:py-20 lg:py-24">
+    <section className="relative w-full overflow-hidden bg-[#fffafa] py-8 sm:py-8 lg:py-8">
 
       
       <div className="pointer-events-none absolute -left-28 -top-28 h-[380px] w-[380px] rounded-full border-[55px] border-[#fce9f1] opacity-70 blur-[1px]" />

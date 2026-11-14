@@ -4,9 +4,9 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import {
-  ChevronDown,
   Menu,
   X,
   ArrowUpRight,
@@ -14,6 +14,7 @@ import {
 import { navigationData, siteInfoData } from "@/data";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const navLinks = navigationData.links.map(({ label, href }) => ({
     name: label,
     href,
@@ -21,8 +22,12 @@ export default function Navbar() {
   const appointmentButton = navigationData.button;
   const mobileMenu = siteInfoData.mobileMenu;
 
+  const isActiveLink = (href: string) => {
+    if (href === "/") return pathname === "/";
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
+
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -76,8 +81,9 @@ export default function Navbar() {
             >
               <Link
                 href={link.href}
+                aria-current={isActiveLink(link.href) ? "page" : undefined}
                 className={`group relative py-3 text-[17px] font-medium transition-colors duration-300 ${
-                  link.name === "Home"
+                  isActiveLink(link.href)
                     ? "text-[#c75d76]"
                     : "text-[#242424] hover:text-[#c75d76]"
                 }`}
@@ -86,9 +92,7 @@ export default function Navbar() {
 
                 <span
                   className={`absolute bottom-0 left-0 h-[3px] rounded-full bg-[#c75d76] transition-all duration-300 ${
-                    link.name === "Home"
-                      ? "w-full"
-                      : "w-0 group-hover:w-full"
+                    isActiveLink(link.href) ? "w-full" : "w-0 group-hover:w-full"
                   }`}
                 />
               </Link>
@@ -106,10 +110,19 @@ export default function Navbar() {
             >
               <Link
                 href={link.href}
-                className="group relative py-3 text-[17px] font-medium text-[#242424] transition-colors duration-300 hover:text-[#c75d76]"
+                aria-current={isActiveLink(link.href) ? "page" : undefined}
+                className={`group relative py-3 text-[17px] font-medium transition-colors duration-300 ${
+                  isActiveLink(link.href)
+                    ? "text-[#c75d76]"
+                    : "text-[#242424] hover:text-[#c75d76]"
+                }`}
               >
                 {link.name}
-                <span className="absolute bottom-0 left-0 h-[3px] w-0 rounded-full bg-[#c75d76] transition-all duration-300 group-hover:w-full" />
+                <span
+                  className={`absolute bottom-0 left-0 h-[3px] rounded-full bg-[#c75d76] transition-all duration-300 ${
+                    isActiveLink(link.href) ? "w-full" : "w-0 group-hover:w-full"
+                  }`}
+                />
               </Link>
             </motion.div>
           ))}
@@ -188,7 +201,12 @@ export default function Navbar() {
                     <Link
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
-                      className="block rounded-lg px-4 py-3 text-base font-medium text-gray-800 transition-all hover:bg-[#fff1f4] hover:text-[#c75d76]"
+                      aria-current={isActiveLink(link.href) ? "page" : undefined}
+                      className={`block rounded-lg px-4 py-3 text-base font-medium transition-all ${
+                        isActiveLink(link.href)
+                          ? "bg-[#fff1f4] text-[#c75d76]"
+                          : "text-gray-800 hover:bg-[#fff1f4] hover:text-[#c75d76]"
+                      }`}
                     >
                       {link.name}
                     </Link>
@@ -205,7 +223,12 @@ export default function Navbar() {
                     <Link
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
-                      className="block rounded-lg px-4 py-3 text-base font-medium text-gray-800 transition-all hover:bg-[#fff1f4] hover:text-[#c75d76]"
+                      aria-current={isActiveLink(link.href) ? "page" : undefined}
+                      className={`block rounded-lg px-4 py-3 text-base font-medium transition-all ${
+                        isActiveLink(link.href)
+                          ? "bg-[#fff1f4] text-[#c75d76]"
+                          : "text-gray-800 hover:bg-[#fff1f4] hover:text-[#c75d76]"
+                      }`}
                     >
                       {link.name}
                     </Link>

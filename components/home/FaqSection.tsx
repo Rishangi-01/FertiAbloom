@@ -19,7 +19,7 @@ export default function FaqSection() {
   const faqs = faqSectionData.items;
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#fffafa] py-16 sm:py-20 lg:py-24">
+    <section className="relative w-full overflow-hidden bg-[#fffafa] py-8 sm:py-8 lg:py-8">
       {/* =========================
           BACKGROUND DECORATIONS
       ========================== */}

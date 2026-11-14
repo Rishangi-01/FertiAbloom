@@ -38,7 +38,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="relative w-full overflow-hidden bg-[#fff9f7] py-16 sm:py-20 lg:py-24"
+      className="relative w-full overflow-hidden bg-[#fff9f7] py-8 sm:py-8 lg:py-8"
     >
       {/* Background Decorative Elements */}
       <div className="pointer-events-none absolute -left-32 top-32 h-72 w-72 rounded-full bg-[#f9e5e8]/40 blur-[100px]" />

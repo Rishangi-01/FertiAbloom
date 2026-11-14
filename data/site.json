@@ -1253,8 +1253,8 @@
                 }
               ],
               "button": {
-                "label": "Appointment",
-                "href": "/contact-us"
+                "label": "Read More",
+                "href": "/about-us"
               }
             },
             "eyebrow": "About Us",
@@ -1265,6 +1265,7 @@
             "familyImage": "/images/home/family-hero.webp",
             "familyImageAlt": "Mother lovingly holding her baby",
             "homeText": "At FertiAbloom, we are dedicated to providing personalized fertility care with advanced treatments and a supportive environment. Our experienced specialists guide you at every step with care, compassion and the latest medical technology to help you achieve your dream of a happy family.",
+            "homeText2": "At FertiAbloom, we are dedicated to providing personalized fertility care with advanced treatments and a supportive environment. Our experienced specialists guide you at every step with care, compassion and the latest medical technology to help you achieve your dream of a happy family.",
             "experience": {
               "value": "18+",
               "label": [
@@ -1320,7 +1321,7 @@
       "WhyChooseUs": {
         "variants": {
           "InsuranceWhyChooseUs1": {
-            "eyebrow": "Why Choose Us",
+            "eyebrow": "WHY CHOOSE US",
             "title": "Having Trouble",
             "titleLine2": "Getting",
             "highlight": "Pregnant?",
@@ -1982,7 +1983,7 @@
           "InsuranceTestimonials1": {
             "heroTitle": "Testimonials",
             "ariaLabel": "Patient testimonials",
-            "eyebrow": "Testimonial",
+            "eyebrow": "TESTIMONIAL",
             "title": "Real Stories,",
             "highlight": "Real Hope",
             "storyLabel": "A personal story",
@@ -2064,7 +2065,7 @@
             "heroTitle": "Blog",
             "readLabel": "Read More",
             "readAriaLabelTemplate": "Read {title}",
-            "eyebrow": "Our Blog",
+            "eyebrow": "OUR BLOG",
             "title": "Latest Insights &",
             "highlight": "Articles",
             "text": "Stay informed with expert advice, tips, and the latest updates on fertility, pregnancy, and women's health from our specialists.",
