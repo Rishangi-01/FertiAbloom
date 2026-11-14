@@ -60,7 +60,7 @@ export default function Footer() {
         <div className="pointer-events-none absolute bottom-0 right-0 h-96 w-96 rounded-full bg-[#f9d8e8]/60 blur-[100px]" />
 
 
-        <div className="relative z-10 grid grid-cols-1 gap-10 px-6 pb-10 pt-10 sm:px-9 sm:py-12 lg:grid-cols-[1.55fr_1fr_1fr_1.35fr_0.9fr] 
+        <div className="relative z-10 grid grid-cols-1 gap-10 px-6 pb-10 pt-10 sm:px-9 sm:py-12 lg:grid-cols-[1.55fr_0.9fr_0.9fr_1.55fr_0.9fr] 
         lg:gap-7 lg:px-10 lg:py-14 xl:px-16">
           <motion.div
             variants={reveal}
@@ -226,7 +226,6 @@ export default function Footer() {
                     whileHover={reduceMotion ? undefined : { x: 5 }}
                     className="group flex items-center gap-4"
                   >
-                    {/* Icon Circle */}
 
                     <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#f8dce8] bg-[#fde8f1] text-[#e83d85] shadow-sm transition-all duration-300 group-hover:border-[#e83d85] group-hover:bg-[#e83d85] group-hover:text-white sm:h-[56px] sm:w-[56px]">
                       <Icon size={21} strokeWidth={2.2} />

@@ -1040,20 +1040,20 @@
               "appointmentLabel": "Book Appointment",
               "appointmentHref": "/book-appointment",
               "ariaLabel": "Mobile navigation",
-              "phoneLabel": "+91 98765 43210",
-              "phoneHref": "tel:+919876543210",
-              "emailLabel": "info@fertiabloom.com",
-              "emailHref": "mailto:info@fertiabloom.com"
+              "phoneLabel": "+1 00000000",
+              "phoneHref": "tel:+1 00000000",
+              "emailLabel": "info@XYZ.com",
+              "emailHref": "mailto:info@XYZ.com"
             },
             "addressLines": [
               "123 Wellness Street,",
               "New Delhi, India - 110001"
             ],
             "emails": [
-              "info@fertiabloom.com"
+              "info@XYZ.com"
             ],
             "phones": [
-              "+91 98765 43210"
+              "+1 00000000"
             ],
             "callLabel": "Call Us",
             "bannerImage": "/images/banner.webp",
@@ -2443,9 +2443,9 @@
               "mobileEyebrow": "GET IN TOUCH",
               "requiredMarker": "*",
               "emailLabel": "Email us",
-              "emailValue": "info@fertiabloom.com",
+              "emailValue": "info@XYZ.com",
               "phoneLabel": "Call us",
-              "phoneValue": "+91 98765 43210",
+              "phoneValue": "+1 00000000",
               "backgroundImage": "/images/banner.webp",
               "backgroundImageAlt": "A happy baby receiving loving medical care",
               "fields": {
@@ -2749,19 +2749,19 @@
             "contactDetails": [
               {
                 "title": "Call Us",
-                "value": "+91 98765 43210",
-                "href": "tel:+919876543210",
+                "value": "+1 00000000",
+                "href": "tel:+1 00000000",
                 "icon": "phone"
               },
               {
                 "title": "Email Us",
-                "value": "info@fertiabloom.com",
-                "href": "mailto:info@fertiabloom.com",
+                "value": "info@XYZ.com",
+                "href": "mailto:info@XYZ.com",
                 "icon": "mail"
               },
               {
                 "title": "Visit Us",
-                "value": "123 Wellness Street, New Delhi, India - 110001",
+                "value": "742 Evergreen Terrace (or 123 Main St), Springfield, 62704, United States",
                 "href": "https://maps.google.com/?q=New+Delhi+India",
                 "icon": "map-pin"
               }
