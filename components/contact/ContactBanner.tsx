@@ -69,7 +69,7 @@ export default function ContactBanner() {
           <motion.h1
             id="contact-heading"
             variants={fadeUp}
-            className="text-5xl font-bold tracking-tight text-[#351c35] sm:text-6xl md:text-7xl lg:text-[84px] xl:text-[80px]"
+            className="text-5xl font-bold tracking-tight text-[#351c35] sm:text-6xl md:text-7xl lg:text-[84px] xl:text-[68px]"
           >
             {contactPageData.hero.heading}
           </motion.h1>
