@@ -161,11 +161,7 @@ export default function AboutSection() {
                 className="group flex items-center gap-3"
               >
                 <span
-                  className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-white shadow-sm transition-transform duration-300 group-hover:scale-110 ${
-                    feature.color === "pink"
-                      ? "bg-[#d46a7a]"
-                      : "bg-[#9db99e]"
-                  }`}
+                  className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-white shadow-sm transition-transform duration-300 group-hover:scale-110 bg-[#d46a7a]`}
                 >
                   <Check size={17} strokeWidth={3} />
                 </span>

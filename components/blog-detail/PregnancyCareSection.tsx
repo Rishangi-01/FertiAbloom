@@ -486,10 +486,10 @@ export default function PregnancyCareSection() {
 
               </div>
 
-              {/* COMMENT BUTTON */}
+              
 
               <Link
-                href="#comments"
+                href="/contact-us"
                 className="mt-6 flex items-center justify-center gap-2 rounded-xl bg-[#fde6ef] py-3 text-sm font-bold text-[#e83d85] transition-all duration-300 hover:bg-[#e83d85] hover:text-white"
               >
 

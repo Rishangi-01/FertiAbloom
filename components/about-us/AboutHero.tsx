@@ -69,7 +69,7 @@ export default function AboutHero() {
           <motion.h1
             id="about-heading"
             variants={fadeUp}
-            className="text-5xl font-bold tracking-tight text-[#351c35] sm:text-6xl md:text-7xl lg:text-[84px] xl:text-[68px]"
+            className="text-3xl font-bold tracking-tight text-[#351c35] sm:text-6xl md:text-7xl lg:text-[84px] xl:text-[68px]"
           >
             {aboutSectionData.heroTitle}
           </motion.h1>

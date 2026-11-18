@@ -60,14 +60,14 @@ export default function Footer() {
         <div className="pointer-events-none absolute bottom-0 right-0 h-96 w-96 rounded-full bg-[#f9d8e8]/60 blur-[100px]" />
 
 
-        <div className="relative z-10 grid grid-cols-1 gap-10 px-6 pb-10 pt-10 sm:px-9 sm:py-12 lg:grid-cols-[1.55fr_0.9fr_0.9fr_1.55fr_0.9fr] 
+        <div className="relative z-10 grid grid-cols-2 gap-10 px-6 pb-10 pt-10 sm:px-9 sm:py-12 lg:grid-cols-[1.55fr_0.9fr_0.9fr_1.55fr_0.9fr] 
         lg:gap-7 lg:px-10 lg:py-14 xl:px-16">
           <motion.div
             variants={reveal}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
-            className="relative z-20"
+            className="col-span-2 lg:col-span-1 relative z-20"
           >
             <Link
               href={navigationData.links[0].href}
@@ -79,11 +79,11 @@ export default function Footer() {
                 width={420}
                 height={145}
                 priority
-                className="h-auto w-[260px] object-contain sm:w-[310px] lg:w-full lg:max-w-[370px]"
+                className="h-auto w-[200px] object-contain sm:w-[290px] lg:w-full lg:max-w-[300px]"
               />
             </Link>
 
-            <p className="mt-5 max-w-[440px] text-[15px] leading-[1.9] text-[#77778d] sm:text-base">
+            <p className="mt-3 max-w-[440px] text-[15px] leading-[1.9] text-[#77778d] sm:text-base">
               {footerSectionData.about}
             </p>
 
@@ -115,9 +115,9 @@ export default function Footer() {
                           }
                     }
                     whileTap={{ scale: 0.9 }}
-                    className="flex h-12 w-12 items-center justify-center rounded-full border border-[#f9dce9] bg-[#fde8f1] text-[#e83d85] shadow-sm transition-colors duration-300 hover:border-[#e83d85] hover:bg-[#e83d85] hover:text-white sm:h-[58px] sm:w-[58px]"
+                    className="flex h-8 w-8 items-center justify-center rounded-full border border-[#f9dce9] bg-[#fde8f1] text-[#e83d85] shadow-sm transition-colors duration-300 hover:border-[#e83d85] hover:bg-[#e83d85] hover:text-white sm:h-[45px] sm:w-[45px]"
                   >
-                    <Icon size={21} />
+                    <Icon className="h-[16px] w-[16px] lg:h-[20px] lg:w-[20px]" />
                   </motion.a>
                 );
               })}
@@ -199,7 +199,7 @@ export default function Footer() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             transition={{ delay: 0.3 }}
-            className="relative z-20 lg:pr-2"
+            className="col-span-2 lg:col-span-1 relative z-20 lg:pr-2"
           >
             <h3 className="text-xl font-extrabold tracking-tight text-[#32164e] sm:text-[23px]">
               {footerSectionData.contactTitle}
@@ -227,8 +227,8 @@ export default function Footer() {
                     className="group flex items-center gap-4"
                   >
 
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#f8dce8] bg-[#fde8f1] text-[#e83d85] shadow-sm transition-all duration-300 group-hover:border-[#e83d85] group-hover:bg-[#e83d85] group-hover:text-white sm:h-[56px] sm:w-[56px]">
-                      <Icon size={21} strokeWidth={2.2} />
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#f8dce8] bg-[#fde8f1] text-[#e83d85] shadow-sm transition-all duration-300 group-hover:border-[#e83d85] group-hover:bg-[#e83d85] group-hover:text-white sm:h-[45px] sm:w-[45px]">
+                      <Icon className="h-[16px] w-[16px] lg:h-[20px] lg:w-[20px]" strokeWidth={2.2} />
                     </span>
 
                     {/* Text */}

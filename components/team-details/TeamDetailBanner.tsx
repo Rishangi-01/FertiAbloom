@@ -67,9 +67,9 @@ export default function TeamDetailBanner() {
           <motion.h1
             id="our-team-heading"
             variants={fadeUp}
-            className="text-5xl font-bold tracking-tight text-[#351c35] sm:text-6xl md:text-7xl lg:text-[84px] xl:text-[68px]"
+            className="text-3xl font-bold tracking-tight text-[#351c35] sm:text-6xl md:text-7xl lg:text-[84px] xl:text-[68px]"
           >
-            {teamPageData.heroTitle}
+            {teamPageData.heroDetailTitle}
           </motion.h1>
 
           <motion.nav
@@ -84,6 +84,10 @@ export default function TeamDetailBanner() {
             <ChevronRight size={23} strokeWidth={2.8} aria-hidden="true" />
 
             <span aria-current="page">{teamPageData.heroTitle}</span>
+
+            <ChevronRight size={23} strokeWidth={2.8} aria-hidden="true" />
+
+            <span aria-current="page">{teamPageData.heroDetailTitle}</span>
           </motion.nav>
         </motion.div>
       </div>

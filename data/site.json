@@ -1150,7 +1150,7 @@
                 "imageAlt": "Mother lovingly holding her baby",
                 "button": {
                   "label": "Appointment",
-                  "href": "/contact-us"
+                  "href": "/book-appointment"
                 }
               },
               {
@@ -1228,28 +1228,22 @@
               ],
               "features": [
                 {
-                  "title": "Personalized Fertility Treatment",
-                  "color": "pink"
+                  "title": "Personalized Fertility Treatment"
                 },
                 {
-                  "title": "Advanced IVF & IUI Support",
-                  "color": "pink"
+                  "title": "Advanced IVF & IUI Support"
                 },
                 {
-                  "title": "Comprehensive Women's Care",
-                  "color": "pink"
+                  "title": "Comprehensive Women's Care"
                 },
                 {
-                  "title": "Experienced Specialists",
-                  "color": "green"
+                  "title": "Experienced Specialists"
                 },
                 {
-                  "title": "Compassionate & Supportive Care",
-                  "color": "green"
+                  "title": "Compassionate & Supportive Care"
                 },
                 {
-                  "title": "Modern & Advanced Technology",
-                  "color": "green"
+                  "title": "Modern & Advanced Technology"
                 }
               ],
               "button": {
@@ -2805,6 +2799,7 @@
         "variants": {
           "InsuranceTeam1": {
             "heroTitle": "Our Team",
+            "heroDetailTitle": "Team Details",
             "eyebrow": "Our Specialists",
             "title": "Meet Our Expert Medical Professionals",
             "profile": {
@@ -2849,13 +2844,13 @@
                 {
                   "icon": "phone",
                   "title": "Phone",
-                  "value": "+91 123 456 7890",
+                  "value": "+911234567890",
                   "href": "tel:+911234567890"
                 },
                 {
                   "icon": "mail",
                   "title": "Email",
-                  "value": "priyasharma@gmail.com",
+                  "value": "priya@gmail.com",
                   "href": "mailto:priyasharma@gmail.com"
                 },
                 {
@@ -2930,20 +2925,20 @@
                 "linkLabel": "Contact us about Dr. Sneha lyer"
               },
               {
-                "name": "Dr. Ananya Singh",
+                "name": "Dr. Karan Malhotra",
                 "role": "Menopause Care Specialist",
                 "image": "/images/home/specialist6.webp",
-                "imageAlt": "Dr. Ananya Singh, Menopause Care Specialist",
-                "href": "/our-team/team-detail",
-                "linkLabel": "Contact us about Dr. Ananya Singh"
-              },
-              {
-                "name": "Dr. Karan Malhotra",
-                "role": "Infertility Specialist",
-                "image": "/images/home/specialist7.webp",
-                "imageAlt": "Dr. Karan Malhotra, Infertility Specialist",
+                "imageAlt": "Dr. Karan Malhotra, Menopause Care Specialist",
                 "href": "/our-team/team-detail",
                 "linkLabel": "Contact us about Dr. Karan Malhotra"
+              },
+              {
+                "name": "Dr. Ananya Singh",
+                "role": "Infertility Specialist",
+                "image": "/images/home/specialist7.webp",
+                "imageAlt": "Dr. Ananya Singh, Infertility Specialist",
+                "href": "/our-team/team-detail",
+                "linkLabel": "Contact us about Dr. Ananya Singh"
               },
               {
                 "name": "Dr. Vikram Rao",

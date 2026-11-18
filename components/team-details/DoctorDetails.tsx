@@ -150,17 +150,17 @@ export default function DoctorDetails() {
                           duration: reduceMotion ? 0 : 0.5,
                           delay: reduceMotion ? 0 : index * 0.1,
                         }}
-                        className="group flex items-center gap-3 sm:items-start sm:gap-2 lg:gap-3"
+                        className="group items-center gap-3 sm:items-start sm:gap-2 lg:gap-3"
                       >
-                        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#fdeaf1] text-[#ec408a] transition-all duration-300 group-hover:bg-[#ec408a] group-hover:text-white">
+                        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#fdeaf1] text-[#ec408a] transition-all duration-300 group-hover:bg-[#ec408a] group-hover:text-white mx-auto mb-2">
                           <Icon size={21} strokeWidth={2.2} />
                         </span>
 
-                        <span className="min-w-0 pt-1">
-                          <span className="block text-sm font-bold text-[#32134f]">
+                        <span className="min-w-0 pt-1 mx-auto">
+                          <span className="block text-sm font-bold text-[#32134f] text-center">
                             {item.title}
                           </span>
-                          <span className="mt-1 block break-words text-xs leading-relaxed text-[#858295] sm:text-[11px] xl:text-xs">
+                          <span className="mt-1 block break-words text-nowrap text-xs leading-relaxed text-[#858295] sm:text-[11px] xl:text-xs text-center">
                             {item.value}
                           </span>
                         </span>
