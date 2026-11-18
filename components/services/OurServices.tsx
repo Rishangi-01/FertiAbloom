@@ -67,7 +67,7 @@ export default function OurServices() {
           </div>
 
           {/* Main Heading */}
-          <h2 className="mx-auto max-w-3xl text-3xl font-bold leading-[1.2] tracking-[-0.035em] text-[#342b3d] sm:text-4xl md:text-5xl lg:text-[52px]">
+          <h2 className="mx-auto max-w-3xl text-2xl font-bold leading-[1.2] tracking-[-0.035em] text-[#342b3d] sm:text-3xl md:text-5xl lg:text-[52px]">
             {servicesData.title}
 
             <span className="mt-1 block text-[#d45f78]">
