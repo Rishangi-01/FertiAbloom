@@ -78,7 +78,7 @@ export default function BookAppointmentBanner() {
           <motion.nav
             aria-label={siteInfoData.breadcrumbLabel}
             variants={fadeUp}
-            className="mt-7 inline-flex items-center gap-3 rounded-full bg-[#c75d7b] px-7 py-4 text-sm font-medium text-white shadow-lg shadow-[#c75d7b]/15 transition-all duration-300 hover:bg-[#ad4565] hover:shadow-xl sm:gap-4 sm:px-8 sm:py-[15px] sm:text-lg"
+            className="mt-7 inline-flex items-center gap-3 rounded-full bg-[#c75d7b] px-7 py-4 text-xs font-medium text-white shadow-lg shadow-[#c75d7b]/15 transition-all duration-300 hover:bg-[#ad4565] hover:shadow-xl sm:gap-4 sm:px-8 sm:py-[15px] sm:text-lg"
           >
             <Link
               href={navigationData.links[0].href}
@@ -88,7 +88,7 @@ export default function BookAppointmentBanner() {
             </Link>
 
             <ChevronRight
-              size={23}
+              className="lg:h-[22px] lg:w-[22px] h-[16px] w-[16px]"
               strokeWidth={2.8}
               aria-hidden="true"
             />
