@@ -46,7 +46,7 @@ export default function DoctorDetails() {
   };
 
   return (
-    <section className="relative overflow-clip bg-[#fffafa] py-8 sm:py-12 lg:py-16">
+    <section className="relative overflow-clip bg-[#fffafa] py-8 sm:py-12 lg:py-12">
       
       <div className="pointer-events-none absolute -left-40 top-40 h-96 w-96 rounded-full bg-pink-100/40 blur-[100px]" />
 
@@ -57,10 +57,10 @@ export default function DoctorDetails() {
 
           <div className="min-w-0 space-y-6 sm:space-y-7">
 
-            {/* Doctor Introduction */}
+            
             <div className="grid grid-cols-1 items-center gap-7 md:grid-cols-[minmax(280px,0.78fr)_minmax(0,1fr)] md:gap-8 xl:grid-cols-[420px_minmax(0,1fr)] xl:gap-9">
 
-              {/* Doctor Image */}
+            
               <motion.div
                 initial={{
                   opacity: 0,

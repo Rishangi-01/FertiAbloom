@@ -19,7 +19,7 @@ export default function FaqSection() {
   const faqs = faqSectionData.items;
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#fffafa] py-8 sm:py-8 lg:py-8">
+    <section className="relative w-full overflow-hidden bg-[#fffafa] py-8 sm:py-12 lg:py-12">
       {/* =========================
           BACKGROUND DECORATIONS
       ========================== */}
@@ -71,7 +71,7 @@ export default function FaqSection() {
             duration: 0.9,
             ease: "easeOut",
           }}
-          className="relative mx-auto w-full max-w-[727px] lg:mx-0 h-full"
+          className="relative mx-auto w-full max-w-[595px] lg:mx-0 h-full"
         >
           
           <div className="absolute -left-5 -top-6 h-40 w-40 rounded-full bg-[#fbe2ec] opacity-80 blur-2xl sm:-left-8 sm:-top-8 sm:h-52 sm:w-52" />

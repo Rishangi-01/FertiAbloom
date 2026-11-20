@@ -36,7 +36,7 @@ export default function BlogSection() {
   };
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#fffafa] py-12 sm:py-12 lg:py-12">
+    <section className="relative w-full overflow-hidden bg-[#fffafa] py-8 sm:py-12 lg:py-12">
 
       <div className="pointer-events-none absolute -left-32 top-10 h-80 w-80 rounded-full bg-[#fde6ef]/70 blur-[90px]" />
 

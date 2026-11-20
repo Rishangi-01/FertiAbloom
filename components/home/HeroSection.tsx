@@ -39,9 +39,9 @@ export default function HeroSection() {
       </div>
 
       
-      <div className="relative z-10 w-full min-h-[650px] lg:min-h-[680px] xl:min-h-[720px] flex items-center">
+      <div className="relative z-10 w-full min-h-[650px] lg:min-h-[680px] xl:min-h-[720px] flex items-center lg:items-start">
 
-        <div className="w-full max-w-[1600px] mx-auto px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20 py-20">
+        <div className="w-full max-w-[1600px] mx-auto px-6 sm:px-10 md:px-12 lg:px-16 xl:px-20 py-20 lg:py-24">
 
           <div className="max-w-[570px]">
 
@@ -88,29 +88,6 @@ export default function HeroSection() {
             >
               {hero.text}
             </motion.p>
-
-      
-            {hero.button && (
-              <motion.div
-                variants={fadeUp}
-                initial="hidden"
-                animate="visible"
-                transition={{ delay: 0.45 }}
-                className="mt-7"
-              >
-                <Link
-                  href={hero.button.href}
-                  className="group inline-flex items-center gap-4 rounded-full bg-[#d36373] px-8 py-4 text-base sm:text-lg font-semibold text-white shadow-[0_10px_30px_rgba(211,99,115,0.20)] transition-all duration-300 hover:bg-[#bd5365] hover:shadow-[0_15px_35px_rgba(211,99,115,0.35)] hover:-translate-y-1"
-                >
-                  <span>{hero.button.label}</span>
-
-                  <ArrowRight
-                    size={21}
-                    className="transition-transform duration-300 group-hover:translate-x-2"
-                  />
-                </Link>
-              </motion.div>
-            )}
 
           </div>
         </div>

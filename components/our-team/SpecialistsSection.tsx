@@ -52,7 +52,7 @@ export default function SpecialistsSection() {
   const specialists = teamPageData.members;
 
   return (
-    <section className="relative isolate overflow-hidden bg-[#fff9fb] py-16 sm:py-20 lg:py-24">
+    <section className="relative isolate overflow-hidden bg-[#fff9fb] py-8 sm:py-12 lg:py-12">
 
 
       <div className="pointer-events-none absolute -left-32 -top-40 h-96 w-96 rounded-full bg-pink-100/60 blur-3xl" />

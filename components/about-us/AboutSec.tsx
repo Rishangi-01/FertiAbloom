@@ -35,7 +35,7 @@ export default function AboutSec() {
   return (
     <section
       id="about"
-      className="relative w-full overflow-hidden bg-[#fffaf8] py-16 sm:py-20 lg:py-24"
+      className="relative w-full overflow-hidden bg-[#fffaf8] py-16 sm:py-16 lg:py-16"
     >
       {/* Background Decorative Shapes */}
       <div className="absolute -left-32 bottom-0 h-[350px] w-[350px] rounded-full border-[35px] border-[#fae8e8]/50 pointer-events-none" />
@@ -124,7 +124,7 @@ export default function AboutSec() {
             variants={fadeUp}
             className="mt-6 text-base leading-[1.8] text-[#77727a] sm:text-lg"
           >
-            {aboutSectionData.homeText} {aboutSectionData.homeText} 
+            {aboutSectionData.homeText}
             <br />
             {aboutSectionData.homeText2}
           </motion.p>

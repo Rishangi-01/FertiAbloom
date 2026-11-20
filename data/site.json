@@ -1030,14 +1030,14 @@
             "metadata": {
               "title": "FertiAbloom | IVF & Fertility Care",
               "description": "Expert fertility care, advanced treatments and compassionate support to help you achieve your dream of a happy family.",
-              "icon": "/favicon.webp"
+              "icon": "/favicon.png"
             },
             "mobileMenu": {
               "openLabel": "Open navigation menu",
               "closeLabel": "Close navigation menu",
               "contactLabel": "Contact Us",
               "contactHref": "/contact-us",
-              "appointmentLabel": "Book Appointment",
+              "appointmentLabel": "Book An Appointment",
               "appointmentHref": "/book-appointment",
               "ariaLabel": "Mobile navigation",
               "phoneLabel": "+1 00000000",
@@ -1128,7 +1128,7 @@
               }
             ],
             "button": {
-              "label": "Appointment",
+              "label": "Book An Appointment",
               "href": "/book-appointment"
             }
           }
@@ -1149,7 +1149,7 @@
                 "image": "/images/home/family-hero.webp",
                 "imageAlt": "Mother lovingly holding her baby",
                 "button": {
-                  "label": "Appointment",
+                  "label": "Book An Appointment",
                   "href": "/book-appointment"
                 }
               },
@@ -1259,7 +1259,7 @@
             "familyImage": "/images/home/family-hero.webp",
             "familyImageAlt": "Mother lovingly holding her baby",
             "homeText": "At FertiAbloom, we are dedicated to providing personalized fertility care with advanced treatments and a supportive environment. Our experienced specialists guide you at every step with care, compassion and the latest medical technology to help you achieve your dream of a happy family.",
-            "homeText2": "At FertiAbloom, we are dedicated to providing personalized fertility care with advanced treatments and a supportive environment. Our experienced specialists guide you at every step with care, compassion and the latest medical technology to help you achieve your dream of a happy family.",
+            "homeText2": "We believe every family's journey is unique. That's why we focus on creating a comfortable, supportive experience where you feel heard, valued, and confident throughout your fertility journey.",
             "experience": {
               "value": "18+",
               "label": [
@@ -1280,7 +1280,7 @@
               }
             ],
             "button": {
-              "label": "Appointment",
+              "label": "Book An Appointment",
               "href": "/book-appointment"
             },
             "pageParagraphs": [
@@ -1770,7 +1770,7 @@
             "contactHref": "/book-appointment",
             "supportTitle": "Book an Appointment",
             "supportButton": {
-              "label": "Book an Appointment",
+              "label": "Book An Appointment",
               "href": "/book-appointment"
             },
             "features": [
@@ -1859,7 +1859,7 @@
                 "Laparoscopic Gynecological Procedures"
               ],
               "appointmentButton": {
-                "label": "Book an Appointment",
+                "label": "Book An Appointment",
                 "href": "/book-appointment"
               },
               "healthSection": {
@@ -1887,7 +1887,7 @@
             "highlight": "Journey",
             "text": "Each treatment follows its own clinical process. Your specialist will explain the steps and timing that apply to your plan.",
             "button": {
-              "label": "Book an Appointment",
+              "label": "Book An Appointment",
               "href": "/book-appointment"
             },
             "steps": [
@@ -2021,7 +2021,7 @@
                 "rating": 5,
                 "image": "/images/profile/avatar4.webp",
                 "imageAlt": "Ananya Mehta",
-                "quote": "The doctors and staff were incredibly kind and professional. Every appointment gave us confidence and hope. We appreciate the personalized care and dedication that made our experience so special."
+                "quote": "The doctors and staff were incredibly kind and professional. Every appointment gave us confidence. We appreciate dedication that made our experience so special."
               },
               {
                 "name": "Meera & Rahul",
@@ -2047,7 +2047,7 @@
             "text": "Expert fertility care, advanced treatments and compassionate support to help you achieve your dream of a happy family.",
             "image": "/images/home/family-hero.webp",
             "button": {
-              "label": "Appointment",
+              "label": "Book An Appointment",
               "href": "/book-appointment"
             }
           }
@@ -2384,7 +2384,6 @@
               "Support Your"
             ],
             "highlight": "Journey",
-            "text": "Have a question or want to book an appointment? Fill out the form and our team will get back to you shortly.",
             "cards": [
               {
                 "icon": "phone-solid",
@@ -2404,12 +2403,10 @@
             ],
             "formTitle": "Send Us a",
             "formHighlight": "Message",
-            "formText": "We are here to help you with personalized guidance and support.",
             "detailsTitle": [
               "Get in Touch",
               "With Us"
             ],
-            "detailsText": "We'd love to hear from you. Reach out to our team for appointments, inquiries or any assistance related to women's health and fertility care.",
             "sectionImage": "/images/home/gynecology-care.webp",
             "sectionImageAlt": "Doctor providing pregnancy care and consultation to an expecting mother",
             "location": {
@@ -2707,7 +2704,7 @@
                     "href": "/contact-us"
                   },
                   {
-                    "label": "Appointment",
+                    "label": "Book An Appointment",
                     "href": "/book-appointment"
                   }
                 ]
@@ -2742,6 +2739,12 @@
             "contactTitle": "Contact Us",
             "contactDetails": [
               {
+                "title": "Visit Us",
+                "value": "742 Evergreen Terrace (or 123 Main St), Springfield, 62704, United States",
+                "href": "https://maps.google.com/?q=New+Delhi+India",
+                "icon": "map-pin"
+              },
+              {
                 "title": "Call Us",
                 "value": "+1 00000000",
                 "href": "tel:+1 00000000",
@@ -2752,12 +2755,6 @@
                 "value": "info@XYZ.com",
                 "href": "mailto:info@XYZ.com",
                 "icon": "mail"
-              },
-              {
-                "title": "Visit Us",
-                "value": "742 Evergreen Terrace (or 123 Main St), Springfield, 62704, United States",
-                "href": "https://maps.google.com/?q=New+Delhi+India",
-                "icon": "map-pin"
               }
             ],
             "contact": [

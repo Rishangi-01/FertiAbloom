@@ -132,7 +132,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="relative isolate w-full overflow-hidden bg-[#fffaf9] py-16 sm:py-20 lg:py-24"
+      className="relative isolate w-full overflow-hidden bg-[#fffaf9] py-8 sm:py-12 lg:py-12"
     >
       {/* ================= BACKGROUND DECORATIONS ================= */}
 
@@ -187,14 +187,6 @@ export default function ContactSection() {
 
           </h2>
 
-          {/* Description */}
-
-          <p className="mx-auto mt-4 max-w-4xl text-sm leading-relaxed text-[#858493] sm:text-base md:text-lg">
-
-            {content.text}
-
-          </p>
-
         </motion.div>
 
         {/* ================= MAIN CONTENT ================= */}
@@ -236,12 +228,6 @@ export default function ContactSection() {
                 </span>
 
               </h3>
-
-              <p className="mt-2 text-sm leading-relaxed text-[#858493] sm:text-base">
-
-                {content.formText}
-
-              </p>
 
             </div>
 
@@ -441,27 +427,6 @@ export default function ContactSection() {
 
                 </motion.button>
 
-                {/* RESET BUTTON */}
-
-                <motion.button
-                  type="button"
-                  onClick={handleReset}
-                  whileHover={
-                    reduceMotion
-                      ? undefined
-                      : { y: -3 }
-                  }
-                  whileTap={
-                    reduceMotion
-                      ? undefined
-                      : { scale: 0.97 }
-                  }
-                  className="inline-flex min-h-[58px] min-w-[135px] items-center justify-center rounded-full border-2 border-[#b7d0c1] bg-white px-8 py-3.5 text-sm font-semibold text-[#666572] transition-all duration-300 hover:border-[#b7cdbd] hover:bg-[#edf5ef] hover:text-[#6c9b7e] sm:text-base"
-                >
-
-                  {formContent.resetLabel}
-
-                </motion.button>
 
               </div>
 
@@ -494,12 +459,6 @@ export default function ContactSection() {
                 </span>
 
               </h3>
-
-              <p className="mt-5 max-w-[470px] text-sm leading-[1.85] text-[#858493] sm:text-base">
-
-                {content.detailsText}
-
-              </p>
 
             </motion.div>
 

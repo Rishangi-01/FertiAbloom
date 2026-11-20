@@ -95,35 +95,6 @@ export default function GynecologyService() {
             className="flex flex-col"
           >
 
-            {/* Breadcrumb */}
-            <motion.nav
-              variants={fadeUp}
-              aria-label={content.breadcrumb.ariaLabel}
-              className="mb-9 flex flex-wrap items-center gap-2 text-sm font-medium text-[#777078] sm:mb-10 sm:text-base"
-            >
-              <Link
-                href={content.breadcrumb.homeHref}
-                className="transition-colors hover:text-[#bc5b68]"
-              >
-                {content.breadcrumb.homeLabel}
-              </Link>
-
-              <ChevronRight size={17} />
-
-              <Link
-                href={content.breadcrumb.servicesHref}
-                className="transition-colors hover:text-[#bc5b68]"
-              >
-                {content.breadcrumb.servicesLabel}
-              </Link>
-
-              <ChevronRight size={17} />
-
-              <span className="text-[#bd5c69]">
-                {content.breadcrumb.currentLabel}
-              </span>
-            </motion.nav>
-
             {/* Eyebrow */}
             <motion.div
               variants={fadeUp}

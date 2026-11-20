@@ -89,7 +89,7 @@ export default function StatsSection() {
   const stats = statsSectionData.items;
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#fffaf9] px-4 py-8 sm:px-6 sm:py-8 lg:px-8 lg:py-8">
+    <section className="relative w-full overflow-hidden bg-[#fffaf9] px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-12">
 
       {/* Main Statistics Container */}
       <motion.div

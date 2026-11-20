@@ -20,7 +20,7 @@ export default function LocationMapSection() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#fffafa] py-12 sm:py-16 lg:py-20">
+    <section className="relative w-full overflow-hidden bg-[#fffafa] py-8 sm:py-12 lg:py-12">
 
       {/* BACKGROUND DECORATIONS */}
 

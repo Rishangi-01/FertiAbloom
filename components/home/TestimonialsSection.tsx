@@ -65,7 +65,7 @@ export default function TestimonialsSection() {
 
   return (
     <section
-      className="relative w-full overflow-hidden bg-[#fffafa] py-12 sm:py-16 lg:py-16"
+      className="relative w-full overflow-hidden bg-[#fffafa] py-8 sm:py-12 lg:py-12"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -228,7 +228,6 @@ export default function TestimonialsSection() {
           transition={{ duration: 0.9, ease: "easeOut" }}
           className="relative mx-auto w-full max-w-[760px] lg:mx-0"
         >
-          {/* Decorative Background Circle */}
           <div className="absolute -right-10 -top-12 h-60 w-60 rounded-full bg-[#fde5ef]/80 blur-[2px] sm:-right-14 sm:-top-16 sm:h-80 sm:w-80" />
 
           {/* Main Image */}
@@ -245,54 +244,6 @@ export default function TestimonialsSection() {
 
             <div className="absolute inset-0 bg-gradient-to-t from-[#301c3c]/10 via-transparent to-white/5" />
           </div>
-
-          <motion.div
-            initial={{
-              opacity: 0,
-              x: reduceMotion ? 0 : 35,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-            }}
-            viewport={{ once: true }}
-            transition={{
-              duration: 0.8,
-              delay: reduceMotion ? 0 : 0.5,
-            }}
-            animate={
-              reduceMotion
-                ? undefined
-                : {
-                    y: [0, -9, 0],
-                  }
-            }
-            className="absolute -right-2 top-1/2 z-20 w-[125px] -translate-y-1/2 rounded-[22px] border border-white/90 bg-white/90 px-3 py-5 text-center shadow-[0_15px_45px_rgba(65,35,70,0.13)] backdrop-blur-xl sm:-right-7 sm:w-[155px] sm:rounded-[25px] sm:px-5 sm:py-7 lg:-right-8 xl:w-[165px]"
-          >
-            <h3 className="text-4xl font-extrabold tracking-tight text-[#ed4088] sm:text-5xl">
-              {testimonialsSectionData.averageRating}
-            </h3>
-
-            {/* Stars */}
-            <div className="mt-2 flex justify-center gap-0.5">
-              {Array.from({ length: 5 }).map((_, index) => (
-                <Star
-                  key={index}
-                  size={16}
-                  strokeWidth={1.5}
-                  className="fill-[#ed4088] text-[#ed4088] sm:h-[19px] sm:w-[19px]"
-                />
-              ))}
-            </div>
-
-            <div className="my-4 h-px w-full bg-[#f7dce7]" />
-
-            <p className="text-xs leading-[1.7] text-[#77748d] sm:text-sm">
-              {testimonialsSectionData.reviewSummary.map((line) => (
-                <span key={line} className="block">{line}</span>
-              ))}
-            </p>
-          </motion.div>
 
         </motion.div>
       </div>

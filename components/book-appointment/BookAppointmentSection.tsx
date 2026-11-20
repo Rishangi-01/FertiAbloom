@@ -148,7 +148,7 @@ export default function BookAppointmentSection() {
   return (
     <section
       id="appointment"
-      className="relative isolate w-full overflow-hidden bg-[#fffaf8] py-16 sm:py-20 lg:py-24"
+      className="relative isolate w-full overflow-hidden bg-[#fffaf8] py-8 sm:py-12 lg:py-12"
     >
       {/* ================= BACKGROUND DECORATIONS ================= */}
 

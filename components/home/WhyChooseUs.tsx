@@ -41,7 +41,7 @@ export default function WhyChooseUs() {
   return (
     <section
       id="why-choose-us"
-      className="relative w-full overflow-hidden bg-[#fff9f8] py-12 sm:py-12 lg:py-12"
+      className="relative w-full overflow-hidden bg-[#fff9f8] py-8 sm:py-12 lg:py-12"
     >
       <div className="pointer-events-none absolute -top-20 right-[35%] h-64 w-64 rounded-full bg-[#fce5ed]/60 blur-[80px]" />
 
@@ -255,7 +255,7 @@ export default function WhyChooseUs() {
               duration: 0.8,
               delay: reduceMotion ? 0 : 0.3,
             }}
-            className="relative z-20 mx-3 -mt-16 rounded-[22px] border border-white/80 bg-white/95 p-5 shadow-[0_15px_50px_rgba(75,43,65,0.12)] backdrop-blur-xl sm:mx-6 sm:-mt-20 sm:rounded-[28px] sm:p-7 md:mx-8 lg:mx-6 lg:-mt-75 xl:mx-10 xl:p-9"
+            className="relative z-20 mx-3 -mt-16 rounded-[22px] border border-white/80 bg-white/95 p-5 shadow-[0_15px_50px_rgba(75,43,65,0.12)] backdrop-blur-xl sm:mx-6 sm:-mt-20 sm:rounded-[28px] sm:p-7 md:mx-8 lg:mx-6 lg:-mt-[80px] xl:mx-10 xl:p-9"
           >
 
           
@@ -264,7 +264,7 @@ export default function WhyChooseUs() {
             </h3>
 
           
-            <div className="grid grid-cols-1 gap-x-5 gap-y-4 sm:grid-cols-2 sm:gap-y-5">
+            <div className="grid grid-cols-1 gap-x-5 gap-y-4 sm:grid-cols-2 sm:gap-y-3">
 
               {treatments.map((treatment, index) => (
                 <motion.div

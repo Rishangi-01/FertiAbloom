@@ -122,9 +122,9 @@ export default function SpecialistsSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#35213f]/10 via-transparent to-transparent opacity-70" />
 
 
-                  <div className="absolute right-4 top-4 flex h-10 w-10 scale-90 items-center justify-center rounded-full bg-white/85 text-[#e64a8c] opacity-0 shadow-md backdrop-blur-sm transition-all duration-500 group-hover:scale-100 group-hover:opacity-100">
+                  {/* <div className="absolute right-4 top-4 flex h-10 w-10 scale-90 items-center justify-center rounded-full bg-white/85 text-[#e64a8c] opacity-0 shadow-md backdrop-blur-sm transition-all duration-500 group-hover:scale-100 group-hover:opacity-100">
                     <ShieldCheck size={21} />
-                  </div>
+                  </div> */}
 
                 </div>
 
